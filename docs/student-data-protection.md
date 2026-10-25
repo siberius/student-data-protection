@@ -43,15 +43,15 @@ Do not put real student data, production logs, keys, or databases into an ordina
 | Records and DPO | [Z] Keep appropriate Article 30 records; regular school processing is not automatically exempt by the 250-employee threshold. Involve a DPO under Article 37; Czech schools deciding on rights and obligations have a specific position as a public authority. |
 | Risk assessment | [Z] Security must match the risk under Article 32; design privacy by default under Article 25. Assess the need for a DPIA under Article 35, especially for children, evaluation, monitoring, and profiling. |
 
-Sources for the table: [ÚOOÚ – education](https://uoou.gov.cz/profesional/qa-otazky-a-odpovedi/skolstvi), [School Act No. 561/2004, especially Section 28](https://e-sbirka.gov.cz/sb/2004/561), [Act No. 110/2019](https://e-sbirka.gov.cz/sb/2019/110), [ÚOOÚ – basic guide](https://uoou.gov.cz/verejnost/zakladni-prirucka-k-ochrane-udaju), [EDPB – controller and processor](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en), [EDPB – compliance and DPIA](https://www.edpb.europa.eu/sme/be-compliant/be-compliant_en).
+Sources for the table: [ÚOOÚ: education](https://uoou.gov.cz/profesional/qa-otazky-a-odpovedi/skolstvi), [School Act No. 561/2004, especially Section 28](https://e-sbirka.gov.cz/sb/2004/561), [Act No. 110/2019](https://e-sbirka.gov.cz/sb/2019/110), [ÚOOÚ: basic guide](https://uoou.gov.cz/verejnost/zakladni-prirucka-k-ochrane-udaju), [EDPB: controller and processor](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en), [EDPB: compliance and DPIA](https://www.edpb.europa.eu/sme/be-compliant/be-compliant_en).
 
-[O] Do not infer an automatic DPIA exemption from Section 10 of Act No. 110/2019 or from the fact that it is a school. Consider Article 35(10) GDPR, the specific operations, and current ÚOOÚ lists. With high residual risk, use prior consultation under Article 36. See [ÚOOÚ – DPIA and the relationship of Czech law to GDPR](https://uoou.gov.cz/profesional/qa-otazky-a-odpovedi/posouzeni-vlivu-na-ochranu-osobnich-udaju).
+[O] Do not infer an automatic DPIA exemption from Section 10 of Act No. 110/2019 or from the fact that it is a school. Consider Article 35(10) GDPR, the specific operations, and current ÚOOÚ lists. With high residual risk, use prior consultation under Article 36. See [ÚOOÚ: DPIA and the relationship of Czech law to GDPR](https://uoou.gov.cz/profesional/qa-otazky-a-odpovedi/posouzeni-vlivu-na-ochranu-osobnich-udaju).
 
 ### 2.3 Information, rights, and transfers
 
 [Z] Prepare clear information under Articles 12–14: controller and DPO, purposes and bases, recipients, transfers, retention, rights, complaint, and relevant automated decision-making. Ensure access, rectification, restriction, and other applicable rights; erasure is not absolute. Portability does not automatically apply to every school processing. Verify the requester's identity proportionally, without blanket collection of ID copies. The default response time is one month; a statutory extension requires conditions and timely notification. Assess Article 22 for solely automated decisions with legal or similarly significant effects, even without AI. A formal teacher click is not meaningful human review. [GDPR, Articles 12–22](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
-[Z] GDPR generally does not require Czech-only or EU-only hosting. Assess transfers outside the EEA under Chapter V, including remote support and subcontractors. [P] The default profile uses EEA hosting and backups; document any deviation with an applicable mechanism, a transfer assessment where needed, and supplementary measures. ÚOOÚ and EDPB methodologies are interpretative materials, not a separate product certification. [EDPB – roles and international transfers](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
+[Z] GDPR generally does not require Czech-only or EU-only hosting. Assess transfers outside the EEA under Chapter V, including remote support and subcontractors. [P] The default profile uses EEA hosting and backups; document any deviation with an applicable mechanism, a transfer assessment where needed, and supplementary measures. ÚOOÚ and EDPB methodologies are interpretative materials, not a separate product certification. [EDPB: roles and international transfers](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
 
 ## 3. AI Act: applicability, classification, and dates
 
@@ -61,21 +61,21 @@ Sources for the table: [ÚOOÚ – education](https://uoou.gov.cz/profesional/qa
 - **A developer using an AI assistant:** the organisation may be a deployer of that assistant. Duties are assessed for its use; they do not automatically transfer to the delivered application without AI features.
 - **AI functionality in the application:** generating feedback, evaluating free-text answers, predicting performance, personalising by results, or monitoring a test require a separate assessment. AI can be an external API or an internal batch process, not only a chatbot in the UI.
 
-[P] Keep an inventory: feature, purpose, model and version, inputs, outputs, recipients, impact on the student, provider, deployer, GDPR basis, classification, and review date. A change of purpose or a substantial modification may change roles under Article 25. [AI Act – official regulation](https://eur-lex.europa.eu/eli/reg/2024/1689/oj), [Commission – navigating the AI Act](https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act).
+[P] Keep an inventory: feature, purpose, model and version, inputs, outputs, recipients, impact on the student, provider, deployer, GDPR basis, classification, and review date. A change of purpose or a substantial modification may change roles under Article 25. [AI Act: official regulation](https://eur-lex.europa.eu/eli/reg/2024/1689/oj), [Commission: navigating the AI Act](https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act).
 
-### 3.2 Article 4 – AI literacy
+### 3.2 Article 4: AI literacy
 
 [Z/O] Chapter I applies from 2 February 2025. The currently displayed text of Article 4 on the AI Act Service Desk after the July 2026 amendment requires providers and deployers to take measures supporting the development of AI literacy; it does not explicitly require guaranteeing a certain level for every individual. Do not claim the obligation has disappeared, and do not repeat the original wording as current without verification.
 
-[P] Provide appropriate training by role: model errors, data protection, bias, prompt injection, output verification, human oversight, and reporting problems. Record content, date, and attendance; the skill does not require a specific certificate. It also applies to staff using a development AI tool if they fall within the relevant role. [Article 4 – current Commission view](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4).
+[P] Provide appropriate training by role: model errors, data protection, bias, prompt injection, output verification, human oversight, and reporting problems. Record content, date, and attendance; the skill does not require a specific certificate. It also applies to staff using a development AI tool if they fall within the relevant role. [Article 4: current Commission view](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4).
 
-### 3.3 Article 5 – prohibited practices
+### 3.3 Article 5: prohibited practices
 
 [Z] For a school application, check in particular the prohibition of AI emotion inference in educational institutions, with a narrow exception for medical or safety reasons. Ordinary attention or cheating monitoring does not automatically meet that exception. Also check harmful manipulation, exploitation of age-related vulnerability, prohibited social scoring, and sensitive biometric categorisation. For each prohibition, respect all its conditions; an ordinary school record or score is not prohibited social scoring by itself.
 
 [P] This profile does not allow emotion recognition, biometric categorisation, or camera AI monitoring of students. The amendment also introduces new prohibitions of certain intimate synthetic material and child sexual abuse material, applicable from 2 December 2026; do not create such features at all. Prohibitions are not replaced by parental or teacher consent. [Article 5](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-5), [Article 113](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113).
 
-### 3.4 Annex III point 3 – education and high-risk AI
+### 3.4 Annex III point 3: education and high-risk AI
 
 [Z] Assess AI intended for admission, access, or assignment to educational institutions, evaluating learning outcomes including steering the learning process, determining the appropriate level of education, and monitoring or detecting prohibited behaviour during tests. AI grade suggestions may fall within this area even if a teacher later approves them. Using AI in a school is not enough to classify it as high-risk. [Annex III](https://ai-act-service-desk.ec.europa.eu/en/ai-act/annex-3).
 
@@ -87,11 +87,11 @@ Sources for the table: [ÚOOÚ – education](https://uoou.gov.cz/profesional/qa
 
 ### 3.5 Duties for actual high-risk use
 
-[Z/O] Depending on role and applicable date, prepare risk management, data governance, technical documentation, logging, human oversight, accuracy, robustness, and cybersecurity; for a provider also a quality management system, the relevant conformity assessment, declaration, marking, and registration. This skill's ordinary checklist does not replace that assessment. [AI Act – Commission overview](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai).
+[Z/O] Depending on role and applicable date, prepare risk management, data governance, technical documentation, logging, human oversight, accuracy, robustness, and cybersecurity; for a provider also a quality management system, the relevant conformity assessment, declaration, marking, and registration. This skill's ordinary checklist does not replace that assessment. [AI Act: Commission overview](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai).
 
 A deployer must use the instructions appropriately, ensure competent oversight, monitor operation, and handle incidents. Automatic logs under its control have a special rule of a reasonable period of at least six months, unless an applicable EU or national rule provides otherwise. Do not confuse them with all ordinary web logs. [Article 26](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-26).
 
-For public authorities and private providers of public services, assess a FRIA under Article 27; it may be relevant for a school. FRIA and GDPR DPIA have a different scope and can be coordinated. Also verify information to affected persons and the applicability of Article 50 to AI interaction or generated content. [Article 27](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-27), [Commission – FAQ](https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act).
+For public authorities and private providers of public services, assess a FRIA under Article 27; it may be relevant for a school. FRIA and GDPR DPIA have a different scope and can be coordinated. Also verify information to affected persons and the applicability of Article 50 to AI interaction or generated content. [Article 27](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-27), [Commission: FAQ](https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act).
 
 ### 3.6 Timeline and level of legal verification
 
@@ -132,7 +132,7 @@ Sources: [Article 113 on the Service Desk](https://ai-act-service-desk.ec.europa
 - A CSV or API import has a mapping preview, duplicate and target-school validation, atomic confirmation, and audit. An external ID is unique within the source system and school. Do not overwrite records based on a name match.
 - Integrations have their own service identity with minimal scope, secret rotation, and revocation. Verify webhooks by signature, time window, and replay protection. The default profile sends push and email notifications without sensitive content, only with a link to an authenticated interface.
 
-Background for minimisation and data separation: [ENISA – Data Protection Engineering](https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Data%20Protection%20Engineering.pdf). The specific schema and implementation choices above are this skill's proposal.
+Background for minimisation and data separation: [ENISA: Data Protection Engineering](https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Data%20Protection%20Engineering.pdf). The specific schema and implementation choices above are this skill's proposal.
 
 ## 5. Authentication, optional invitations, and sessions [P]
 
@@ -209,7 +209,7 @@ GDPR does not prescribe AES-256-GCM or any single universal cipher. This profile
 - AAD must canonically bind the format version, school, type and ID of the object, and record version. AAD is not secret; a name does not belong in it. Obtain the expected context independently, not only from an envelope supplied by an attacker.
 - The envelope contains `format_version`, `algorithm`, `key_id`, `nonce`, `ciphertext`, `tag`, and necessary public metadata. Reject a change to the nonce, AAD, ciphertext, or tag without returning any plaintext. GCM alone does not prevent replay of an entire older valid version; check the version against trusted state and audit.
 
-Background: [NIST SP 800-38D](https://csrc.nist.gov/pubs/sp/800/38/d/final), [NIST – revision announcement](https://csrc.nist.gov/news/2024/nist-to-revise-sp-80038d-gcm-and-gmac-modes). Do not treat the revision announcement as a finished new standard.
+Background: [NIST SP 800-38D](https://csrc.nist.gov/pubs/sp/800/38/d/final), [NIST: revision announcement](https://csrc.nist.gov/news/2024/nist-to-revise-sp-80038d-gcm-and-gmac-modes). Do not treat the revision announcement as a finished new standard.
 
 ### 7.2 Keys and transport
 
@@ -284,7 +284,7 @@ Backups are encrypted, separated, and at least one copy is protected from change
 
 ## 11. Incidents [Z/P]
 
-[Z] A processor reports a breach to the controller without undue delay. The controller reports to ÚOOÚ without undue delay and where possible within 72 hours of becoming aware of it, unless the risk to rights and freedoms is unlikely; justify any delay. Where high risk is likely, inform affected persons without undue delay with an assessment of the Article 34 exceptions. Unreported breaches are also documented. Encryption can reduce risk, but a key leak, integrity, or availability requires its own assessment. [ÚOOÚ – personal data breach](https://uoou.gov.cz/profesional/poruseni-zabezpeceni-osobnich-udaju), [Articles 33–34 GDPR in ÚOOÚ material](https://uoou.gov.cz/media/poskytnute-informace/2019/31122019/uoou-0612218-24.pdf).
+[Z] A processor reports a breach to the controller without undue delay. The controller reports to ÚOOÚ without undue delay and where possible within 72 hours of becoming aware of it, unless the risk to rights and freedoms is unlikely; justify any delay. Where high risk is likely, inform affected persons without undue delay with an assessment of the Article 34 exceptions. Unreported breaches are also documented. Encryption can reduce risk, but a key leak, integrity, or availability requires its own assessment. [ÚOOÚ: personal data breach](https://uoou.gov.cz/profesional/poruseni-zabezpeceni-osobnich-udaju), [Articles 33–34 GDPR in ÚOOÚ material](https://uoou.gov.cz/media/poskytnute-informace/2019/31122019/uoou-0612218-24.pdf).
 
 [P] Prepare contacts for the controller, DPO, and operational service. Internal target: escalation to the responsible person within 1 hour, initial assessment within 24 hours; these are organisational targets, not legal deadlines. Runbook:
 
