@@ -1,5 +1,7 @@
 # Student Data Protection in School Apps
 
+[![Dokumentace](https://github.com/siberius/student-data-protection/actions/workflows/docs.yml/badge.svg)](https://github.com/siberius/student-data-protection/actions/workflows/docs.yml)
+
 **Čeština:** [README.cs.md](README.cs.md) · **Czech guide:** [docs/ochrana-dat-zaku.md](docs/ochrana-dat-zaku.md)
 
 A practical guide for teachers, school IT staff, and anyone building school applications that collect, store, or share student data. It turns GDPR and AI Act duties into concrete technical rules that can be implemented and tested.

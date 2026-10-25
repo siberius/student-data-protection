@@ -1,5 +1,7 @@
 # Ochrana dat žáků ve školních aplikacích
 
+[![Dokumentace](https://github.com/siberius/student-data-protection/actions/workflows/docs.yml/badge.svg)](https://github.com/siberius/student-data-protection/actions/workflows/docs.yml)
+
 **English:** [README.md](README.md) · **Anglická verze průvodce:** [docs/student-data-protection.md](docs/student-data-protection.md)
 
 Praktický průvodce pro učitele, školní IT a každého, kdo staví školní aplikace, které pracují s údaji žáků. Převádí povinnosti GDPR a AI Actu do konkrétních technických pravidel, která se dají implementovat a otestovat.

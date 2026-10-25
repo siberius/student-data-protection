@@ -1,0 +1,32 @@
+name: Oprava nebo doplnění
+description: Chyba v textu, zastaralý odkaz nebo nové doporučení.
+title: "[oprava] "
+labels: ["oprava"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Děkuji za podnět. Napište prosím, co je špatně a podle jakého zdroje.
+        Nevkládejte skutečné údaje žáků ani klíče.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Co je potřeba opravit
+      description: Ideálně přesná citace místa a návrh úpravy.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Zdroj nebo odkaz
+      description: Právní předpis, dokumentace, článek. U právních změn uveďte datum ověření.
+  - type: dropdown
+    id: language
+    attributes:
+      label: Jazyk
+      options:
+        - Čeština
+        - English
+        - Oba
+    validations:
+      required: true
