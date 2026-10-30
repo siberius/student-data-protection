@@ -4,6 +4,10 @@
 
 **Verze:** 1.1 · **Jazyk:** čeština · **Ověření zdrojů:** 22. 10. 2026 · **Vydání:** 25. 10. 2026
 
+**Rozsah:** pouze české prostředí základních a středních škol (ZŠ a SŠ). **Časové vymezení:** říjen 2026. Uvedené datum ověření právních zdrojů je 22. 10. 2026; upřesnění rozsahu ze dne 30. 10. 2026 nepředstavuje nové právní ověření. Před pozdějším použitím zkontrolujte aktuálnost předpisů a jejich použitelnost v konkrétní škole.
+
+Skill není určen pro jiné státy, mateřské ani vysoké školy. Anglická verze je překladem pro stejný český kontext ZŠ a SŠ, nikoli obecnou mezinárodní metodikou.
+
 Tento samostatný skill použij při tvorbě, úpravě nebo kontrole aplikací, které sbírají, ukládají, zobrazují, vyhodnocují nebo sdílejí osobní údaje žáků a související údaje zákonných zástupců či pracovníků školy. Patří sem evidence, formuláře, docházka, úkoly, portfolia, komunikace, přihlášky na akce, hodnocení i další školní nástroje. Údaji mohou být jména, kontakty, třídy, ročníky, soubory, zprávy, výsledky, známky, provozní záznamy a session/device ID.
 
 Základ tvoří ochrana celého životního cyklu dat. Konkrétní webové/PWA kontroly použij jen tam, kde daná technologie existuje; mobilní či desktopový klient vyžaduje navíc odpovídající zabezpečení platformy. CSV a SQLite jsou podporované varianty, nikoli povinná architektura. Nevytvářej kvůli tomuto skillu kvíz, známkování, AI funkce ani vstup pomocí kódu.

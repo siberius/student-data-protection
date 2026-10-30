@@ -6,6 +6,10 @@
 
 A practical guide for teachers, school IT staff, and anyone building school applications that collect, store, or share student data. It turns GDPR and AI Act duties into concrete technical rules that can be implemented and tested.
 
+**Scope:** exclusively the Czech education system, for základní školy (ZŠ, primary and lower-secondary schools) and střední školy (SŠ, upper-secondary schools). **Reference period:** October 2026. The recorded legal-source verification date is 22 October 2026; the scope clarification dated 30 October 2026 is not a new legal review. Before later use, check that the rules remain current and applicable to the particular school.
+
+This skill is not intended for other countries, preschools or higher education. The English version is a translation for the same Czech ZŠ and SŠ context, not a general international guide.
+
 ## What it covers
 
 - data inventory, minimisation, and identity

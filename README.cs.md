@@ -6,6 +6,10 @@
 
 Praktický průvodce pro učitele, školní IT a každého, kdo staví školní aplikace, které pracují s údaji žáků. Převádí povinnosti GDPR a AI Actu do konkrétních technických pravidel, která se dají implementovat a otestovat.
 
+**Rozsah:** pouze české prostředí základních a středních škol (ZŠ a SŠ). **Časové vymezení:** říjen 2026. Uvedené datum ověření právních zdrojů je 22. 10. 2026; upřesnění rozsahu ze dne 30. 10. 2026 nepředstavuje nové právní ověření. Před pozdějším použitím zkontrolujte aktuálnost předpisů a jejich použitelnost v konkrétní škole.
+
+Skill není určen pro jiné státy, mateřské ani vysoké školy. Anglická verze je překladem pro stejný český kontext ZŠ a SŠ, nikoli obecnou mezinárodní metodikou.
+
 ## Co v průvodci najdete
 
 - datový inventář, minimalizaci a identitu

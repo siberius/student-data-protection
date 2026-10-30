@@ -4,6 +4,10 @@
 
 **Version:** 1.1 · **Language:** English · **Sources verified:** 22 October 2026 · **Edition:** 25 October 2026 · **Czech original:** [ochrana-dat-zaku.md](ochrana-dat-zaku.md)
 
+**Scope:** exclusively the Czech education system, for základní školy (ZŠ, primary and lower-secondary schools) and střední školy (SŠ, upper-secondary schools). **Reference period:** October 2026. The recorded legal-source verification date is 22 October 2026; the scope clarification dated 30 October 2026 is not a new legal review. Before later use, check that the rules remain current and applicable to the particular school.
+
+This skill is not intended for other countries, preschools or higher education. The English version is a translation for the same Czech ZŠ and SŠ context, not a general international guide.
+
 Use this standalone skill when you build, change, or review applications that collect, store, display, evaluate, or share personal data of students and related data of their legal guardians or school staff. This includes records, forms, attendance, assignments, portfolios, communication, event registrations, assessment, and other school tools. The data may be names, contacts, classes, grades, files, messages, results, marks, operational records, and session or device IDs.
 
 The basis is protection across the whole data lifecycle. Apply web and PWA checks only where the technology exists; a mobile or desktop client also needs the platform's own security. CSV and SQLite are supported options, not a mandatory architecture. Do not add a quiz, grading, AI features, or code-based entry just because of this skill.
