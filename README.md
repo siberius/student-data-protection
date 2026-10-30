@@ -42,6 +42,6 @@ Luděk Sušický, biologist and secondary and university teacher of computer sci
 
 ## License
 
-© 2026 Luděk Sušický. The text is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [LICENSE](LICENSE).
+© 2026 Luděk Sušický. The text is licensed under [MIT](https://opensource.org/license/mit). See [LICENSE](LICENSE).
 
 Corrections and issues are welcome, especially when a legal reference or a security recommendation becomes outdated.

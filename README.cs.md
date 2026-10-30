@@ -42,6 +42,6 @@ Luděk Sušický, biolog, středoškolský a vysokoškolský učitel informatick
 
 ## Licence
 
-© 2026 Luděk Sušický. Text je pod licencí [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Viz [LICENSE](LICENSE).
+© 2026 Luděk Sušický. Text je pod licencí [MIT](https://opensource.org/license/mit). Viz [LICENSE](LICENSE).
 
 Opravy a připomínky jsou vítané, hlavně když zastará právní odkaz nebo bezpečnostní doporučení.

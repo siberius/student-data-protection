@@ -360,3 +360,27 @@ Perform only in an authorised test environment with synthetic data. Prepare two 
 When using the skill, hand over the application changes, configuration, personal data map, permission matrix, confirmed retention, recovery and incident procedure, and the results of relevant tests. For AI, attach the decision record and a list of legal points to confirm. These do not have to be separate files if the project keeps these records differently.
 
 OWASP, NIST, and ENISA provide technical and methodological guidance. They are not automatically binding Czech law or harmonised AI Act standards establishing a presumption of conformity. A completed checklist is not a GDPR certificate, a high-risk AI conformity assessment, or a guarantee against attack. Report specific verified properties and remaining risks; do not claim "100% GDPR compliant" without evidence.
+
+## License / Licence
+
+MIT License
+
+Copyright (c) 2026 Luděk Sušický
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
