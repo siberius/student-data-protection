@@ -67,4 +67,4 @@ All inputs are validated by the server. Ownership, approval, attendance, grades,
 
 **If the application evaluates:** the server calculates or confirms the score; a client result is not authoritative; the answer key is not published early. **If it accepts applications or attendance:** the user's submission is distinct from the approved record; the user must not set the approval status themselves.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

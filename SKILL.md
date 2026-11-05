@@ -4,14 +4,14 @@ description: Design, implement or audit student-data protection in school applic
 metadata:
   version: "1.1"
   language: "en"
-  license: "CC-BY-4.0"
+  license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/student-data-protection"
 ---
 
 # Student data protection
 
-Use the requested scope and available evidence. This skill supports school software work; it does not certify compliance or authorise production changes. Default legal context is EU/Czech schools only where applicable; choose the actual jurisdiction. A language choice alone does not select national law.
+Use the requested scope and available evidence. This skill supports school software work; it does not certify compliance or authorise production changes. The English/Czech editions cover Czech primary and secondary schools (ZŠ/SŠ), excluding preschools and higher education; choose the actual jurisdiction. A language choice alone does not select national law.
 
 ## Choose the mode and affected boundary
 
@@ -59,4 +59,4 @@ For an implementation, select tests for the actual changed feature and its risks
 
 Suitable for school data workflows, records, portals, forms and AI learning tools where the task affects personal data. No specific stack, provider, API, account system or national curriculum is required. Keep this file, references/ and LICENSE together. Use one relevant language package; a native skill host must support loading its files. The standalone guide remains available separately. This skill does not authorise installation, paid services, publication, production access or processing changes outside the request.
 
-© 2026 Luděk Sušický. CC BY 4.0. Preserve attribution, license and change notices on redistribution; external sources retain their rights. Revised edition 1.1 adds scoped modes, modular references, AI/SSO controls and revised DPO governance to the original 1.1 guide.
+© 2026 Luděk Sušický. MIT. Preserve attribution, license and change notices on redistribution; external sources retain their rights. Revised edition 1.1 adds scoped modes, modular references, AI/SSO controls and revised DPO governance to the original 1.1 guide.

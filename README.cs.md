@@ -13,6 +13,10 @@ Začni krátkým nativním jádrem a načti jen potřebnou referenci. [Praktick�
 Kompletní průvodce zůstává samostatnou čtenářskou verzí; nenačítej jej současně se všemi referencemi. Zatím zachovej jeden skill. Incidenty, audit či implementaci vyčleň až při samostatných vstupech, oprávněních a výstupech; společné ochrany neduplikuj.
 
 
+**Rozsah české/anglické verze:** české prostředí základních a středních škol (ZŠ a SŠ). **Časové vymezení:** říjen 2026. Uvedené datum ověření právních zdrojů je 22. 10. 2026; upřesnění rozsahu ze dne 30. 10. 2026 nepředstavuje nové právní ověření. Před pozdějším použitím zkontrolujte aktuálnost předpisů a jejich použitelnost v konkrétní škole.
+
+Česká a anglická verze jsou určeny českým ZŠ a SŠ, nikoli mateřským či vysokým školám. Španělská verze je samostatnou adaptací pro Španělsko; nepřenáší české právo do jiného státu.
+
 ## Co v průvodci najdete
 
 - datový inventář, minimalizaci a identitu
@@ -59,7 +63,7 @@ biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
 ## Licence
 
-© 2026 Luděk Sušický. Text je pod licencí [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Viz [LICENSE](LICENSE).
+© 2026 Luděk Sušický. Text je pod licencí [MIT](https://opensource.org/license/mit). Viz [LICENSE](LICENSE).
 
 Opravy a připomínky jsou vítané, hlavně když zastará právní odkaz nebo bezpečnostní doporučení.
 

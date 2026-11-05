@@ -27,4 +27,4 @@ Usa una biblioteca CSV que entrecomille correctamente delimitadores, comillas y 
 
 Un CSV descargado y abierto es una copia sin cifrar en el dispositivo receptor. Informa sobre almacenamiento seguro y plazo de eliminación; cerrar sesión no lo borra. Si necesitas transferir un archivo cifrado fuera de la aplicación, utiliza un canal seguro gestionado o contenedor adecuado con entrega separada del secreto.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

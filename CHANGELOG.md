@@ -2,6 +2,7 @@
 
 ## 1.1 revised edition (2026-11-05)
 
+- Merge upstream Czech ZŠ/SŠ scope clarification; keep the separately requested Spain adaptation.
 - Offer a proportionate entry audit for existing applications, with prioritised findings, concrete remediation and explicit verification status.
 - Retain release number 1.1 at the author's request; dates distinguish revisions.
 - Add six practical data-handling modes, implementation paths, repair guidance and a solution card in a conditional reference. Keep one short core per language and document when a future skill split is justified.
@@ -11,7 +12,7 @@
 - Add AI/RAG data lifecycle and SSO guidance plus acceptance scenarios AT31–AT36.
 - Add a source-status register and planned skill-behaviour evaluation, separate from application test execution.
 - Treat blocked link checks as unverified; keep EUR-Lex exclusions explicit.
-- Preserve CC BY 4.0 and original authorship. Existing 1.1 source verification remains historical; new targeted review is not full legal certification.
+- Adopt the upstream MIT license in all editions with the author's confirmation on 2026-11-05; preserve original authorship. Existing 1.1 source verification remains historical; new targeted review is not full legal certification.
 
 ## 1.1 original edition (2026-10-25)
 

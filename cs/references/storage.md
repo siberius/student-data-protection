@@ -27,4 +27,4 @@ Použij CSV knihovnu s řádným citováním oddělovačů, uvozovek a nových �
 
 Stažený otevřený CSV je nešifrovaná kopie na zařízení příjemce. Informuj o zabezpečeném uložení a lhůtě smazání; logout jej nesmaže. Je-li potřeba šifrovaný přenos souboru mimo aplikaci, použij spravovaný bezpečný kanál nebo vhodný kontejner a oddělené předání tajemství.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

@@ -32,4 +32,4 @@ Choose the architecture before applying implementation-specific recipes. Encrypt
 
 The controller is accountable for purposes, lawful processing and deployment decisions. The DPO informs, advises and monitors independently and is consulted in good time, including on a DPIA. This guide does not assign general operational approval or controller responsibility to the DPO. Record advice and the responsible decision; resolve disagreements through the appropriate governance process. See [EDPB: DPO](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

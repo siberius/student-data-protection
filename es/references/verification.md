@@ -74,4 +74,4 @@ Al usar el skill, entrega cambios de aplicación, configuración, mapa de datos 
 
 OWASP, NIST y ENISA aportan orientación técnica y metodológica. No son automáticamente derecho vinculante en España ni normas armonizadas del Reglamento de IA que establezcan presunción de conformidad. Completar una lista no equivale a certificado RGPD, evaluación de conformidad de IA de alto riesgo ni garantía contra ataques. Informa de propiedades verificadas concretas y riesgos restantes; no afirmes «100 % conforme al RGPD» sin evidencia.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

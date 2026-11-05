@@ -31,4 +31,4 @@ Fuentes locales: [LOPDGDD, Ley Orgánica 3/2018](https://www.boe.es/buscar/act.p
 
 [Z] El RGPD no exige por sí solo alojamiento exclusivamente español o europeo. Evalúa transferencias fuera del EEE, incluido soporte remoto y subencargados. [P] El perfil estricto utiliza alojamiento y copias en el EEE; una alternativa requiere mecanismo válido, evaluación y medidas adicionales cuando procedan. La ubicación no sustituye comprobar los flujos. El criterio de una autoridad es orientación, no certificación del producto.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

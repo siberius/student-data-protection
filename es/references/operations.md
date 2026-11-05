@@ -49,4 +49,4 @@ Las copias están cifradas, separadas y al menos una protegida contra modificaci
 
 Evalúa por separado las obligaciones nacionales de ciberseguridad aplicables en España, cuya norma y ámbito deben verificarse, y las del Reglamento de IA si corresponden al operador o sistema; sus plazos no son automáticamente las 72 horas del RGPD. La ley checa de ciberseguridad no se presenta aquí como norma aplicable en España. Fundamento metodológico: [NIST SP 800-61 Rev. 3, versión final de abril de 2025](https://csrc.nist.gov/pubs/sp/800/61/r3/final).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

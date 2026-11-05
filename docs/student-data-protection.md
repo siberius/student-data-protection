@@ -4,6 +4,10 @@
 
 **Version:** 1.1 · **Language:** English · **Sources verified:** 22 October 2026 · **Edition:** 5 November 2026 · **Czech original:** [ochrana-dat-zaku.md](ochrana-dat-zaku.md)
 
+**Scope of the English/Czech editions:** the Czech education system, for základní školy (ZŠ, primary and lower-secondary schools) and střední školy (SŠ, upper-secondary schools). **Reference period:** October 2026. The recorded legal-source verification date is 22 October 2026; the scope clarification dated 30 October 2026 is not a new legal review. Before later use, check that the rules remain current and applicable to the particular school.
+
+The English and Czech editions address Czech ZŠ and SŠ, excluding preschools and higher education. The Spanish edition is a separate adaptation for Spain, not an extension of Czech law to another country.
+
 Use this standalone skill when you build, change, or review applications that collect, store, display, evaluate, or share personal data of students and related data of their legal guardians or school staff. This includes records, forms, attendance, assignments, portfolios, communication, event registrations, assessment, and other school tools. The data may be names, contacts, classes, grades, files, messages, results, marks, operational records, and session or device IDs.
 
 The basis is protection across the whole data lifecycle. Apply web and PWA checks only where the technology exists; a mobile or desktop client also needs the platform's own security. CSV and SQLite are supported options, not a mandatory architecture. Do not add a quiz, grading, AI features, or code-based entry just because of this skill.
@@ -495,4 +499,28 @@ Map current behaviour and evidence first, then deliver prioritised findings with
 An audit request authorises assessment, not application changes. Propose fixes unless implementation is already authorised; apply only that authorised scope. Record whether each item is proposed, implemented but unverified, verified with stated evidence, or unresolved. Run intrusive checks only in an authorised environment; without execution, provide a check plan. Do not mark the application safe for real use solely because the audit produced no finding.
 
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide; preserve attribution, license and change notices. External sources retain their own rights.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide; preserve attribution, license and change notices. External sources retain their own rights.
+
+## License / Licence
+
+MIT License
+
+Copyright (c) 2026 Luděk Sušický
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

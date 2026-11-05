@@ -21,4 +21,4 @@ For a changed legal claim, record exact article/paragraph, jurisdiction, source 
 
 Recheck after an amendment, a changed purpose/provider/jurisdiction or before a legally consequential deployment. Record unresolved conflicts and the responsible follow-up. This register does not settle each school's national/regional retention plan, authority competence, contracts, DPIA/EIPD, FRIA or provider conditions. These are deployment decisions to verify; do not invent compliance while waiting.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

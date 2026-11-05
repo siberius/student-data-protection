@@ -32,4 +32,4 @@ Architekturu zvol před použitím konkrétního implementačního receptu. Inte
 
 Správce odpovídá za účely, zákonné zpracování a rozhodnutí o provozu. Pověřenec nezávisle informuje, radí a monitoruje; je včas konzultován včetně DPIA. Tento průvodce mu nepřiděluje obecné provozní schvalování ani odpovědnost správce. Eviduj radu a odpovědné rozhodnutí; neshody řeš odpovídajícím procesem řízení. Viz [EDPB: pověřenec](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

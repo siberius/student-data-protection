@@ -13,6 +13,10 @@ Start with the short native core and load only the relevant reference. [Practica
 The complete guide remains a standalone reading format; do not load it alongside all references. Keep one skill for now. Split incident response, audit or implementation into separate skills only if they acquire independent inputs, permissions and deliverables; avoid duplicating common safeguards.
 
 
+**Scope of the English/Czech editions:** the Czech education system, for základní školy (ZŠ, primary and lower-secondary schools) and střední školy (SŠ, upper-secondary schools). **Reference period:** October 2026. The recorded legal-source verification date is 22 October 2026; the scope clarification dated 30 October 2026 is not a new legal review. Before later use, check that the rules remain current and applicable to the particular school.
+
+The English and Czech editions address Czech ZŠ and SŠ, excluding preschools and higher education. The Spanish edition is a separate adaptation for Spain, not an extension of Czech law to another country.
+
 ## What it covers
 
 - data inventory, minimisation, and identity
@@ -59,7 +63,7 @@ biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
 ## License
 
-© 2026 Luděk Sušický. The text is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [LICENSE](LICENSE).
+© 2026 Luděk Sušický. The text is licensed under [MIT](https://opensource.org/license/mit). See [LICENSE](LICENSE).
 
 Corrections and issues are welcome, especially when a legal reference or a security recommendation becomes outdated.
 

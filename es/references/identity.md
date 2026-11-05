@@ -67,4 +67,4 @@ El servidor valida todas las entradas. Titularidad, aprobación, asistencia, not
 
 **Si la aplicación evalúa:** el servidor calcula o confirma la puntuación; el resultado del cliente no es oficial; la clave de respuestas no se publica anticipadamente. **Si acepta solicitudes o asistencia:** el envío del usuario se distingue del registro aprobado; el usuario no puede fijar su propio estado de aprobación.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

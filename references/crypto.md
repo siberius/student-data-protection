@@ -24,4 +24,4 @@ Separate data keys from data, and keep wrapping keys in a KMS or HSM or a suitab
 
 HTTPS and WSS everywhere; prefer TLS 1.3, TLS 1.2 only where necessary for compatibility with ECDHE and AEAD. Disable SSL and TLS 1.0 and 1.1, weak suites, and TLS compression. AES-128-GCM or ChaCha20-Poly1305 in TLS do not by themselves violate this profile. Verify certificates, renewal, and internal network links. Deploy HSTS after verifying HTTPS, for example `max-age=31536000`; `includeSubDomains` only after checking all subdomains. Never send personal data over an insecure request or before a redirect. [OWASP TLS](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

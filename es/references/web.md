@@ -15,4 +15,4 @@ Secciones de origen: 9.
 - Sin rastreadores publicitarios ni reproducción de sesiones en pantallas del alumnado. Minimiza scripts de terceros; errores y analítica deben ocultar datos. Las importaciones tienen límite de tamaño, esquema, nombres seguros y comprobaciones de contenido.
 - Actualiza entorno de ejecución y dependencias, conserva archivo de bloqueo, comprueba secretos y vulnerabilidades conocidas, separa pruebas y producción. ASVS nivel 2 es el objetivo de verificación predeterminado en el ámbito pertinente, no una afirmación de certificación. [OWASP ASVS 5.0.0](https://asvs.owasp.org/).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

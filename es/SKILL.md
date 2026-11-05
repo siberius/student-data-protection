@@ -5,7 +5,7 @@ metadata:
   version: "1.1"
   language: "es"
   jurisdiction: "ES/EU"
-  license: "CC-BY-4.0"
+  license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/student-data-protection"
 ---
@@ -60,4 +60,4 @@ En implementación elige pruebas de la función cambiada y sus riesgos, en entor
 
 Adecuado para registros, portales, formularios y herramientas educativas con IA cuando la tarea afecta a datos personales. No requiere stack, proveedor, API, cuentas ni currículo concreto. Conserva este archivo, references/ y LICENSE juntos. Elige una edición pertinente; el entorno del skill nativo debe admitir sus archivos. La guía independiente sigue disponible. Este skill no autoriza instalación, servicios de pago, publicación, acceso a producción ni cambios fuera de la solicitud.
 
-© 2026 Luděk Sušický. CC BY 4.0. Conserva atribución, licencia y avisos de cambios al redistribuir; las fuentes externas conservan sus derechos. La edición revisada 1.1 adapta la guía original de octubre de 2026 con modos delimitados, módulos, controles IA/SSO y gobierno del DPD; la localización española revisa sus referencias nacionales.
+© 2026 Luděk Sušický. MIT. Conserva atribución, licencia y avisos de cambios al redistribuir; las fuentes externas conservan sus derechos. La edición revisada 1.1 adapta la guía original de octubre de 2026 con modos delimitados, módulos, controles IA/SSO y gobierno del DPD; la localización española revisa sus referencias nacionales.

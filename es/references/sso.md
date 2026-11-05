@@ -20,6 +20,6 @@ Orientación técnica: [OWASP OAuth2](https://cheatsheetseries.owasp.org/cheatsh
 
 Las adiciones específicas sobre papel del DPD, RAG y SSO se revisaron el 5 de noviembre de 2026 en la actualización de origen. La fecha original de comprobación de fuentes anterior es histórica; esta edición no afirma una auditoría jurídica completa nueva. Consulta el registro de fuentes para distinguir afirmaciones comprobadas y pendientes.
 
-Autor: Luděk Sušický. Licencia [Creative Commons Atribución 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Conserva la atribución y el aviso de licencia al compartir o adaptar este documento.
+Autor: Luděk Sušický. Licencia [MIT](https://opensource.org/license/mit). Conserva la atribución y el aviso de licencia al compartir o adaptar este documento.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

@@ -20,4 +20,4 @@ Technické vodítko: [OWASP OAuth2](https://cheatsheetseries.owasp.org/cheatshee
 
 Dílčí doplnění (role pověřence, RAG a SSO) posouzena 5. 11. 2026. Původní datum ověření zdrojů výše je historické; vydání netvrdí nový úplný právní audit. Ověřená a neověřená tvrzení rozlišuje registr zdrojů.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

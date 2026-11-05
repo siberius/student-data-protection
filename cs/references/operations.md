@@ -49,4 +49,4 @@ Zálohy jsou šifrované, oddělené a nejméně jedna kopie chráněná před z
 
 Samostatně prověř případné povinnosti podle českého zákona o kybernetické bezpečnosti a AI Actu, pokud se na provozovatele/systém vztahují; jejich lhůty nejsou automaticky GDPR 72 hodin. Metodický podklad: [NIST SP 800-61 Rev. 3, finální duben 2025](https://csrc.nist.gov/pubs/sp/800/61/r3/final).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

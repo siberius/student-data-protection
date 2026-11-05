@@ -32,4 +32,4 @@ Elige la arquitectura antes de aplicar recetas específicas de implementación. 
 
 El responsable responde de las finalidades, la licitud y las decisiones de despliegue. El DPD informa, asesora y supervisa con independencia y se consulta con suficiente antelación, incluida la evaluación de impacto relativa a la protección de datos (EIPD). Esta guía no atribuye al DPD una aprobación operativa general ni la responsabilidad del responsable del tratamiento. Registra el asesoramiento y la decisión responsable; resuelve los desacuerdos mediante la gobernanza adecuada. Véase [CEPD: DPD](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

@@ -67,4 +67,4 @@ Všechny vstupy validuje server. Vlastnictví, schválení, docházka, známky a
 
 **Pokud aplikace hodnotí:** skóre počítá nebo potvrzuje server, klientský výsledek není autoritativní; klíč odpovědí se nezveřejní předčasně. **Pokud přijímá žádosti nebo docházku:** podání uživatele se odlišuje od schváleného záznamu; uživatel si nesmí sám nastavit stav schválení.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

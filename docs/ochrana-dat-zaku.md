@@ -4,6 +4,10 @@
 
 **Verze:** 1.1 · **Jazyk:** čeština · **Ověření zdrojů:** 22. 10. 2026 · **Vydání:** 5. 11. 2026
 
+**Rozsah české/anglické verze:** české prostředí základních a středních škol (ZŠ a SŠ). **Časové vymezení:** říjen 2026. Uvedené datum ověření právních zdrojů je 22. 10. 2026; upřesnění rozsahu ze dne 30. 10. 2026 nepředstavuje nové právní ověření. Před pozdějším použitím zkontrolujte aktuálnost předpisů a jejich použitelnost v konkrétní škole.
+
+Česká a anglická verze jsou určeny českým ZŠ a SŠ, nikoli mateřským či vysokým školám. Španělská verze je samostatnou adaptací pro Španělsko; nepřenáší české právo do jiného státu.
+
 Tento samostatný skill použij při tvorbě, úpravě nebo kontrole aplikací, které sbírají, ukládají, zobrazují, vyhodnocují nebo sdílejí osobní údaje žáků a související údaje zákonných zástupců či pracovníků školy. Patří sem evidence, formuláře, docházka, úkoly, portfolia, komunikace, přihlášky na akce, hodnocení i další školní nástroje. Údaji mohou být jména, kontakty, třídy, ročníky, soubory, zprávy, výsledky, známky, provozní záznamy a session/device ID.
 
 Základ tvoří ochrana celého životního cyklu dat. Konkrétní webové/PWA kontroly použij jen tam, kde daná technologie existuje; mobilní či desktopový klient vyžaduje navíc odpovídající zabezpečení platformy. CSV a SQLite jsou podporované varianty, nikoli povinná architektura. Nevytvářej kvůli tomuto skillu kvíz, známkování, AI funkce ani vstup pomocí kódu.
@@ -495,4 +499,28 @@ Nejprve zmapuj současné chování a důkazy, potom předej seřazené nálezy 
 Zadání auditu opravňuje k posouzení, nikoli ke změnám aplikace. Opravy navrhni, pokud implementace již není autorizována; prováděj jen schválený rozsah. U každého bodu rozliš návrh, provedeno bez ověření, ověřeno s konkrétními důkazy a nevyřešeno. Zásahové kontroly prováděj jen v autorizovaném prostředí; bez provedení předej plán. Absence nálezu sama nedokládá bezpečnost aplikace pro reálná data.
 
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026; zachovej autora, licenci a oznámení úprav. Externí zdroje mají vlastní práva.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026; zachovej autora, licenci a oznámení úprav. Externí zdroje mají vlastní práva.
+
+## License / Licence
+
+MIT License
+
+Copyright (c) 2026 Luděk Sušický
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

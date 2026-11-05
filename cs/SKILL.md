@@ -4,14 +4,14 @@ description: Navrhuje, implementuje nebo audituje ochranu žákovských údajů 
 metadata:
   version: "1.1"
   language: "cs"
-  license: "CC-BY-4.0"
+  license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/student-data-protection"
 ---
 
 # Ochrana údajů žáků
 
-Vycházej ze zadaného rozsahu a dostupných důkazů. Skill podporuje práci na školním softwaru; necertifikuje soulad ani neopravňuje k produkčním změnám. Výchozí právní kontext EU/české školy použij tam, kde platí; určuj skutečnou jurisdikci. Jazyk sám neurčuje národní právo.
+Vycházej ze zadaného rozsahu a dostupných důkazů. Skill podporuje práci na školním softwaru; necertifikuje soulad ani neopravňuje k produkčním změnám. Česká/anglická verze pokrývá české ZŠ a SŠ, nikoli mateřské či vysoké školy; určuj skutečnou jurisdikci. Jazyk sám neurčuje národní právo.
 
 ## Režim a dotčená hranice
 
@@ -59,4 +59,4 @@ Při implementaci vybírej testy pro změněnou funkci a její rizika. Používe
 
 Vhodné pro školní evidence, portály, formuláře a AI výukové nástroje, pokud úkol ovlivňuje osobní data. Nevyžaduje konkrétní stack, poskytovatele, API, účty ani národní kurikulum. Tento soubor, references/ a LICENSE zachovej pohromadě. Načti jednu relevantní jazykovou verzi; prostředí nativního skillu musí podporovat čtení souborů. Samostatný průvodce zůstává dostupný. Skill neopravňuje k instalaci, placeným službám, publikaci, produkčnímu přístupu ani změnám zpracování mimo zadání.
 
-© 2026 Luděk Sušický. CC BY 4.0. Při šíření zachovej autora, licenci a oznámení úprav; externí zdroje mají vlastní práva. Revidované vydání 1.1 přidává vymezené režimy, reference, AI/SSO a zpřesněnou roli pověřence k původnímu průvodci 1.1.
+© 2026 Luděk Sušický. MIT. Při šíření zachovej autora, licenci a oznámení úprav; externí zdroje mají vlastní práva. Revidované vydání 1.1 přidává vymezené režimy, reference, AI/SSO a zpřesněnou roli pověřence k původnímu průvodci 1.1.

@@ -24,4 +24,4 @@ Odděl datové klíče od dat a obalovací klíče uchovávej v KMS/HSM nebo vho
 
 HTTPS/WSS všude; preferuj TLS 1.3, TLS 1.2 jen pro potřebnou kompatibilitu s ECDHE a AEAD. Vypni SSL a TLS 1.0/1.1, slabé sady a TLS kompresi. AES-128-GCM nebo ChaCha20-Poly1305 v TLS nejsou samy o sobě porušením tohoto profilu. Ověř certifikáty, obnovu a interní síťové spoje. HSTS zaveď po ověření HTTPS, např. `max-age=31536000`; `includeSubDomains` až po kontrole všech subdomén. Osobní data nikdy neodešli nezabezpečeným požadavkem ani před přesměrováním. [OWASP TLS](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

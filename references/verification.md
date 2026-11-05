@@ -75,4 +75,4 @@ When using the skill, hand over the application changes, configuration, personal
 
 OWASP, NIST, and ENISA provide technical and methodological guidance. They are not automatically binding Czech law or harmonised AI Act standards establishing a presumption of conformity. A completed checklist is not a GDPR certificate, a high-risk AI conformity assessment, or a guarantee against attack. Report specific verified properties and remaining risks; do not claim "100% GDPR compliant" without evidence.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

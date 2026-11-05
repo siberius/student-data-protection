@@ -75,4 +75,4 @@ Při použití skillu předej změny aplikace, konfiguraci, mapu osobních dat, 
 
 OWASP, NIST a ENISA zde poskytují technická a metodická vodítka. Nejsou automaticky povinnými českými zákony ani harmonizovanými normami AI Actu zakládajícími domněnku shody. Splněný checklist není certifikát GDPR, posouzení shody high-risk AI ani záruka proti útoku. Reportuj konkrétní ověřené vlastnosti a zbývající rizika; netvrď bez podkladů „100% GDPR compliant“.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

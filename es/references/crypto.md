@@ -24,4 +24,4 @@ Separa claves de datos y datos; conserva claves de envoltura en KMS, HSM o gesto
 
 HTTPS y WSS en todas partes; prefiere TLS 1.3, TLS 1.2 solo cuando sea necesario por compatibilidad con ECDHE y AEAD. Desactiva SSL, TLS 1.0 y 1.1, conjuntos débiles y compresión TLS. AES-128-GCM o ChaCha20-Poly1305 en TLS no incumplen por sí solos el perfil. Verifica certificados, renovación y enlaces internos de red. Despliega HSTS tras verificar HTTPS, por ejemplo `max-age=31536000`; `includeSubDomains` solo tras comprobar todos los subdominios. Nunca envíes datos personales en solicitudes inseguras ni antes de una redirección. [OWASP TLS](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

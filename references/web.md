@@ -15,4 +15,4 @@ Source sections: 9.
 - No advertising trackers or session replay on student screens. Minimise third-party scripts; errors and analytics must redact data. Imports have a size limit, a schema, safe names, and content checks.
 - Update the runtime and dependencies, keep a lockfile, check secrets and known vulnerabilities, separate test and production. ASVS level 2 is the default verification target in the relevant scope, not a certification claim. [OWASP ASVS 5.0.0](https://asvs.owasp.org/).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

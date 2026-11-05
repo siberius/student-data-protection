@@ -21,4 +21,4 @@ Para cada afirmación jurídica modificada registra artículo/apartado, jurisdic
 
 Revisa tras una reforma, cambio de finalidad/proveedor/país o antes de un despliegue jurídicamente relevante. Documenta conflictos y seguimiento responsable. El registro no resuelve conservación nacional/autonómica, autoridad competente, contratos, EIPD, evaluación de derechos fundamentales ni condiciones de proveedores para cada centro. Son decisiones pendientes del despliegue; no inventes conformidad.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

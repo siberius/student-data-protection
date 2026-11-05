@@ -40,6 +40,6 @@ Luděk Sušický
 
 biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
-Autor original: **Luděk Sušický**. El contenido se distribuye bajo [Creative Commons Atribución 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Conserva atribución y aviso de licencia al compartir o adaptar. Esta es una edición traducida y adaptada al ámbito español; no cambia la licencia del contenido original. Las normas y publicaciones enlazadas conservan sus propios derechos.
+Autor original: **Luděk Sušický**. El contenido se distribuye bajo [MIT](https://opensource.org/license/mit). Conserva atribución y aviso de licencia al compartir o adaptar. Esta es una edición traducida y adaptada al ámbito español; no cambia la licencia del contenido original. Las normas y publicaciones enlazadas conservan sus propios derechos.
 
 [Registro de fuentes](docs/registro-fuentes.md) · [Evaluación del skill](docs/evaluacion-skill.md) · [English](README.md) · [Čeština](README.cs.md)

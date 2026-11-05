@@ -15,4 +15,4 @@ Zdrojové oddíly: 9.
 - Žádné reklamní trackery ani session replay na žákovských obrazovkách. Minimalizuj cizí skripty; chyby a analytika musí mít redakci údajů. Importy mají limit velikosti, schéma, bezpečné názvy a kontrolu obsahu.
 - Aktualizuj runtime a závislosti, drž lockfile, kontroluj tajemství a známé zranitelnosti, odděl test a produkci. ASVS úroveň 2 je výchozí ověřovací cíl v relevantním rozsahu, nikoli prohlášení certifikace. [OWASP ASVS 5.0.0](https://asvs.owasp.org/).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

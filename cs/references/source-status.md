@@ -21,4 +21,4 @@ U změněného právního tvrzení eviduj článek/odstavec, jurisdikci, verzi p
 
 Znovu ověř při novele, změně účelu/poskytovatele/země či před významným právním nasazením. Eviduj rozpory a odpovědné pokračování. Registr neřeší individuální národní/regionální retenci, příslušný dozor, smlouvy, DPIA/EIPD, FRIA ani podmínky poskytovatelů. Jde o provozní rozhodnutí k ověření; při čekání nepředstírej soulad.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

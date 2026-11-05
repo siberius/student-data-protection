@@ -49,4 +49,4 @@ Backups are encrypted, separated, and at least one copy is protected from change
 
 Separately assess any duties under the Czech Cybersecurity Act and the AI Act if they apply to the operator or system; their deadlines are not automatically the GDPR 72 hours. Methodological background: [NIST SP 800-61 Rev. 3, final April 2025](https://csrc.nist.gov/pubs/sp/800/61/r3/final).
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

@@ -20,4 +20,4 @@ Technical guidance: [OWASP OAuth2](https://cheatsheetseries.owasp.org/cheatsheet
 
 Targeted additions (DPO role, RAG and SSO guidance) reviewed 5 November 2026. The original source-check date above is historical; this edition does not claim a new full legal audit. Consult the source register for checked and unverified claims.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

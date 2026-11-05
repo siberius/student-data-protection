@@ -27,4 +27,4 @@ Use a CSV library with proper quoting of delimiters, quotes, and newlines. Prote
 
 A downloaded, opened CSV is an unencrypted copy on the recipient's device. Inform about secure storage and the deletion period; logout does not delete it. If an encrypted file transfer outside the application is needed, use a managed secure channel or a suitable container with separate secret delivery.
 
-© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
