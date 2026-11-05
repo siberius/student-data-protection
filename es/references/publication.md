@@ -50,7 +50,6 @@ Añade a la ficha solo inventario pertinente de salidas, proyección permitida, 
 
 Los comentarios reutilizables para quien mantiene el skill incluyen herramienta/versión, reproducción sintética, comportamiento esperado frente al observado y corrección general. Elimina identificadores, secretos e indicios indirectos; no adjuntes logs de producción, registros familiares, escaneos ni bases escolares. Muestra el contenido saneado antes de cualquier envío externo autorizado por separado. Los comentarios son opcionales y nunca se envían automáticamente.
 
-
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026; conserva atribución, licencia y avisos de cambios. Las fuentes externas conservan sus derechos.
 
 ## Licencia

@@ -8,13 +8,11 @@ Antes del trabajo sustantivo el skill establece el contexto y pregunta por infor
 
 [Publicación y salidas derivadas](es/references/publication.md) trata campos públicos permitidos, documentos/medios, procedencia, artefactos compilados reales, índices, acceso, retirada y actualizaciones seguras. Se carga solo para tareas pertinentes. Los comentarios técnicos usan ejemplos sintéticos saneados y nunca se envían automáticamente.
 
-
 ## Soluciones prácticas y tamaño del paquete
 
 Empieza por el núcleo breve y carga solo la referencia pertinente. [Soluciones prácticas](es/references/practical-solutions.md) ofrece seis modos de datos: práctica puntual, recogida limitada, progreso guardado, registros oficiales, informes/exportaciones y tutor con IA. Incluye vías de implementación, contención frente a corrección duradera y ficha de solución. Desarrolla solo el procedimiento elegido. Son ejemplos de diseño, no evidencia de salvaguardas desplegadas.
 
 La guía completa conserva su uso independiente; no la cargues junto con todas las referencias. Mantén un skill por ahora. Separa incidentes, auditoría o implementación solo cuando tengan entradas, permisos y entregables independientes; evita duplicar protecciones comunes.
-
 
 ## Elige un formato
 

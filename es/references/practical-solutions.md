@@ -63,7 +63,6 @@ Persona responsable y siguiente decisión:
 
 Distingue comprobaciones propuestas y ejecutadas, y justifica las no aplicables. Usa ejemplos sintéticos sin registros reales del alumnado. En España consulta el módulo jurídico español y concreta comunidad autónoma, titularidad y autoridad competente. El modo o el idioma no seleccionan automáticamente la jurisdicción.
 
-
 ### 17.6 Empieza con una aplicación existente
 
 Si el usuario aporta una aplicación existente, ofrece una auditoría inicial proporcionada y un plan de corrección. Reutiliza código, arquitectura y hallazgos disponibles. Si ya pidió auditoría, procede dentro de ese alcance sin volver a pedir aprobación del mismo paso. Ante una implementación acotada, revisa el límite afectado como parte del trabajo; ofrece una auditoría más amplia por separado cuando las evidencias lo justifiquen.

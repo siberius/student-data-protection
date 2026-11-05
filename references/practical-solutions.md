@@ -63,7 +63,6 @@ Responsible owner and next decision:
 
 Label proposed checks separately from performed checks and give N/A reasons. Use synthetic examples, not real learner records. For Spain, use the Spanish legal module; for EU/Czech contexts, use the applicable local framework. A mode or language never selects jurisdiction automatically.
 
-
 ### 17.6 Start with an existing application
 
 When the user brings an existing application, offer a proportionate entry audit with a remediation plan. Reuse any supplied code, architecture and prior findings. If an audit is already requested, proceed within that scope rather than asking for the same approval again. If the user requests a narrow implementation, inspect the affected boundary as part of that work; offer a broader audit separately when evidence warrants it.

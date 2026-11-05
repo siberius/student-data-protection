@@ -389,7 +389,6 @@ Prováděj pouze v autorizovaném testovacím prostředí se syntetickými daty.
 | AT35 | Odeber členství SSO, revokuj místní relaci a simuluj výpadek identity provideru. | Odebraná práva v aplikaci končí, výpadek neobchází ověření či MFA; náhrada a případné lhůty přenosu změn jsou výslovné. |
 | AT36 | Do AI zdroje/odpovědi vlož pokyn k odtoku dat, požaduj nepovolený cíl nástroje a simuluj neplatný výstup či timeout. | Hranice cíle a dat platí mimo prompt; nevznikne autoritativní zápis ani vymyšlená známka; nerozhodnuté hodnocení a práce zůstanou zachované. |
 
-
 ## 14. Podoba předání a hranice tvrzení
 
 Při použití skillu předej změny aplikace, konfiguraci, mapu osobních dat, matici oprávnění, potvrzenou retenci, provozní postup obnovy/incidentu a výsledky relevantních testů. U AI přilož rozhodovací záznam a seznam právních bodů k potvrzení. Nemusí jít o oddělené soubory, pokud projekt vede tyto evidence jinak.
@@ -499,7 +498,6 @@ Odpovědná osoba a další rozhodnutí:
 
 Odliš plánované a provedené kontroly, u N/A doplň důvod. Používej syntetické příklady bez reálných záznamů žáků. Pro Španělsko použij španělský právní modul; pro EU/ČR použitelný místní rámec. Režim ani jazyk automaticky neurčují jurisdikci.
 
-
 ### 17.6 Začni u existující aplikace
 
 Když uživatel přinese existující aplikaci, nabídni přiměřený vstupní audit a plán nápravy. Využij dodaný kód, architekturu a předchozí nálezy. Pokud už audit zadal, pokračuj v tomto rozsahu bez opakovaného schvalování stejného kroku. Při zadání drobné implementace prověř dotčenou hranici v rámci práce; širší audit nabídni samostatně, pokud jej odůvodňují zjištění.
@@ -509,7 +507,6 @@ Nabídni dvě použitelné hloubky: cílenou kontrolu měněné funkce a jejího
 Nejprve zmapuj současné chování a důkazy, potom předej seřazené nálezy s místem, dotčenými údaji/uživateli, rozlišením pozorovaného selhání a hypotézy, návrhem opravy, pracností/závislostmi a způsobem ověření. Začni doloženým zpřístupněním či ohrožením integrity, potom relevantními nedostatky; volitelná zlepšení označ zvlášť. Uveď i funkční ochrany. Vybranou nápravu rozpracuj kartou řešení a zachovej vhodnou architekturu.
 
 Zadání auditu opravňuje k posouzení, nikoli ke změnám aplikace. Opravy navrhni, pokud implementace již není autorizována; prováděj jen schválený rozsah. U každého bodu rozliš návrh, provedeno bez ověření, ověřeno s konkrétními důkazy a nevyřešeno. Zásahové kontroly prováděj jen v autorizovaném prostředí; bez provedení předej plán. Absence nálezu sama nedokládá bezpečnost aplikace pro reálná data.
-
 
 ## 18. Publikování, dokumenty a odvozené výstupy [D/O]
 
@@ -556,7 +553,6 @@ Před aktualizací šablony/skillu porovnej verze a místní změny, zálohuj do
 Do karty řešení doplň jen potřebný přehled výstupů, povolený publikační obsah, stav přezkumu, limity odstranění a odpovědný další krok. Report má vést k proveditelné nápravě a pojmenovat neprozkoumané výstupy. Pro návrh kontroly úniku do indexu nebo výmazu používej syntetické rozlišitelné značky, nikoli skutečné údaje žáků v důkazech testu.
 
 Zpětná vazba pro správce skillu obsahuje nástroj/verzi, syntetickou reprodukci, očekávané a pozorované chování a obecnou opravu. Odstraň identifikátory, tajemství i nepřímá vodítka; nepřikládej produkční logy, rodinné záznamy, skeny ani školní databáze. Očištěný obsah ukaž před případným samostatně autorizovaným odesláním. Zpětná vazba je volitelná a neposílá se automaticky.
-
 
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026; zachovej autora, licenci a oznámení úprav. Externí zdroje mají vlastní práva.
 

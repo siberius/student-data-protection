@@ -63,7 +63,6 @@ Odpovědná osoba a další rozhodnutí:
 
 Odliš plánované a provedené kontroly, u N/A doplň důvod. Používej syntetické příklady bez reálných záznamů žáků. Pro Španělsko použij španělský právní modul; pro EU/ČR použitelný místní rámec. Režim ani jazyk automaticky neurčují jurisdikci.
 
-
 ### 17.6 Začni u existující aplikace
 
 Když uživatel přinese existující aplikaci, nabídni přiměřený vstupní audit a plán nápravy. Využij dodaný kód, architekturu a předchozí nálezy. Pokud už audit zadal, pokračuj v tomto rozsahu bez opakovaného schvalování stejného kroku. Při zadání drobné implementace prověř dotčenou hranici v rámci práce; širší audit nabídni samostatně, pokud jej odůvodňují zjištění.

@@ -50,7 +50,6 @@ Do karty řešení doplň jen potřebný přehled výstupů, povolený publikač
 
 Zpětná vazba pro správce skillu obsahuje nástroj/verzi, syntetickou reprodukci, očekávané a pozorované chování a obecnou opravu. Odstraň identifikátory, tajemství i nepřímá vodítka; nepřikládej produkční logy, rodinné záznamy, skeny ani školní databáze. Očištěný obsah ukaž před případným samostatně autorizovaným odesláním. Zpětná vazba je volitelná a neposílá se automaticky.
 
-
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026; zachovej autora, licenci a oznámení úprav. Externí zdroje mají vlastní práva.
 
 ## License / Licence

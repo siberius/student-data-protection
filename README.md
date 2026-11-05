@@ -10,13 +10,11 @@ Before substantive work, the skill establishes the necessary context and asks fo
 
 [Publication and derived outputs](references/publication.md) covers allowed public fields, document/media review, provenance, actual build artifacts, search indexes, access boundaries, removal and safe updates. It loads only for the relevant task. Technical feedback uses sanitised synthetic examples and is never sent automatically.
 
-
 ## Practical solutions and package size
 
 Start with the short native core and load only the relevant reference. [Practical solutions](references/practical-solutions.md) offers six data-handling modes: one-off practice, limited collection, saved progress, official records, teacher reports/exports and AI tutoring. It includes implementation paths, containment versus durable repair and a solution card. Expand only the selected recipe. These are design examples, not evidence of deployed safeguards.
 
 The complete guide remains a standalone reading format; do not load it alongside all references. Keep one skill for now. Split incident response, audit or implementation into separate skills only if they acquire independent inputs, permissions and deliverables; avoid duplicating common safeguards.
-
 
 **Scope of the English/Czech editions:** the Czech education system, for základní školy (ZŠ, primary and lower-secondary schools) and střední školy (SŠ, upper-secondary schools). **Reference period:** October 2026. The recorded legal-source verification date is 22 October 2026; the scope clarification dated 30 October 2026 is not a new legal review. Before later use, check that the rules remain current and applicable to the particular school.
 

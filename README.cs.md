@@ -10,13 +10,11 @@ Před vlastní prací skill zjistí potřebný kontext a doptá se na chybějíc
 
 [Publikování a odvozené výstupy](cs/references/publication.md) řeší povolená veřejná pole, přezkum dokumentů/médií, původ údajů, skutečné sestavené výstupy, indexy, přístup, odstranění a bezpečné aktualizace. Načítá se jen pro příslušný úkol. Technická zpětná vazba používá očištěné syntetické příklady a nikdy se neodesílá automaticky.
 
-
 ## Praktická řešení a velikost balíčku
 
 Začni krátkým nativním jádrem a načti jen potřebnou referenci. [Praktická řešení](cs/references/practical-solutions.md) nabízejí šest režimů dat: jednorázové procvičování, omezený sběr, uložený pokrok, úřední evidenci, přehledy/exporty a AI tutora. Obsahují cesty realizace, omezení rizika oproti trvalé opravě a kartu řešení. Rozpracuj jen zvolený postup. Jde o návrhové příklady, nikoli důkaz nasazených ochran.
 
 Kompletní průvodce zůstává samostatnou čtenářskou verzí; nenačítej jej současně se všemi referencemi. Zatím zachovej jeden skill. Incidenty, audit či implementaci vyčleň až při samostatných vstupech, oprávněních a výstupech; společné ochrany neduplikuj.
-
 
 **Rozsah české/anglické verze:** české prostředí základních a středních škol (ZŠ a SŠ). **Časové vymezení:** říjen 2026. Uvedené datum ověření právních zdrojů je 22. 10. 2026; upřesnění rozsahu ze dne 30. 10. 2026 nepředstavuje nové právní ověření. Před pozdějším použitím zkontrolujte aktuálnost předpisů a jejich použitelnost v konkrétní škole.
 

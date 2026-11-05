@@ -389,7 +389,6 @@ Perform only in an authorised test environment with synthetic data. Prepare two 
 | AT35 | Remove SSO membership, revoke the local session and simulate identity-provider failure. | Removed rights stop in the application; outage does not bypass verification or MFA; fallback and any propagation limits are explicit. |
 | AT36 | Insert exfiltration instructions in an AI source/answer, request an unauthorised tool destination and simulate invalid output or timeout. | Destination and data boundaries hold outside the prompt; no authoritative write or fabricated grade occurs; unresolved feedback and work are preserved. |
 
-
 ## 14. Handover and limits of claims
 
 When using the skill, hand over the application changes, configuration, personal data map, permission matrix, confirmed retention, recovery and incident procedure, and the results of relevant tests. For AI, attach the decision record and a list of legal points to confirm. These do not have to be separate files if the project keeps these records differently.
@@ -499,7 +498,6 @@ Responsible owner and next decision:
 
 Label proposed checks separately from performed checks and give N/A reasons. Use synthetic examples, not real learner records. For Spain, use the Spanish legal module; for EU/Czech contexts, use the applicable local framework. A mode or language never selects jurisdiction automatically.
 
-
 ### 17.6 Start with an existing application
 
 When the user brings an existing application, offer a proportionate entry audit with a remediation plan. Reuse any supplied code, architecture and prior findings. If an audit is already requested, proceed within that scope rather than asking for the same approval again. If the user requests a narrow implementation, inspect the affected boundary as part of that work; offer a broader audit separately when evidence warrants it.
@@ -509,7 +507,6 @@ Offer two useful depths: a focused review of the changed feature and its data fl
 Map current behaviour and evidence first, then deliver prioritised findings with location, affected data/users, observed failure versus hypothesis, proposed correction, effort/dependencies and a verification method. Start with evidenced exposure or integrity risks, then relevant gaps; keep optional improvements separate. Recognise controls that already work. Use the solution card for the selected remediation and preserve existing sound architecture.
 
 An audit request authorises assessment, not application changes. Propose fixes unless implementation is already authorised; apply only that authorised scope. Record whether each item is proposed, implemented but unverified, verified with stated evidence, or unresolved. Run intrusive checks only in an authorised environment; without execution, provide a check plan. Do not mark the application safe for real use solely because the audit produced no finding.
-
 
 ## 18. Publication, documents and derived outputs [D/O]
 
@@ -556,7 +553,6 @@ Before a template/skill update, compare versions and local changes, back up affe
 Add to the solution card only the relevant output inventory, publication projection, review status, removal limits and responsible next action. Keep the report actionable and identify uninspected artifacts. Use synthetic distinctive markers when proposing checks of index leakage or deletion; do not place real learner data in test evidence.
 
 Reusable feedback for a skill maintainer contains tool/version, synthetic reproduction, expected versus observed behaviour and a general correction. Remove identifiers, credentials and indirect clues; do not attach production logs, family records, scans or school databases. Show the sanitised content before any separately authorised external submission. Feedback is optional and never sent automatically.
-
 
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide; preserve attribution, license and change notices. External sources retain their own rights.
 

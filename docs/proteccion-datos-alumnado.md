@@ -495,7 +495,6 @@ Persona responsable y siguiente decisión:
 
 Distingue comprobaciones propuestas y ejecutadas, y justifica las no aplicables. Usa ejemplos sintéticos sin registros reales del alumnado. En España consulta el módulo jurídico español y concreta comunidad autónoma, titularidad y autoridad competente. El modo o el idioma no seleccionan automáticamente la jurisdicción.
 
-
 ### 17.6 Empieza con una aplicación existente
 
 Si el usuario aporta una aplicación existente, ofrece una auditoría inicial proporcionada y un plan de corrección. Reutiliza código, arquitectura y hallazgos disponibles. Si ya pidió auditoría, procede dentro de ese alcance sin volver a pedir aprobación del mismo paso. Ante una implementación acotada, revisa el límite afectado como parte del trabajo; ofrece una auditoría más amplia por separado cuando las evidencias lo justifiquen.
@@ -505,7 +504,6 @@ Ofrece dos profundidades útiles: revisión de la función cambiada y su flujo d
 Mapea comportamiento y evidencias actuales; entrega hallazgos priorizados con ubicación, datos/usuarios afectados, fallo observado frente a hipótesis, corrección propuesta, esfuerzo/dependencias y forma de verificación. Empieza por exposición o riesgos de integridad demostrados, después carencias pertinentes; separa mejoras opcionales. Reconoce controles que funcionan. Desarrolla la corrección elegida mediante la ficha y conserva la arquitectura adecuada.
 
 Pedir auditoría autoriza evaluación, no cambios en la aplicación. Propón correcciones salvo que la implementación ya esté autorizada; ejecuta solo ese alcance. Distingue propuesta, implementado sin verificar, verificado con evidencias concretas y pendiente. Las comprobaciones intrusivas requieren un entorno autorizado; sin ejecución entrega un plan. La ausencia de hallazgos por sí sola no acredita seguridad para datos reales.
-
 
 ## 18. Publicación, documentos y salidas derivadas [D/O]
 
@@ -552,7 +550,6 @@ Antes de actualizar plantilla/skill compara versiones y cambios locales, respald
 Añade a la ficha solo inventario pertinente de salidas, proyección permitida, estado de revisión, límites de retirada y siguiente acción responsable. El informe debe permitir corregir e identificar artefactos sin inspeccionar. Propón marcadores sintéticos distinguibles para comprobar filtración al índice o supresión; no incluyas datos reales del alumnado en evidencias de prueba.
 
 Los comentarios reutilizables para quien mantiene el skill incluyen herramienta/versión, reproducción sintética, comportamiento esperado frente al observado y corrección general. Elimina identificadores, secretos e indicios indirectos; no adjuntes logs de producción, registros familiares, escaneos ni bases escolares. Muestra el contenido saneado antes de cualquier envío externo autorizado por separado. Los comentarios son opcionales y nunca se envían automáticamente.
-
 
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026; conserva atribución, licencia y avisos de cambios. Las fuentes externas conservan sus derechos.
 

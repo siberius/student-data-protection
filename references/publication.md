@@ -50,7 +50,6 @@ Add to the solution card only the relevant output inventory, publication project
 
 Reusable feedback for a skill maintainer contains tool/version, synthetic reproduction, expected versus observed behaviour and a general correction. Remove identifiers, credentials and indirect clues; do not attach production logs, family records, scans or school databases. Show the sanitised content before any separately authorised external submission. Feedback is optional and never sent automatically.
 
-
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide; preserve attribution, license and change notices. External sources retain their own rights.
 
 ## License / Licence
