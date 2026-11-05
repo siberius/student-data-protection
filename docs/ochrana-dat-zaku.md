@@ -1,8 +1,8 @@
 # Ochrana údajů žáků ve školních aplikacích
 
-> Tento dokument je praktický bezpečnostní profil pro školní aplikace. Není to právní posudek ani certifikát. Před provozem s reálnými daty jej potvrdí škola a její pověřenec.
+> Tento dokument je praktický bezpečnostní profil pro školní aplikace. Není to právní posudek ani certifikát. Před provozem s reálnými daty rozhoduje správce po odpovídajícím posouzení a včasné konzultaci s pověřencem.
 
-**Verze:** 1.1 · **Jazyk:** čeština · **Ověření zdrojů:** 22. 10. 2026 · **Vydání:** 25. 10. 2026
+**Verze:** 1.1 · **Jazyk:** čeština · **Ověření zdrojů:** 22. 10. 2026 · **Vydání:** 5. 11. 2026
 
 Tento samostatný skill použij při tvorbě, úpravě nebo kontrole aplikací, které sbírají, ukládají, zobrazují, vyhodnocují nebo sdílejí osobní údaje žáků a související údaje zákonných zástupců či pracovníků školy. Patří sem evidence, formuláře, docházka, úkoly, portfolia, komunikace, přihlášky na akce, hodnocení i další školní nástroje. Údaji mohou být jména, kontakty, třídy, ročníky, soubory, zprávy, výsledky, známky, provozní záznamy a session/device ID.
 
@@ -17,14 +17,26 @@ Rozlišuj **ověřený dlouhodobý účet**, **omezenou jednorázovou účast** 
 - **[D] Doporučení:** vhodné rozšíření podle rizika a provozu.
 - **[O] Ověřit:** otázka závislá na skutečném použití, aktuálním právu nebo dosud nepotvrzené konfiguraci. Nevydávej ji za splněnou.
 
-1. Zmapuj správce, dodavatele, hosting, věk uživatelů, účely zpracování, typy údajů, počet škol, datové toky, offline funkce a případné AI funkce. Použij dostupné podklady; chybějící rozhodnutí uveď výslovně. Bez rozhodnutí lze vyvíjet se syntetickými daty.
-2. Pro každý údaj a operaci určuj zdroj, příjemce, ověření identity, oprávnění a dobu uchování. Rozlišuj neověřené podání od potvrzeného evidenčního záznamu; u známek nebo docházky navíc určuj odpovědnost za kontrolu správnosti.
-3. Vytvoř model hrozeb: spolužák vydávající se za jiného, převzetí účtu či podání za jiného, hádání případného kódu, sdílený počítač, ztracený mobil, chybná oprávnění mezi školami, únik souboru/zálohy, XSS, podvržení evidenčních údajů, nechtěné zveřejnění příloh, kompromitace zaměstnance a případná manipulace AI.
-4. Implementuj profil; pro každé důležité opatření zaznamenej místo konfigurace nebo kódu a odpovídající test.
-5. Před předáním vyplň checklist a proveď příslušné acceptance tests. Rozlišuj „prošlo“, „neprošlo“, „neprovedeno“ a „netýká se + důvod“. Samotný tento dokument nepotvrzuje bezpečnost aplikace.
-6. Před produkcí ověř změny právních zdrojů, zejména AI Actu. Pokud právní titul nebo povinné posouzení chybí, nedoporučuj spuštění dotčeného zpracování reálných dat; pokračuj v ostatní implementaci.
+1. Ze zadání určuj režim: návrh, implementace, audit nebo incident. Audit předává nálezy a doporučení bez změn aplikace. Posouzení incidentu neopravňuje vypínat živé služby, rušit účty či odesílat oznámení. Takové kroky prováděj jen v rozsahu skutečného oprávnění.
+2. Využij známý kontext a určuj dotčený účel, datové toky, role a změnu rizika. Ptej se jen na chybějící údaje měnící rozhodnutí. U malé opravy posuzuj dotčenou hranici a regrese, nezačínej celé hodnocení aplikace znovu. Závažný sousední problém dolož a oznam; implementaci potichu nerozšiřuj.
+3. Mapuj relevantní data, příjemce, identitu, oprávnění, retenci a hrozby. Zachovej existující bezpečnou architekturu a funkční ochrany. Dokud chybí účel, právní titul či rozhodnutí pro provoz, používej syntetická data.
+4. Při návrhu doporuč přiměřené ochrany a kritéria. Při autorizované implementaci je realizuj a dolož místa kódu či konfigurace. Při auditu uveď závažnost, důkaz, dopad, návrh a potřebné ověření. Podezření odliš od pozorovaného selhání.
+5. Vyber acceptance scénáře podle dotčených funkcí a rizika. Rozliš prošlo, neprošlo, neprovedeno a netýká se s důvodem; každá oprava nevyžaduje nový návrh celého systému. Testovací plán nevydávej za provedení.
+6. Před reálným provozem ověř titul, potřebné posouzení a aktuální předpis. Správce rozhoduje o nasazení s včasnou radou pověřence a odpovídajícím odborným přezkumem. Bez potřebného titulu či posouzení nedoporučuj dotčené zpracování; pokračuj v autorizované práci, které se překážka netýká.
 
 Nevkládej skutečné žákovské údaje, produkční logy, klíče ani databáze do běžného AI chatu nebo veřejného repozitáře. Pro ladění generuj syntetická data. Použití reálných údajů v AI službě vyžaduje samostatné vyhodnocení účelu, nezbytnosti, smlouvy, příjemců, retence a předávání; samotné vypnutí trénování není dostatečné.
+
+### 1.1 Ochrany podle datového toku a rizika
+
+Právní povinnosti platí při splnění jejich podmínek. Základní cíle zahrnují účelové omezení, minimalizaci, důvěryhodné přístupové hranice, integritu, obnovitelnost a odpovědné řešení incidentů a práv podle skutečného zpracování. Aktivita bez osobního zpracování nepotřebuje účty, databázi, KMS ani osobní audit jen proto, že je popisuje průvodce. Před označením anonymní prověř i hosting a provozní metadata.
+
+Podrobné hodnoty [P] níže tvoří přísný referenční profil pro nové systémy s trvalými školními evidencemi nebo projekty, které jej výslovně přijaly. Algoritmy, timeouty a provozní cíle jsou volby profilu. U existujícího systému nejprve posuď skutečné kontroly a rovnocenné ochrany proti relevantním hrozbám; jiná udržovaná technologie není automaticky zranitelnost. Neoslabuj autorizaci ani nevymýšlej právní výjimku. Podstatnou odchylku od přijatého profilu dolož hrozbou, náhradní ochranou, ověřením a rozhodnutím odpovědného správce. Audit může rozhodnutí navrhnout, nesmí předstírat schválení ani vyžadovat nové schválení každé běžné autorizované úpravy.
+
+Architekturu zvol před použitím konkrétního implementačního receptu. Interní šifrování a správa nonce patří komponentě, která šifruje, ne automaticky aplikaci, pokud tuto úlohu řeší ověřená úložná služba. U skutečného řešení vysvětli přístup ke klíčům, zálohy, viditelnost metadat a zbytkové riziko. Změna hostingu, poskytovatele identity, placené služby či příjemců dat potřebuje příslušné oprávnění.
+
+### 1.2 Správce a pověřenec
+
+Správce odpovídá za účely, zákonné zpracování a rozhodnutí o provozu. Pověřenec nezávisle informuje, radí a monitoruje; je včas konzultován včetně DPIA. Tento průvodce mu nepřiděluje obecné provozní schvalování ani odpovědnost správce. Eviduj radu a odpovědné rozhodnutí; neshody řeš odpovídajícím procesem řízení. Viz [EDPB: pověřenec](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en).
 
 ## 2. GDPR a český právní rámec
 
@@ -300,7 +312,7 @@ Samostatně prověř případné povinnosti podle českého zákona o kybernetic
 
 - [ ] Jsou určeny role správce/zpracovatele, účely, tituly, příjemci a školou potvrzená retence?
 - [ ] Existuje informace pro žáky/rodiče, proces práv, zpracovatelské smlouvy a posouzení předávání?
-- [ ] Pověřenec posoudil DPIA; je zdůvodněn závěr a vyřešeno zbytkové vysoké riziko?
+- [ ] Správce posoudil potřebu DPIA, získal včas radu pověřence, odůvodnil závěr a vyřešil zbytkové vysoké riziko?
 - [ ] Je pro každý přístupový režim určeno ověření identity a odděleno neověřené podání od potvrzené evidence?
 - [ ] Pokud existují kódy/QR, neotevírají historii a fungují expirace, odvolání a limity?
 - [ ] Objektová a meziškolní oprávnění platí na všech rozhraních a v exportech?
@@ -354,9 +366,133 @@ Prováděj pouze v autorizovaném testovacím prostředí se syntetickými daty.
 | AT28 | Přesuň žáka do jiné třídy a odeber zaměstnanci přidělení; zkus starý účet, export a sdílený odkaz. | Přístup odpovídá aktuálnímu oprávnění, včetně historie; případné zachování přístupu má doložený účel a rozsah. |
 | AT29 | Importuj dvě osoby stejného jména a stejné externí ID ze dvou škol; opakuj import po přerušení. | Osoby/školy se nesloučí, mapování je ověřené, opakování nevytvoří duplicity ani částečný přepis. |
 | AT30 | Odvolej servisní token a zopakuj podepsaný webhook; prohlédni e-mail/push na zamčeném zařízení. | Token nefunguje, replay se odmítne a notifikace neobsahuje citlivý osobní obsah. |
+| AT31 | Dotazuj RAG index syntetickým rozlišitelným textem jiné školy, včetně citací, úryvků a cache po změně role. | Cizí obsah ani odhalující metadata se nevyhledají/nepředají; stará oprávnění přístup neobnoví. |
+| AT32 | Smaž či oprav zdroj a obnov zastaralou indexovací úlohu, checkpoint nebo zálohu. | Příslušné chunky, indexy, souhrny a fronty se zneplatní/opraví s doloženým postupem záloh a poskytovatele; smazaná data se potichu nevrátí. |
+| AT33 | Ve skutečném OIDC/SAML toku podvrhni issuer/audience, povinný podpis, expiraci či replay a podle toku state/nonce. | Protokolová knihovna odmítne neplatný login; nevznikne ověřená relace ani privilegovaná role. |
+| AT34 | Předlož stejný e-mail/jméno od jiných vydavatelů či škol a nedůvěryhodnou zaměstnaneckou roli. | Účty se potichu nesloučí a cizí členství ani privilegium nevznikne. |
+| AT35 | Odeber členství SSO, revokuj místní relaci a simuluj výpadek identity provideru. | Odebraná práva v aplikaci končí, výpadek neobchází ověření či MFA; náhrada a případné lhůty přenosu změn jsou výslovné. |
+| AT36 | Do AI zdroje/odpovědi vlož pokyn k odtoku dat, požaduj nepovolený cíl nástroje a simuluj neplatný výstup či timeout. | Hranice cíle a dat platí mimo prompt; nevznikne autoritativní zápis ani vymyšlená známka; nerozhodnuté hodnocení a práce zůstanou zachované. |
+
 
 ## 14. Podoba předání a hranice tvrzení
 
 Při použití skillu předej změny aplikace, konfiguraci, mapu osobních dat, matici oprávnění, potvrzenou retenci, provozní postup obnovy/incidentu a výsledky relevantních testů. U AI přilož rozhodovací záznam a seznam právních bodů k potvrzení. Nemusí jít o oddělené soubory, pokud projekt vede tyto evidence jinak.
 
 OWASP, NIST a ENISA zde poskytují technická a metodická vodítka. Nejsou automaticky povinnými českými zákony ani harmonizovanými normami AI Actu zakládajícími domněnku shody. Splněný checklist není certifikát GDPR, posouzení shody high-risk AI ani záruka proti útoku. Reportuj konkrétní ověřené vlastnosti a zbývající rizika; netvrď bez podkladů „100% GDPR compliant“.
+
+## 15. Datové toky AI, tutor a RAG [P/O]
+
+Použij jen pro implementovanou nebo výslovně zadanou AI funkci. Kvůli této sekci nepřidávej model, vektorovou databázi ani ukládání rozhovorů. Vývojový asistent a žákovská služba mají různé datové toky a potřebují samostatné položky inventáře.
+
+### 15.1 Minimalizace a hranice toku
+
+Pro každý tok eviduj účel, role správce/zpracovatele, schválené zdroje, kategorie údajů, uživatelský přístup, příjemce, region i vzdálenou podporu, smluvní retenci, způsob výmazu a potřebná předávání. Zahrň prompty, odpovědi, přílohy, rozhovory, předávací záznamy, moderaci a podporu, cache, embeddings, vektorové indexy, logy poskytovatele a výstupy nástrojů či konektorů. Odvozená data mohou být osobní i bez jmen; embeddings nejsou zárukou anonymizace.
+
+Před voláním služby vyber jen pole nezbytná pro daný úkol a oprávněného příjemce. Odstraň nesouvisející identifikátory a tajemství. Nepředpokládej, že učitel smí nahrát celou evidenci třídy. Ověř nastavení a podmínky skutečného účtu a endpointu; vypnutý trénink, školní označení či region EU samy neřeší retenci, přístup podpory ani předávání. Nedostupné podmínky zůstávají neověřené; vývoj může pokračovat se syntetickými daty.
+
+Klíče služby drž na serveru. Cílová místa, nástroje a rozsah dat vynucuj mimo prompt. Vstup žáka, načtené dokumenty i výstup jsou nedůvěryhodné. Dokument ani odpověď nesmí měnit role, volat libovolné URL či odesílat evidenci novému příjemci. U načítání zdrojů omez cíle a prověř podvržení serverových požadavků a odtok dat. Strukturovaný výstup ověř před změnou záznamu a text bezpečně vykresluj.
+
+### 15.2 Oprávnění v celém vyhledávání
+
+Dokumenty, chunky, embeddings a souhrny propoj se zdrojem, školou, příslušnými právy osob/skupin, verzí obsahu a retenční kategorií. Oprávnění vynucuj před vyhledáváním i před vydáním výsledku; podobnost není oprávnění. Sdílený index potřebuje vynucenou izolaci škol. Filtruj hledání, počty, citace, náhledy, exporty i opakované použití rozhovoru, nejen finální odpověď. Odebrání přístupu či výmaz zneplatní související cache a odvozené kopie ve vymezené lhůtě; do potvrzení zneplatnění dotčené výsledky blokuj, pokud by se vydaly podle známého zastaralého oprávnění.
+
+Zachovej původ zdroje a odliš citaci, interpretaci a nepodložené tvrzení. Testuj cizí školu pomocí syntetického rozlišitelného textu i změnu role po indexaci. Smyšlená citace není doklad správnosti. Odděl načtený obsah a ověřuj akce; pokyn ignorovat škodlivé instrukce není dostatečná izolace.
+
+### 15.3 Evidence učení a výmaz
+
+Pro pokračování ukládej jen cíl, potřebné odkazy na úlohy, vyjádřenou odpověď a argumentaci, podmínky pomoci, pozorované revize a další krok nezbytný pro účel. Neodvozuj a nearchivuj diagnózy, osobnost ani soukromé myšlenkové pochody. Souhrn uvažování může být osobní údaj. Platí pro něj stejná oprávnění, informování a účelová retence jako pro aktivitu; na sdíleném zařízení zajisti srozumitelné ukončení a vyčištění.
+
+Výmaz a opravu mapuj do zdrojů, chunků, indexů, souhrnů, exportovaných záznamů, front, záloh a kopií u poskytovatele. Uveď přímý výmaz, nutnou žádost poskytovateli a kopie uchované po odůvodněnou omezenou dobu. Kde výmaz zdroje či práva zneplatní výsledek, pozastav vyhledávání. Zabraň nové indexaci ze zastaralé fronty či zálohy. Neslibuj okamžitý výmaz neměnných záloh ani cizích systémů bez důkazu. Pokud lze, prověř skutečný postup poskytovatele syntetickými daty; nepředpokládej odstranění všech kopií pouhým odesláním žádosti API.
+
+Při výpadku nebo neplatném výstupu zachovej práci a označ hodnocení jako nerozhodnuté. Timeout není plný počet bodů; nevymýšlej hodnocení ani potichu neměň poskytovatele. Významné posouzení vyžaduje odpovídající odpovědný lidský přezkum.
+
+Technické vodítko: [OWASP RAG Security](https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html). Jde o implementační ochrany; nenahrazují právní klasifikaci ani posouzení poskytovatele.
+
+## 16. Školní federované přihlášení a SSO [P]
+
+Použij jen při zapojení poskytovatele identity. Funkční přihlášení nenahrazuj pouze kvůli zavedení SSO. Použij udržovanou protokolovou knihovnu a aktuální integrační pokyny poskytovatele; autorizace OAuth sama nepotvrzuje identitu uživatele.
+
+U OIDC ověř vydavatele, podpis s důvěryhodným zjištěním klíčů, příjemce a případnou povinnou autorizovanou stranu, expiraci, nonce a vazbu na přihlašovací transakci. Použij tok autorizačního kódu s PKCE, kde jej profil klienta podporuje a vyžaduje; přesně omez redirect URI, svaž callback s původním prohlížečem a zabraň login CSRF a opakovanému použití kódu. Access token nepovažuj za ID token. U SAML ověř potřebné podpisy, vydavatele, audience, destination, recipient, vazbu na požadavek, časové podmínky a opakované použití assertion pomocí udržované implementace. Nevytvářej vlastní parser XML podpisu. Kontroly vybírej podle skutečného protokolu a toku, ne pro oba protokoly automaticky.
+
+Identitu propoj ověřeným stabilním identifikátorem v rozsahu důvěryhodného vydavatele, například issuer a subject; následně přiřaď oprávněné členství správné škole a aplikační roli. E-mail, jméno, doména či nedůvěryhodný údaj školy samy nesmí slučovat účty nebo udělit zaměstnanecký přístup. Vymez registraci, spojení účtů, změnu e-mailu či subject, shodu jmen a odebrání členství. Privilegovaná role vychází z důvěryhodných oprávnění nebo oprávněného administrativního kroku. Úspěšné přihlášení u poskytovatele samo neotevírá všechny školní evidence.
+
+Místní relace musí být odvolatelné; logout poskytovatele a aplikace mají různý rozsah. Členství a privilegia vyhodnocuj podle doloženého přenosu změn a pro známé odebrání zajisti okamžitou aplikační revokaci. Zaměstnanecký přístup nenechávej potichu platný do vzdálené expirace tokenu poskytovatele. Při výpadku či neplatných metadatech odmítni chráněný přístup a nabídni odpovídající provozní náhradu; neobcházej MFA a nevěř neověřeným assertion.
+
+Pro skutečný tok ověř cizí issuer/audience, chybný či chybějící povinný podpis, expiraci a replay, nesouhlas state/nonce, mapování jiné školy, shodný e-mail, odebrané členství a výpadek poskytovatele. Eviduj verze protokolu/knihovny a skutečné výsledky. Společná tabulka přidává scénáře SSO; samotný test běžné relace nestačí.
+
+Technické vodítko: [OWASP OAuth2](https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet.html), [OWASP SAML Security](https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html).
+
+Dílčí doplnění (role pověřence, RAG a SSO) posouzena 5. 11. 2026. Původní datum ověření zdrojů výše je historické; vydání netvrdí nový úplný právní audit. Ověřená a neověřená tvrzení rozlišuje registr zdrojů.
+
+## 17. Průvodce praktickým řešením
+
+### 17.1 Vyber režim práce s daty
+
+[D] Tento modul načti při žádosti o praktické řešení nebo volbu rozsahu ochrany. Jde o návrhové postupy pro školní situace, nikoli doložená nasazení z praxe či stupně právního souladu. Doplňují pracovní režimy (návrh, implementace, audit, incident); neopravňují k provedení zásahu. Využij známý kontext. Ptej se jen na chybějící údaje měnící volbu: účel a potřebná pole, nutnost ověřené identity, uchování či úřední využití, sdílená zařízení a příjemce včetně hostingu, analytiky a AI.
+
+Doporuč jeden režim s důvodem a případně jednodušší alternativu. Režimy kombinuj podle funkcí: anonymní cvičení a jmenný přehled učitele mohou mít odlišné hranice. Každá aplikace nepotřebuje nejsložitější režim. Použití reálných dat nadále vyžaduje odpovídající rozhodnutí o zpracování a ochranná opatření.
+
+| Režim a školní příklad | Minimální návrh | Kontroly před reálným použitím |
+|---|---|---|
+| M1 Jednorázové procvičování: zlomky | Bez jména a účtu, pokud nejsou potřebné; odpovědi v pracovní paměti; vyčištění při ukončení. Lokální/statická aktivita může obejít centrální evidenci. | Obnovení, historie a další uživatel nesmějí odhalit odpovědi; před tvrzením o anonymitě prověř skutečné požadavky, logy, telemetrii a úložiště prohlížeče. |
+| M2 Omezený sběr: přihláška na akci | Jen údaje potřebné pro akci; chráněný příjem a přístup; spouštěč výmazu podle účelu. Neověřené podání zůstává nepotvrzené. | Přístup k cizím záznamům, nečekaná zapisovatelná pole, limity podání a výmaz. Společný kód sám neověřuje identitu pro úřední evidenci. |
+| M3 Navazující učení: uložený pokrok | Uchovávej minimum pokroku; osobní historii zpřístupni přes ověřenou školní identitu. Pseudonymní přístup posuď podle následků jeho zneužití. | Cizí historie, odhlášení na sdíleném zařízení, změna členství ve třídě a obnova. Pseudonym není automaticky anonymní. |
+| M4 Úřední evidence: známky či docházka | Ověřená identita, důvěryhodná autorizace, řízený zápis, řešení souběhu, historie oprav a obnovitelné úložiště; retence podle konkrétní agendy. | Podvržený vlastník či známka, odebraný přístup, souběžné úpravy a obnova. Nepřebírej obecnou lhůtu výmazu cvičných dat. |
+| M5 Přehledy učitele a exporty | Přístup podle přidělených tříd a účelu; agregace, když stačí; minimum polí a nové ověření oprávnění při stažení. | Cizí třída, prošlý/odvolaný odkaz, vzorce v CSV, prozrazující názvy souborů a životní cyklus stažených kopií. |
+| M6 AI tutor | Nejprve zvaž zkontrolovaná statická vysvětlení. Potřebná AI má schválené příjemce, minimální vstup, klíče na serveru a validovaný výstup. | Oprávnění při vyhledávání, skutečně odesílaná data, injekce, výpadek, retence a výmaz u poskytovatele. Samotný výstup modelu nesmí zapsat úřední známku. |
+
+Pro vynucení objektových oprávnění použij [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html). Tabulka a školní příklady jsou doporučením tohoto průvodce; netvrdí, že OWASP uvedené aplikace posuzoval.
+
+### 17.2 Zvol cestu realizace
+
+- **Lokální/statická aktivita:** hodí se bez potřeby sdílené evidence. Prověř místní ukládání, externí součásti a metadata hostingu; samotný offline provoz nedokládá absenci osobních údajů.
+- **Existující školní platforma:** využij vhodnou udržovanou identitu, oprávnění a úložiště. Ověř skutečné nastavení, příjemce, exporty a chování výmazu.
+- **Vlastní serverová aplikace:** použij udržované součásti pro autentizaci a relace, vynucuj práva na serveru, validuj vstupy a zajisti ochranu úložiště, obnovu a odpovědnost za provoz. PHP se SQLite je jedna možnost; zachovej rovnocennou podporovanou architekturu.
+- **Volitelná AI služba:** přidej vymezený datový tok, limity zdrojů, řízené selhání a lidskou kontrolu tam, kde ji vyžadují následky. Výuková aktivita má mít použitelnou náhradu při výpadku.
+
+Pracnost odhaduj až podle prostředí a závislostí. Neslibuj bezpečnost za pevný počet minut ani nevytvářej nový heslový systém, pokud existuje vhodné školní SSO.
+
+### 17.3 Rozpracuj jen zvolený postup
+
+U M1 zmapuj síť a úložiště, odstraň zbytečný sběr, doplň ukončení/reset a prověř dalšího uživatele. U M2 stanov povolená pole, chráněné hranice podání/čtení a odpovědnost za výmaz. U M3 vyřeš identitu a vlastnictví záznamu, následně návrat k práci, odhlášení a odebrání přístupu. U M4 definuj oprávněný zápis, opravy a konflikty před ukládáním a obnovou. U M5 vytvoř omezený dotaz, minimalizuj export a autorizuj stažení. Odpovídající technický modul načítej jen podle potřeby.
+
+U M6 vyřeš potřebnou identitu, vynuť oprávnění před výběrem zdrojů a odesláním modelu, minimalizuj požadavek, ověř odpověď a zobraz ji, případně předej samostatně autorizovaný zápis ke kontrole. Filtrace odpovědi po volání nevrátí již předaná data poskytovateli. Přístup a výmaz zahrnují indexy, cache i souhrny. Při výpadku či nejisté validaci zachovej práci a nabídni srozumitelnou náhradu bez tichého autoritativního zápisu. Podrobnosti řeší oddíl 15 a [OWASP RAG Security](https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html).
+
+### 17.4 Oprav existující aplikaci
+
+Odděl okamžité omezení rizika od trvalé opravy. Navrhni nejmenší účinný zásah, například omezení veřejného exportu či zastavení zbytečného sběru. Odstranění zveřejněného klíče z klienta nestačí: revokaci a rozsah vystavení řeš autorizovaným incidentním postupem. Uveď dotčené uživatele, ověření, zbytkové vystavení a další krok. Potřebné důkazy zachovej bez kopírování citlivých logů do chatu.
+
+Trvalou opravou řeš doloženou hranici identity, oprávnění, úložiště nebo provozu a ponech funkční součásti. Migrace záznamů potřebuje kontrolu integrity, zálohu/obnovu a plán návratu. Návrh opatření neopravňuje vypnout produkci, revokovat přístupy ani rozesílat oznámení. Podezření na zpřístupnění dat předej k posouzení incidentu podle použitelných místních pravidel.
+
+### 17.5 Předej kartu řešení
+
+Úvodní odpověď drž stručnou; rozpracuj jen vybraný režim a relevantní ochrany. Přizpůsob tuto kartu:
+
+```text
+Situace a cíl:
+Doporučený režim a důvod:
+Potřebné údaje a údaje, které nesbírat:
+Tok dat, příjemci a místo ukládání:
+Identita a oprávnění:
+Uchovávání, výmaz a obnova:
+Konkrétní kroky realizace:
+Kontroly před použitím a skutečný stav provedení:
+Zbytková rizika a neověřené předpoklady:
+Odpovědná osoba a další rozhodnutí:
+```
+
+Odliš plánované a provedené kontroly, u N/A doplň důvod. Používej syntetické příklady bez reálných záznamů žáků. Pro Španělsko použij španělský právní modul; pro EU/ČR použitelný místní rámec. Režim ani jazyk automaticky neurčují jurisdikci.
+
+
+### 17.6 Začni u existující aplikace
+
+Když uživatel přinese existující aplikaci, nabídni přiměřený vstupní audit a plán nápravy. Využij dodaný kód, architekturu a předchozí nálezy. Pokud už audit zadal, pokračuj v tomto rozsahu bez opakovaného schvalování stejného kroku. Při zadání drobné implementace prověř dotčenou hranici v rámci práce; širší audit nabídni samostatně, pokud jej odůvodňují zjištění.
+
+Nabídni dvě použitelné hloubky: cílenou kontrolu měněné funkce a jejího datového toku, nebo širší přezkum před nasazením zaměřený na identitu, oprávnění, příjemce, retenci a obnovu. Hloubku doporuč podle skutečných následků, například při novém použití reálných dat, úřední evidenci, veřejném exportu, novém AI příjemci či závažném pozorovaném selhání. Chybějící kód nebo nastavení omezuje závěry; vyžádej očištěný kód/konfiguraci či syntetickou ukázku, nikdy produkční databázi nebo tajemství. Samotný screenshot nedokládá zabezpečení serveru.
+
+Nejprve zmapuj současné chování a důkazy, potom předej seřazené nálezy s místem, dotčenými údaji/uživateli, rozlišením pozorovaného selhání a hypotézy, návrhem opravy, pracností/závislostmi a způsobem ověření. Začni doloženým zpřístupněním či ohrožením integrity, potom relevantními nedostatky; volitelná zlepšení označ zvlášť. Uveď i funkční ochrany. Vybranou nápravu rozpracuj kartou řešení a zachovej vhodnou architekturu.
+
+Zadání auditu opravňuje k posouzení, nikoli ke změnám aplikace. Opravy navrhni, pokud implementace již není autorizována; prováděj jen schválený rozsah. U každého bodu rozliš návrh, provedeno bez ověření, ověřeno s konkrétními důkazy a nevyřešeno. Zásahové kontroly prováděj jen v autorizovaném prostředí; bez provedení předej plán. Absence nálezu sama nedokládá bezpečnost aplikace pro reálná data.
+
+
+© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026; zachovej autora, licenci a oznámení úprav. Externí zdroje mají vlastní práva.

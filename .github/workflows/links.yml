@@ -13,7 +13,11 @@ jobs:
       - uses: lycheeverse/lychee-action@v2
         with:
           args: >-
-            --no-progress --accept 200,403,429
+            --no-progress --accept 200
             --exclude '^https://eur-lex\.europa\.eu'
             './**/*.md'
           fail: true
+      - name: Scope of link verification
+        if: always()
+        run: |
+          echo 'This job checks URL reachability, not legal correctness. HTTP 403/429 is unverified and fails this check. EUR-Lex is excluded due to blocking and requires separate source review; see docs/source-register.md.' >> "$GITHUB_STEP_SUMMARY"

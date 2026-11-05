@@ -1,8 +1,8 @@
 # Protecting Student Data in School Apps
 
-> This document is a practical security profile for school applications. It is not legal advice or a certificate. Before processing real data, the school and its data protection officer must approve it.
+> This document is a practical security profile for school applications. It is not legal advice or a certificate. Before processing real data, the controller makes the deployment decision after appropriate assessment and timely consultation with the DPO.
 
-**Version:** 1.1 · **Language:** English · **Sources verified:** 22 October 2026 · **Edition:** 25 October 2026 · **Czech original:** [ochrana-dat-zaku.md](ochrana-dat-zaku.md)
+**Version:** 1.1 · **Language:** English · **Sources verified:** 22 October 2026 · **Edition:** 5 November 2026 · **Czech original:** [ochrana-dat-zaku.md](ochrana-dat-zaku.md)
 
 Use this standalone skill when you build, change, or review applications that collect, store, display, evaluate, or share personal data of students and related data of their legal guardians or school staff. This includes records, forms, attendance, assignments, portfolios, communication, event registrations, assessment, and other school tools. The data may be names, contacts, classes, grades, files, messages, results, marks, operational records, and session or device IDs.
 
@@ -17,14 +17,26 @@ Distinguish a **verified long-term account**, **limited one-time participation**
 - **[D] Recommendation:** a useful extension depending on risk and operation.
 - **[O] Verify:** a question that depends on actual use, current law, or unconfirmed configuration. Do not present it as satisfied.
 
-1. Map controllers, processors, hosting, user age, processing purposes, data types, number of schools, data flows, offline features, and any AI features. Use available materials; state missing decisions explicitly. Without decisions, you can develop with synthetic data.
-2. For each data item and operation, determine the source, recipients, identity verification, permissions, and retention. Distinguish an unverified submission from a confirmed record; for grades or attendance, also assign responsibility for checking accuracy.
-3. Build a threat model: a classmate impersonating someone, account takeover or submitting for another person, guessing a code, a shared computer, a lost phone, wrong permissions between schools, a file or backup leak, XSS, forged record data, unintended publication of attachments, a compromised staff account, and possible AI manipulation.
-4. Implement the profile; for each important control, record the configuration or code location and the corresponding test.
-5. Before handover, fill in the checklist and run the acceptance tests. Distinguish "passed", "failed", "not performed", and "not applicable + reason". This document alone does not confirm that an application is secure.
-6. Before production, verify changes to legal sources, especially the AI Act. If the legal basis or a required assessment is missing, do not recommend starting the affected processing of real data; continue with the rest of the implementation.
+1. Determine the requested mode from the task: design, implementation, audit or incident. An audit produces findings and recommendations without changing the application. An incident review does not authorise disabling live services, revoking accounts or notifying people. Execute such actions only within actual authorisation.
+2. Reuse known context and identify the affected purpose, data flows, roles and change in risk. Ask only for missing information that changes the decision. For a narrow fix, assess the affected boundary and regressions instead of restarting the entire application assessment. Flag a serious adjacent issue with evidence; do not silently expand implementation.
+3. Map only the relevant data, recipients, identity, permissions, retention and threats. Preserve an existing secure architecture and working controls. Use synthetic data while purpose, lawful basis or deployment decisions remain unresolved.
+4. For design, propose proportionate controls and acceptance criteria. For authorised implementation, apply the selected controls and record their code/configuration locations. For audit, report severity, evidence, impact, proposed action and the verification needed. Classify suspected issues separately from observed failures.
+5. Select acceptance scenarios for the affected features and risk. Report passed, failed, not performed and not applicable with a reason; a full redesign is not required for every correction. Do not claim execution from a proposed test plan.
+6. Before real-data deployment, verify the applicable legal basis, required assessment and current legal text. The controller makes deployment decisions with timely DPO advice and appropriate expert review. If a required basis or assessment is missing, do not recommend the affected processing; continue authorised unaffected work.
 
 Do not put real student data, production logs, keys, or databases into an ordinary AI chat or a public repository. Generate synthetic data for debugging. Using real data in an AI service requires a separate assessment of purpose, necessity, contract, recipients, retention, and transfers; disabling training alone is not enough.
+
+### 1.1 Select controls by data flow and risk
+
+Legal duties apply when their conditions are met. Baseline outcomes are purpose limitation, minimisation, trustworthy access boundaries, integrity, recoverability and an accountable handling of incidents and rights, proportionate to actual processing. An activity with no personal processing does not need accounts, a database, KMS or a personal audit merely because this guide describes them. Check hosting and operational metadata before calling it anonymous.
+
+The detailed [P] settings below form a strict reference profile for new systems with persistent school records or where the project explicitly adopts it. Named algorithms, timeouts and operational targets are profile choices. For an existing system, first assess its actual controls and equivalent protections against the relevant threats; a different maintained technology is not automatically a vulnerability. Do not weaken authorisation or invent an exemption from law. Document a material departure from an adopted profile with the threat, compensating control, verification and the responsible controller's decision. A review may propose that decision; it must not fabricate approval or require a new approval for every routine in-scope edit.
+
+Choose the architecture before applying implementation-specific recipes. Encryption-library internals and nonce management belong to the component doing that encryption, not automatically to the application if a verified storage service handles it. Explain key access, backup protection, metadata exposure and residual risk for the actual solution. Any change to hosting, identity provider, paid service or data recipients needs the corresponding authorisation.
+
+### 1.2 Controller and DPO
+
+The controller is accountable for purposes, lawful processing and deployment decisions. The DPO informs, advises and monitors independently and is consulted in good time, including on a DPIA. This guide does not assign general operational approval or controller responsibility to the DPO. Record advice and the responsible decision; resolve disagreements through the appropriate governance process. See [EDPB: DPO](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en).
 
 ## 2. GDPR and the Czech legal framework
 
@@ -300,7 +312,7 @@ Separately assess any duties under the Czech Cybersecurity Act and the AI Act if
 
 - [ ] Are controller and processor roles, purposes, bases, recipients, and school-confirmed retention defined?
 - [ ] Is there information for students and parents, a rights process, processor contracts, and a transfer assessment?
-- [ ] Has the DPO assessed the DPIA; is the conclusion justified and is residual high risk resolved?
+- [ ] Has the controller assessed the need for a DPIA, sought timely DPO advice, justified the conclusion and resolved residual high risk?
 - [ ] Is identity verification defined for each access mode, and is an unverified submission separated from a confirmed record?
 - [ ] If codes or QR exist, do they avoid opening history, and do expiry, revocation, and limits work?
 - [ ] Do object-level and cross-school permissions apply on all interfaces and in exports?
@@ -354,9 +366,133 @@ Perform only in an authorised test environment with synthetic data. Prepare two 
 | AT28 | Move a student to another class and remove an employee's assignment; try the old account, export, and shared link. | Access matches the current permission, including history; any retained access has a documented purpose and scope. |
 | AT29 | Import two people with the same name and the same external ID from two schools; repeat the import after an interruption. | People and schools are not merged, the mapping is verified, and repetition creates no duplicates or partial overwrite. |
 | AT30 | Revoke a service token and replay a signed webhook; inspect an email or push on a locked device. | The token does not work, replay is refused, and the notification contains no sensitive personal content. |
+| AT31 | Query a RAG index using a synthetic distinctive phrase from another school, including citations, snippets and cached results after a role change. | Unauthorised content and revealing metadata are not retrieved or released; stale permissions do not reopen access. |
+| AT32 | Delete or correct a source and restore a stale indexing job/checkpoint or backup. | Applicable chunks, indexes, summaries and queues are invalidated or corrected, with documented backup/provider handling; deleted data is not silently reintroduced. |
+| AT33 | In the implemented OIDC/SAML flow, supply a foreign issuer/audience, invalid required signature, expired or replayed assertion/code and mismatched state/nonce where applicable. | The protocol library rejects invalid login; no local authenticated session or privileged role is created. |
+| AT34 | Supply the same email/name from different issuers or schools and an untrusted staff-role claim. | Accounts are not silently merged and no foreign membership or privileged role is granted. |
+| AT35 | Remove SSO membership, revoke the local session and simulate identity-provider failure. | Removed rights stop in the application; outage does not bypass verification or MFA; fallback and any propagation limits are explicit. |
+| AT36 | Insert exfiltration instructions in an AI source/answer, request an unauthorised tool destination and simulate invalid output or timeout. | Destination and data boundaries hold outside the prompt; no authoritative write or fabricated grade occurs; unresolved feedback and work are preserved. |
+
 
 ## 14. Handover and limits of claims
 
 When using the skill, hand over the application changes, configuration, personal data map, permission matrix, confirmed retention, recovery and incident procedure, and the results of relevant tests. For AI, attach the decision record and a list of legal points to confirm. These do not have to be separate files if the project keeps these records differently.
 
 OWASP, NIST, and ENISA provide technical and methodological guidance. They are not automatically binding Czech law or harmonised AI Act standards establishing a presumption of conformity. A completed checklist is not a GDPR certificate, a high-risk AI conformity assessment, or a guarantee against attack. Report specific verified properties and remaining risks; do not claim "100% GDPR compliant" without evidence.
+
+## 15. AI data flows, tutoring and RAG [P/O]
+
+Apply only to an implemented or explicitly requested AI feature. Do not add a model, a vector database or conversation logging merely to use this section. A development assistant and a student-facing service have different data flows and need separate inventory entries.
+
+### 15.1 Minimise and bound the flow
+
+For each flow record purpose, controller/processor roles, approved sources, data categories, user access, recipients, region and remote support, contractual retention, deletion method and necessary transfers. Include prompts, answers, attachments, conversations, checkpoints, moderation/support traces, caches, embeddings, vector indexes, model-provider logs and tool/connector outputs. Derived data can remain personal even without names; embeddings are not an anonymisation guarantee.
+
+Before calling an AI service, select only the fields necessary for the current task and authorised recipient. Strip irrelevant identifiers and secrets. Do not assume a teacher may upload an entire class record. Verify provider settings and terms for the actual account and endpoint; “training off”, an education label or an EU region alone does not settle retention, support access or transfers. Unavailable terms/configuration remain unverified; development can continue with synthetic data.
+
+Keep service keys server-side. Enforce destination, tool and data-scope permissions outside the prompt. Learner input, retrieved documents and generated output are untrusted. Do not allow a document or an answer to change roles, call arbitrary URLs or send records to a new recipient. Where tools fetch resources, constrain destinations and test request-forgery and data-exfiltration paths. Validate structured output before it can change a record, and encode rendered text safely.
+
+### 15.2 Enforce access throughout retrieval
+
+Associate documents, chunks, embeddings and derived summaries with source ID, school, applicable person/group permissions, content version and retention category. Apply authorisation before retrieval and again before releasing results; a similarity score is not a permission. Shared indexes need enforced tenant isolation. Filter searches, counts, citations, previews, exports and conversation reuse, not just the final visible answer. Permission removal or deletion invalidates related retrieval caches and derived copies within a defined window; if invalidation is not yet confirmed, block affected results rather than serve a known stale permission.
+
+Preserve source provenance and distinguish a quotation, model interpretation and unsupported claim. Test cross-school retrieval with synthetic distinctive text and a role change after indexing. A fabricated citation does not become evidence of correctness. Delimit retrieved content and validate actions; “ignore malicious instructions” is not an adequate isolation control.
+
+### 15.3 Tutoring records and deletion
+
+For resumable learning, store only the goal, necessary task references, expressed response/reasoning, assistance conditions, observed revisions and next step needed for the purpose. Do not infer or archive diagnoses, personality or private thought processes. A summary of a learner's reasoning can be personal data. Give it the same permissions, transparency and purpose-bound retention as the underlying activity; on shared devices, provide a clear finish/clear path.
+
+Map deletion and correction across raw sources, chunks, vector indexes, summaries, exported checkpoints, queues, backups and provider-side copies. Record what can be deleted directly, what requires a provider request and what remains under a justified limited retention period. Suspend retrieval where source deletion or permissions make a result invalid. Prevent re-indexing from a stale queue or backup after deletion. Do not promise immediate removal from immutable backups or third-party systems without evidence. Test the actual provider procedure with synthetic data when available, not by assuming an API request removed all copies.
+
+If the model is unavailable or its output cannot be validated, preserve the learner's work and mark feedback unresolved. Do not turn a timeout into full marks, invent an evaluation or silently switch provider. Consequential evaluation remains subject to appropriate accountable human review.
+
+Technical guidance: [OWASP RAG Security](https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html). These are implementation controls, not a replacement for the separate legal classification and provider assessment.
+
+## 16. Federated school login and SSO [P]
+
+Apply only where an identity provider is used. Do not replace a working login just to introduce SSO. Use a maintained protocol library and the provider's current integration instructions; OAuth authorisation alone is not proof of user identity.
+
+For OIDC, validate issuer, signature with trusted key discovery, intended audience and any required authorised party, expiry, nonce and correlation to the login transaction. Use an authorisation-code flow with PKCE where supported and required by the client profile; constrain redirect URIs exactly, bind the callback to the initiating browser and prevent login CSRF and code replay. Do not treat an access token as an ID token. For SAML, validate the required signatures, issuer, audience, destination, recipient, request correlation, time conditions and assertion replay using a maintained implementation. Do not invent an XML signature parser. Choose the checks for the actual protocol and flow, not both protocols by default.
+
+Link identities by a verified stable identifier scoped to the trusted issuer (for example issuer plus subject), then map authorised membership to the correct school and application role. Email address, display name, domain or an untrusted school claim alone must not merge accounts or grant staff access. Define enrolment, account linking, renamed addresses, subject changes, duplicate names and removal of membership. Privileged role assignment requires trusted entitlement data or an authorised administrative step. A successful identity-provider login does not itself grant access to every school record.
+
+Keep local sessions revocable; provider logout and application logout have different scopes. Re-evaluate membership and privileges according to documented change propagation, and provide immediate application-side revocation for a known removal. Do not silently retain staff access until a distant provider token expiry. On provider outage or invalid metadata, fail closed for protected access and offer an appropriate operational fallback; do not bypass MFA or trust unverified assertions.
+
+For an implemented flow, test wrong issuer/audience, bad or missing required signature, expired/replayed assertion or code, mismatched callback state/nonce, foreign-school mapping, duplicate email, removed membership and provider failure. Record protocol/library versions and actual results. The shared acceptance table adds the relevant SSO scenarios; passing a generic session test is insufficient.
+
+Technical guidance: [OWASP OAuth2](https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet.html), [OWASP SAML Security](https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html).
+
+Targeted additions (DPO role, RAG and SSO guidance) reviewed 5 November 2026. The original source-check date above is historical; this edition does not claim a new full legal audit. Consult the source register for checked and unverified claims.
+
+## 17. Practical solution guide
+
+### 17.1 Select a data-handling mode
+
+[D] Read this module when asked for a practical solution or a choice of protection level. These are design patterns for school situations, not field-tested deployments or compliance tiers. They supplement the task modes (design, implementation, audit, incident); they do not authorise execution. Reuse known context. Ask only about missing facts that change the choice: purpose and necessary fields, need for verified identity, persistence or official use, shared devices, and recipients including hosting, analytics and AI.
+
+Recommend one mode with a reason and, when useful, a simpler alternative. Combine modes only for the affected features: an anonymous exercise and an identified teacher report can have different boundaries. Do not force every application into the most complex mode. Real-data use still needs the applicable processing decision and safeguards.
+
+| Mode and school example | Minimum design | Checks before real use |
+|---|---|---|
+| M1 One-off practice: fractions exercise | No learner name or account when unnecessary; answers in working memory; clear on finish. A local/static activity can avoid a central record. | Reload, history and the next user must not reveal answers; inspect actual requests, logs, telemetry and browser storage before claiming anonymity. |
+| M2 Limited collection: event signup | Collect only fields needed for the event; protect receipt and access; set a purpose-based deletion trigger. Treat an unverified submission as pending. | Foreign-record access, unexpected writable fields, submission limits and deletion. A shared code alone cannot establish identity for official records. |
+| M3 Resume learning: saved practice progress | Keep minimum progress; use verified school identity for personal history. Assess any pseudonymous access mechanism against its consequences. | Another learner's history, shared-device logout, changed class membership and recovery. A pseudonym is not automatically anonymous. |
+| M4 Official records: grades or attendance | Verified identity, trusted authorisation, controlled writes, conflict handling, correction history and recoverable storage; retention follows the actual agenda. | Forged owner or grade, revoked access, concurrent edits and recovery. Do not copy a generic practice-data deletion period. |
+| M5 Teacher reports and exports | Scope access to assigned classes and purpose; aggregate when sufficient; minimise fields and recheck permission on download. | Foreign class, expired/revoked link, CSV formula injection, revealing filenames and the lifecycle of downloaded copies. |
+| M6 AI tutoring | First consider reviewed static explanations. If AI is needed, define approved recipients, minimise input, keep service keys server-side and validate output. | Retrieval permissions, actual outbound data, injection, outage, provider retention and deletion. Model output alone must not write an official grade. |
+
+For object access enforcement, use [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html). The mode table and school examples are this guide's recommendations; they are not a claim that OWASP evaluated these applications.
+
+### 17.2 Choose an implementation path
+
+- **Local/static activity:** suitable when no shared record is needed. Check local persistence, external assets and host metadata; offline operation alone does not prove absence of personal data.
+- **Existing school platform:** reuse maintained identity, permissions and storage where suitable. Verify the actual configuration, recipients, export settings and deletion behaviour.
+- **Custom server application:** use maintained components for authentication and sessions, enforce server permissions, validate inputs and provide storage protection, recovery and an operational owner. PHP with SQLite is one possible stack; preserve an equivalent supported architecture.
+- **Optional AI service:** add a bounded data flow, resource limits, controlled failure handling and human review where consequences require it. The learning activity must retain a usable fallback.
+
+Estimate effort only after inspecting the environment and dependencies. Do not promise security within a fixed number of minutes or introduce a new password system when suitable school SSO exists.
+
+### 17.3 Apply only the selected recipe
+
+For M1, trace network/storage use, remove unnecessary collection, implement end/reset behaviour and check the next-user experience. For M2, define an allowlist of fields, protected submission/read boundaries and deletion ownership. For M3, establish identity and record ownership, then implement resume/logout and access-revocation handling. For M4, define authorised writes, corrections and conflicts before persistence and recovery. For M5, build a scoped query, minimise the export and authorise its download. Load the corresponding technical module only where needed.
+
+For M6, resolve identity where needed, enforce permissions before selecting source content and sending it to the model, minimise the request, validate the response and display it or submit a separately authorised write for review. Filtering an answer after the call cannot undo disclosure to a provider. Include indexes, caches and summaries in access/deletion design. On outage or uncertain validation, preserve work and return a clear fallback without a silent authoritative write. Consult section 15 and [OWASP RAG Security](https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html) for these controls.
+
+### 17.4 Repair an existing application
+
+Separate immediate containment from the durable correction. Propose the smallest effective containment, such as restricting a public export or stopping unnecessary collection. Removing an exposed client-side key is insufficient: assess revocation and exposure through the authorised incident process. State affected users, verification, residual exposure and the next action. Preserve necessary evidence without copying sensitive logs into a chat.
+
+For the durable correction, fix the evidenced identity, authorisation, storage or operational boundary and retain sound existing components. For migrations affecting records, include integrity checks, backup/recovery and a rollback plan. A proposed containment is not permission to shut down production, revoke credentials or notify others. Escalate suspected disclosure for incident assessment under the applicable local rules.
+
+### 17.5 Deliver a solution card
+
+Keep the initial answer short; expand only the selected mode and relevant controls. Use this adaptable card:
+
+```text
+Situation and goal:
+Recommended mode and reason:
+Necessary fields and data to avoid:
+Data flow, recipients and storage:
+Identity and permissions:
+Retention, deletion and recovery:
+Concrete implementation steps:
+Checks before use and actual execution status:
+Residual risks and unverified assumptions:
+Responsible owner and next decision:
+```
+
+Label proposed checks separately from performed checks and give N/A reasons. Use synthetic examples, not real learner records. For Spain, use the Spanish legal module; for EU/Czech contexts, use the applicable local framework. A mode or language never selects jurisdiction automatically.
+
+
+### 17.6 Start with an existing application
+
+When the user brings an existing application, offer a proportionate entry audit with a remediation plan. Reuse any supplied code, architecture and prior findings. If an audit is already requested, proceed within that scope rather than asking for the same approval again. If the user requests a narrow implementation, inspect the affected boundary as part of that work; offer a broader audit separately when evidence warrants it.
+
+Offer two useful depths: a focused review of the changed feature and its data flow, or a broader pre-deployment review of identity, permissions, recipients, retention and recovery. Recommend depth from actual consequences, such as new real-data use, official records, a public export, an AI recipient or a serious observed failure. Missing source or configuration limits what can be concluded; request sanitised code/configuration or a synthetic demonstration, never a production database or secrets. A screenshot alone does not establish server security.
+
+Map current behaviour and evidence first, then deliver prioritised findings with location, affected data/users, observed failure versus hypothesis, proposed correction, effort/dependencies and a verification method. Start with evidenced exposure or integrity risks, then relevant gaps; keep optional improvements separate. Recognise controls that already work. Use the solution card for the selected remediation and preserve existing sound architecture.
+
+An audit request authorises assessment, not application changes. Propose fixes unless implementation is already authorised; apply only that authorised scope. Record whether each item is proposed, implemented but unverified, verified with stated evidence, or unresolved. Run intrusive checks only in an authorised environment; without execution, provide a check plan. Do not mark the application safe for real use solely because the audit produced no finding.
+
+
+© 2026 Luděk Sušický. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Revised edition of version 1.1, based on the original October 2026 guide; preserve attribution, license and change notices. External sources retain their own rights.
