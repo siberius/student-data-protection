@@ -32,4 +32,16 @@ Architekturu zvol před použitím konkrétního implementačního receptu. Inte
 
 Správce odpovídá za účely, zákonné zpracování a rozhodnutí o provozu. Pověřenec nezávisle informuje, radí a monitoruje; je včas konzultován včetně DPIA. Tento průvodce mu nepřiděluje obecné provozní schvalování ani odpovědnost správce. Eviduj radu a odpovědné rozhodnutí; neshody řeš odpovídajícím procesem řízení. Viz [EDPB: pověřenec](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en).
 
+### 1.3 Vyjasni potřebné informace před prací
+
+Před zahájením vlastní práce zjisti potřebný kontext zadaného úkolu. Využij výslovné odpovědi a aktuální podklady projektu; bezpečné cílené čtení necitlivého kódu/dokumentace může fakta zjistit před dotazy. Uživatele se doptej na každou relevantní mezeru, která může změnit řešení, nikoli na již sdělené údaje. Otázky seskup do krátké srozumitelné dávky, další pokládej jen podle potřeby:
+
+- Cíl, existující aplikace a požadovaný výsledek; návrh, audit, implementace či incident a dovolený rozsah změn.
+- Skutečný stát/školní kontext a odpovědnost za zpracování; účel, dotčené osoby, potřebné údaje a použití syntetických či reálných dat, procvičování či úřední evidence.
+- Publikum, role uživatelů, sdílená zařízení a potřeba identity/přístupu; původ a ověření existujících záznamů.
+- Skutečné úložiště, hosting, integrace a externí AI/jiní příjemci; relevantní uchovávání, výmaz, obnova a požadavky zveřejnění.
+- Dostupné očištěné podklady, prostředí, stack, odpovědnost za provoz a omezení; co lze prohlížet či měnit a jaké provedení je autorizováno.
+
+Ptej se jen na použitelné body. Drobná úprava rozhraní nepotřebuje úplný inventář nesouvisejícího zpracování. Chybí-li rozhodující odpověď, před závislým návrhovým rozhodnutím, zpracováním dat či změnou vyčkej; pokračuj pouze nezávislým autorizovaným průzkumem nebo syntetickou přípravou. Potichu nepředpokládej oprávnění, jurisdikci, reálná data ani rozsah publikace. Pokud uživatel neví, vysvětli způsob zjištění a bod ponech otevřený. Nutný dotaz k rozsahu odliš od zbytečného opakování již uděleného souhlasu. Před pokračováním krátce shrň pochopený rozsah, podstatné předpoklady a otevřené limity; shrnutí samo neopravňuje k publikaci či produkčnímu přístupu.
+
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

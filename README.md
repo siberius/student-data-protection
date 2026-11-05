@@ -6,6 +6,11 @@
 
 A practical guide for teachers, school IT staff, and anyone building school applications that collect, store, or share student data. It connects the applicable legal framework with a concrete, explicitly selected security profile and verifiable implementation controls.
 
+Before substantive work, the skill establishes the necessary context and asks for missing consequential information. Supplied facts and permissions are reused; unanswered decisive questions stop only dependent work. The [workflow intake](references/workflow.md) covers relevant scope, data, audience, recipients, lifecycle and environment.
+
+[Publication and derived outputs](references/publication.md) covers allowed public fields, document/media review, provenance, actual build artifacts, search indexes, access boundaries, removal and safe updates. It loads only for the relevant task. Technical feedback uses sanitised synthetic examples and is never sent automatically.
+
+
 ## Practical solutions and package size
 
 Start with the short native core and load only the relevant reference. [Practical solutions](references/practical-solutions.md) offers six data-handling modes: one-off practice, limited collection, saved progress, official records, teacher reports/exports and AI tutoring. It includes implementation paths, containment versus durable repair and a solution card. Expand only the selected recipe. These are design examples, not evidence of deployed safeguards.

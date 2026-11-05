@@ -6,6 +6,11 @@
 
 Praktický průvodce pro učitele, školní IT a každého, kdo staví školní aplikace, které pracují s údaji žáků. Propojuje použitelný právní rámec s výslovně zvoleným bezpečnostním profilem a ověřitelnými implementačními kontrolami.
 
+Před vlastní prací skill zjistí potřebný kontext a doptá se na chybějící rozhodující informace. Využívá již sdělená fakta a oprávnění; nezodpovězená rozhodující otázka zastaví jen závislou práci. [Vstupní postup](cs/references/workflow.md) pokrývá relevantní rozsah, data, publikum, příjemce, životní cyklus a prostředí.
+
+[Publikování a odvozené výstupy](cs/references/publication.md) řeší povolená veřejná pole, přezkum dokumentů/médií, původ údajů, skutečné sestavené výstupy, indexy, přístup, odstranění a bezpečné aktualizace. Načítá se jen pro příslušný úkol. Technická zpětná vazba používá očištěné syntetické příklady a nikdy se neodesílá automaticky.
+
+
 ## Praktická řešení a velikost balíčku
 
 Začni krátkým nativním jádrem a načti jen potřebnou referenci. [Praktická řešení](cs/references/practical-solutions.md) nabízejí šest režimů dat: jednorázové procvičování, omezený sběr, uložený pokrok, úřední evidenci, přehledy/exporty a AI tutora. Obsahují cesty realizace, omezení rizika oproti trvalé opravě a kartu řešení. Rozpracuj jen zvolený postup. Jde o návrhové příklady, nikoli důkaz nasazených ochran.

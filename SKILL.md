@@ -17,7 +17,7 @@ Use the requested scope and available evidence. This skill supports school softw
 
 Infer design, implementation, audit or incident from the request. For an audit, inspect and report without changing the application. Incident analysis does not authorise shutting down services, revoking accounts or sending notifications. For authorised implementation, change the affected boundary and check meaningful regressions. Do not restart a whole-system review for a narrow fix. Flag a serious adjacent risk with evidence and a proposed action rather than silently expanding work.
 
-Reuse known purposes, data flows, school/tenant, roles, hosting and deployment constraints. Ask only when missing information changes the decision. Synthetic data allow development while a real-data processing decision is unresolved. An activity without personal processing need not gain accounts or storage; check operational metadata before describing it as anonymous.
+Before substantive work, establish all context necessary for the requested scope. Reuse known facts and safe project inspection, then ask about every relevant gap (goal/scope, jurisdiction, data, audience, identity, recipients, lifecycle, environment and permissions); use workflow section 1.3 as the intake. Wait for consequential missing answers before dependent decisions or changes. Ask in short batches, do not request secrets or real learner records, and do not repeat answered questions or granted authorisation. Synthetic data allow development while a real-data processing decision is unresolved. An activity without personal processing need not gain accounts or storage; check operational metadata before describing it as anonymous.
 
 For an existing application, offer a focused entry audit and remediation plan, or a broader pre-deployment review when warranted. If audit or implementation is already requested, follow that scope; do not ask again or silently expand it. Use section 17.6 of the practical guide for evidence, prioritisation and remediation status.
 
@@ -38,6 +38,7 @@ For a practical solution, recommend one suitable data-handling mode; expand only
 
 | Work | Reference |
 |---|---|
+| Publication, documents, generated sites or derived outputs | [Publication and outputs](references/publication.md) |
 | Practical choice of data-handling mode and solution card | [Practical solutions](references/practical-solutions.md) |
 | Collection, fields, files, imports or connectors | [Data flows](references/data.md) |
 | Accounts, codes, roles, sessions or record integrity | [Identity and access](references/identity.md) |

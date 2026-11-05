@@ -2,6 +2,9 @@
 
 ## 1.1 revised edition (2026-11-05)
 
+- Add a necessary-context intake before substantive work, reusing supplied facts and waiting on consequential missing answers.
+- Add a conditional publication/document/output guide: explicit field projection, free-text/media review, import boundaries, provenance, artifact/index access, removal, safe updates and sanitised optional feedback.
+
 - Merge upstream Czech ZŠ/SŠ scope clarification; keep the separately requested Spain adaptation.
 - Offer a proportionate entry audit for existing applications, with prioritised findings, concrete remediation and explicit verification status.
 - Retain release number 1.1 at the author's request; dates distinguish revisions.

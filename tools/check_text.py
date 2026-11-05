@@ -46,7 +46,7 @@ def check_bundles() -> list[str]:
         'workflow': [1], 'legal': [2], 'ai-act': [3], 'data': [4],
         'identity': [5, 6], 'crypto': [7], 'storage': [8], 'web': [9],
         'operations': [10, 11], 'verification': [12, 13, 14],
-        'ai-data': [15], 'sso': [16], 'practical-solutions': [17],
+        'ai-data': [15], 'sso': [16], 'practical-solutions': [17], 'publication': [18],
     }
     editions = [('.', 'student-data-protection.md', 'source-register.md'),
                 ('cs', 'ochrana-dat-zaku.md', 'registr-zdroju.md'),
@@ -61,7 +61,7 @@ def check_bundles() -> list[str]:
         matches = list(re.finditer(r'^## (\d+)\. .+$', text, re.M))
         sections = {int(m.group(1)): text[m.start():matches[i+1].start() if i+1 < len(matches) else len(text)].strip()
                     for i, m in enumerate(matches)}
-        if set(sections) != set(range(1, 18)):
+        if set(sections) != set(range(1, 19)):
             errors.append(f'Unexpected source sections: {source}')
             continue
         ids = re.findall(r'^\| (AT\d+) \|', text, re.M)

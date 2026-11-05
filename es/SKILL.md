@@ -18,7 +18,7 @@ Trabaja según el alcance solicitado y las evidencias disponibles. El skill apoy
 
 Deduce diseño, implementación, auditoría o incidente de la solicitud. Una auditoría examina e informa sin modificar la aplicación. Analizar un incidente no autoriza apagar servicios, revocar cuentas o enviar avisos. En una implementación autorizada cambia el límite afectado y comprueba regresiones significativas. Una corrección pequeña no necesita repetir toda la auditoría. Señala un riesgo grave adyacente con pruebas y propuesta, sin ampliar el trabajo silenciosamente.
 
-Reutiliza finalidades, flujos, centro/tenant, roles, alojamiento y condiciones conocidos. Pregunta solo por datos que cambien la decisión. Los datos sintéticos permiten desarrollar mientras falte la decisión de tratamiento real. Una actividad sin tratamiento personal no requiere cuentas o almacenamiento; revisa metadatos operativos antes de llamarla anónima.
+Antes del trabajo sustantivo establece todo contexto necesario para el alcance solicitado. Reutiliza hechos e inspección segura; pregunta por cada carencia pertinente (objetivo/alcance, jurisdicción, datos, público, identidad, destinatarios, ciclo de vida, entorno y permisos); sigue la sección 1.3 del procedimiento. Espera respuestas decisivas antes de decisiones o cambios dependientes. Pregunta en tandas breves, sin pedir secretos ni registros reales del alumnado y sin repetir respuestas o autorizaciones ya dadas. Los datos sintéticos permiten desarrollar mientras falte la decisión de tratamiento real. Una actividad sin tratamiento personal no requiere cuentas o almacenamiento; revisa metadatos operativos antes de llamarla anónima.
 
 Para una aplicación existente ofrece auditoría inicial enfocada y plan de corrección, o revisión más amplia previa al despliegue cuando proceda. Si ya se pidió auditoría o implementación, respeta ese alcance sin preguntar de nuevo ni ampliarlo silenciosamente. La sección 17.6 de la guía práctica detalla evidencias, prioridades y estado.
 
@@ -39,6 +39,7 @@ Cuando se pida una solución práctica, recomienda un modo de datos y desarrolla
 
 | Trabajo | Referencia |
 |---|---|
+| Publicación, documentos, sitios generados y salidas derivadas | [Publicación y salidas](references/publication.md) |
 | Elección práctica del modo de datos y ficha de solución | [Soluciones prácticas](references/practical-solutions.md) |
 | Recogida, campos, archivos, importaciones y conectores | [Flujos](references/data.md) |
 | Cuentas, códigos, roles, sesiones e integridad | [Identidad](references/identity.md) |

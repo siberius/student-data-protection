@@ -17,7 +17,7 @@ Vycházej ze zadaného rozsahu a dostupných důkazů. Skill podporuje práci na
 
 Ze zadání převezmi návrh, implementaci, audit či incident. Audit posuzuje a reportuje bez změn aplikace. Analýza incidentu neopravňuje vypínat služby, revokovat účty či posílat oznámení. Při autorizované implementaci změň dotčenou hranici a ověř smysluplné regrese. Malá oprava nepotřebuje opakovat celý audit. Závažné sousední riziko dolož a navrhni postup místo tichého rozšíření práce.
 
-Využij známé účely, toky, školu/tenant, role, hosting a podmínky nasazení. Ptej se jen na údaje měnící rozhodnutí. Syntetická data dovolují vývoj, dokud chybí rozhodnutí o reálném zpracování. Aktivita bez osobního zpracování nemusí získat účty či úložiště; před označením anonymní ověř provozní metadata.
+Před vlastní prací zjisti vše potřebné pro zadaný rozsah. Využij známá fakta a bezpečný průzkum projektu, potom se doptej na každou relevantní mezeru (cíl/rozsah, jurisdikce, údaje, publikum, identita, příjemci, životní cyklus, prostředí a oprávnění); vstupní postup je v oddílu 1.3 pracovního postupu. Na rozhodující odpovědi vyčkej před závislým rozhodnutím či změnou. Ptej se v krátkých dávkách, nevyžaduj tajemství ani reálné záznamy žáků a neopakuj zodpovězené otázky ani udělené oprávnění. Syntetická data dovolují vývoj, dokud chybí rozhodnutí o reálném zpracování. Aktivita bez osobního zpracování nemusí získat účty či úložiště; před označením anonymní ověř provozní metadata.
 
 U existující aplikace nabídni cílený vstupní audit a plán nápravy, případně odůvodněný širší přezkum před nasazením. Již zadaný audit či implementaci proveď v určeném rozsahu bez opakovaného dotazu a tichého rozšíření. Důkazy, priority a stav nápravy řeší oddíl 17.6 praktické příručky.
 
@@ -38,6 +38,7 @@ Při žádosti o praktické řešení doporuč vhodný režim dat a rozpracuj je
 
 | Práce | Reference |
 |---|---|
+| Publikování, dokumenty, generovaný web a odvozené výstupy | [Publikování a výstupy](references/publication.md) |
 | Praktická volba režimu dat a karta řešení | [Praktická řešení](references/practical-solutions.md) |
 | Sběr, pole, soubory, importy a konektory | [Datové toky](references/data.md) |
 | Účty, kódy, role, relace a integrita | [Identita a přístup](references/identity.md) |

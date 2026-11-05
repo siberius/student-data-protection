@@ -32,4 +32,16 @@ Choose the architecture before applying implementation-specific recipes. Encrypt
 
 The controller is accountable for purposes, lawful processing and deployment decisions. The DPO informs, advises and monitors independently and is consulted in good time, including on a DPIA. This guide does not assign general operational approval or controller responsibility to the DPO. Record advice and the responsible decision; resolve disagreements through the appropriate governance process. See [EDPB: DPO](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en).
 
+### 1.3 Clarify what is needed before work
+
+Before starting substantive work, establish the necessary context for the requested task. Reuse explicit answers and current project evidence; a safe, scoped read of non-sensitive code/docs may establish facts before questions. Ask the user about every relevant gap that could change the solution, not facts already supplied. Group questions into a short understandable batch and follow up only where needed:
+
+- Goal, existing application and expected result; design, audit, implementation or incident, and the permitted scope of changes.
+- Actual country/school context and processing owner; purpose, affected people, necessary data and whether use is synthetic or real, practice or official records.
+- Audience, user roles, shared devices and identity/access needs; source and verification of existing records.
+- Actual storage, hosting, integrations and external AI/other recipients; relevant retention, deletion, recovery and publication requirements.
+- Available sanitised artifacts, environment, stack, operational owner and constraints; what can be inspected or changed and what execution is authorised.
+
+Only ask applicable questions. For a narrow UI fix, a full inventory of unrelated processing is unnecessary. If a consequential answer is missing, wait before the dependent design decision, data processing or change; continue only independent authorised inspection or synthetic preparation. Do not silently assume permission, jurisdiction, real-data use or publication scope. If the user does not know, explain how to establish the fact and keep it unresolved until then. Distinguish a necessary scope question from redundant reapproval of an action already authorised. Briefly state understood scope, important assumptions and unresolved limits before proceeding; this summary does not itself authorise publication or production access.
+
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.

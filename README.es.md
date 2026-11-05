@@ -4,6 +4,11 @@ Perfil práctico para diseñar, implementar o auditar aplicaciones escolares que
 
 **Versión 1.1, edición española para España de 5 de noviembre de 2026.** La comprobación original de fuentes de 22 de octubre de 2026 es histórica. Las revisiones específicas posteriores deben identificarse en el registro de fuentes; no equivalen a una auditoría jurídica completa nueva ni a pruebas ejecutadas de proveedores.
 
+Antes del trabajo sustantivo el skill establece el contexto y pregunta por información decisiva pendiente. Reutiliza hechos y permisos aportados; las preguntas decisivas sin respuesta detienen solo el trabajo dependiente. La [entrada del procedimiento](es/references/workflow.md) cubre alcance, datos, público, destinatarios, ciclo de vida y entorno pertinentes.
+
+[Publicación y salidas derivadas](es/references/publication.md) trata campos públicos permitidos, documentos/medios, procedencia, artefactos compilados reales, índices, acceso, retirada y actualizaciones seguras. Se carga solo para tareas pertinentes. Los comentarios técnicos usan ejemplos sintéticos saneados y nunca se envían automáticamente.
+
+
 ## Soluciones prácticas y tamaño del paquete
 
 Empieza por el núcleo breve y carga solo la referencia pertinente. [Soluciones prácticas](es/references/practical-solutions.md) ofrece seis modos de datos: práctica puntual, recogida limitada, progreso guardado, registros oficiales, informes/exportaciones y tutor con IA. Incluye vías de implementación, contención frente a corrección duradera y ficha de solución. Desarrolla solo el procedimiento elegido. Son ejemplos de diseño, no evidencia de salvaguardas desplegadas.

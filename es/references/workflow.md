@@ -32,4 +32,16 @@ Elige la arquitectura antes de aplicar recetas específicas de implementación. 
 
 El responsable responde de las finalidades, la licitud y las decisiones de despliegue. El DPD informa, asesora y supervisa con independencia y se consulta con suficiente antelación, incluida la evaluación de impacto relativa a la protección de datos (EIPD). Esta guía no atribuye al DPD una aprobación operativa general ni la responsabilidad del responsable del tratamiento. Registra el asesoramiento y la decisión responsable; resuelve los desacuerdos mediante la gobernanza adecuada. Véase [CEPD: DPD](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en).
 
+### 1.3 Aclara lo necesario antes de trabajar
+
+Antes de iniciar el trabajo sustantivo establece el contexto necesario. Reutiliza respuestas explícitas y evidencias actuales; una lectura segura y acotada de código/documentación sin datos sensibles puede establecer hechos antes de preguntar. Pregunta al usuario por cada carencia pertinente que pueda cambiar la solución, sin repetir datos ya aportados. Agrupa preguntas en una tanda breve y comprensible; amplía solo cuando proceda:
+
+- Objetivo, aplicación existente y resultado esperado; diseño, auditoría, implementación o incidente y alcance permitido de cambios.
+- País/contexto escolar real y responsable del tratamiento; finalidad, personas afectadas, datos necesarios y uso sintético o real, práctica o registros oficiales.
+- Público, roles, dispositivos compartidos y necesidades de identidad/acceso; procedencia y verificación de registros existentes.
+- Almacenamiento, alojamiento, integraciones y destinatarios externos de IA u otros; conservación, supresión, recuperación y publicación pertinentes.
+- Artefactos saneados disponibles, entorno, stack, responsabilidad operativa y restricciones; qué se puede inspeccionar/cambiar y qué ejecución está autorizada.
+
+Pregunta solo por puntos aplicables. Una corrección pequeña de interfaz no requiere inventariar tratamientos ajenos. Si falta una respuesta decisiva, espera antes de la decisión de diseño, tratamiento o cambio dependiente; continúa solo inspección autorizada independiente o preparación sintética. No presupongas permiso, jurisdicción, datos reales ni alcance de publicación. Si el usuario no sabe, explica cómo averiguarlo y mantén el punto pendiente. Distingue aclaración necesaria de repetir aprobación ya concedida. Antes de continuar resume brevemente alcance entendido, supuestos relevantes y límites pendientes; el resumen no autoriza publicación ni acceso a producción.
+
 © 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
