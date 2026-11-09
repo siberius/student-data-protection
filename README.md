@@ -2,6 +2,10 @@
 
 [![Dokumentace](https://github.com/siberius/student-data-protection/actions/workflows/docs.yml/badge.svg)](https://github.com/siberius/student-data-protection/actions/workflows/docs.yml)
 
+> 📖 **Článek a rozbor na Vibemaker:** [Chrání vaše aplikace data žáků?](https://vibemaker.cz/clanek/bezpeci-dat-zaku/)
+
+[![Student Data Protection](docs/student-data-protection.gif)](https://vibemaker.cz/clanek/bezpeci-dat-zaku/)
+
 **Čeština:** [README.cs.md](README.cs.md) · **Czech guide:** [docs/ochrana-dat-zaku.md](docs/ochrana-dat-zaku.md)
 
 A practical guide for teachers, school IT staff, and anyone building school applications that collect, store, or share student data. It connects the applicable legal framework with a concrete, explicitly selected security profile and verifiable implementation controls.
