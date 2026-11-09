@@ -66,7 +66,7 @@ Verze 1.1, vydání 5. 11. 2026. Původní datum ověření zdrojů je 22. 10. 2
 
 Luděk Sušický
 
-biolog, středoškolský a vysokoškolský učitel informatických předmětů
+biolog, středoškolský a vysokoškolský učitel informatických předmětů · [@siberius na GitHubu](https://github.com/siberius)
 
 ## Licence
 

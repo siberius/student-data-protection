@@ -66,7 +66,7 @@ Version 1.1, edition of 5 November 2026. The original source-check date is 22 Oc
 
 Luděk Sušický
 
-biologist, secondary-school and university teacher of computing subjects
+biologist, secondary-school and university teacher of computing subjects · [@siberius on GitHub](https://github.com/siberius)
 
 ## License
 
