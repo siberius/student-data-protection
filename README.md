@@ -64,12 +64,12 @@ Version 1.1, edition of 5 November 2026. The original source-check date is 22 Oc
 
 ## Author
 
-**Luděk Sušický** — biologist, secondary-school and university teacher of computing subjects
+**Luděk Sušický**, biolog, secondary-school and university teacher of computing subjects
 
 - E-mail: [ludek.susicky@gmail.com](mailto:ludek.susicky@gmail.com)
 - X: [@ludeksusicky](https://x.com/ludeksusicky)
 - LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
-- GitHub: [@siberius](https://github.com/siberius) — more educational projects and open-source applications
+- GitHub: [@siberius](https://github.com/siberius): more educational projects and open-source applications
 
 ## License
 

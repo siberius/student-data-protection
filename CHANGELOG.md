@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased: style check fix (2026-11-11)
+
+- Replace em dashes in the English and Czech author blocks so `tools/check_text.py`
+  passes again.
+- No legal, security or acceptance content changed; reference regeneration and
+  link checks remain green.
+
 ## 1.1 revised edition (2026-11-05)
 
 - Add a necessary-context intake before substantive work, reusing supplied facts and waiting on consequential missing answers.

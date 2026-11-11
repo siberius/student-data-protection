@@ -64,12 +64,12 @@ Verze 1.1, vydání 5. 11. 2026. Původní datum ověření zdrojů je 22. 10. 2
 
 ## Autor
 
-**Luděk Sušický** — biolog, středoškolský a vysokoškolský učitel informatických předmětů
+**Luděk Sušický**, biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
 - E-mail: [ludek.susicky@gmail.com](mailto:ludek.susicky@gmail.com)
 - X: [@ludeksusicky](https://x.com/ludeksusicky)
 - LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
-- GitHub: [@siberius](https://github.com/siberius) — další vzdělávací projekty a otevřené aplikace
+- GitHub: [@siberius](https://github.com/siberius): další vzdělávací projekty a otevřené aplikace
 
 ## Licence
 
