@@ -8,3 +8,4 @@
   - GitHub metadata: Nastaveny klíčové topics (agent-skills, skills, ai-skills, claude-skills, edtech, data-protection, gdpr, ai-act, security, privacy) pro automatické indexování katalogů (Skills Directory, SkillsMP).
   - VoltAgent: Prověřena pravidla; podle správy portfolia (SKILLS-ROUTING.md) vyžaduje VoltAgent doloženou komunitní adopci, proto se nové skilly nenavrhují předčasně.
 - Ověření: Python testy referencí (build_skill_refs.py --check) prošly s 0 chybami, textový linter (tools/check_text.py) prošel bez závad.
+
