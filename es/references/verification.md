@@ -67,6 +67,8 @@ Realízalas solo en un entorno de pruebas autorizado con datos sintéticos. Prep
 | AT34 | Aporta mismo correo o nombre desde emisores o centros distintos y una declaración no confiable de papel de personal. | No fusiona cuentas silenciosamente ni concede pertenencia ajena o papel privilegiado. |
 | AT35 | Retira pertenencia SSO, revoca sesión local y simula caída del proveedor de identidad. | Los derechos retirados dejan de funcionar; caída no elude verificación ni MFA; alternativa y límites de propagación explícitos. |
 | AT36 | Inserta instrucciones de exfiltración en fuente o respuesta de IA, solicita destino no autorizado de herramienta y simula salida inválida o tiempo agotado. | Se mantienen límites de destino y datos fuera del prompt; sin escritura oficial ni nota inventada; se conservan trabajo y retroalimentación pendiente. |
+| AT37 | Prepara una exportación sintética de clase con 1 alumno con combinación única de cuasi-identificadores (k = 1), múltiples filas del mismo alumno y un grupo homogéneo con idéntica calificación (l = 1); prueba la supresión complementaria en tabla con totales. | La canalización rechaza la exportación directa: detecta k = 1 y falsa k-anonimidad por registros repetidos del mismo alumno, impone generalización o supresión a k >= 5 personas distintas, detecta riesgo de inferencia con l = 1 y suprime una celda complementaria al ocultar datos agrupados. |
+| AT38 | En modo tutor de IA no local 1:1 envía una respuesta de alumno que incluya en texto libre su nombre, teléfono y centro educativo; comprueba student_id en la petición API y la separación de la tabla de correspondencia. | La pasarela local de seudonimización retira student_id antes de llamar a la API externa, desinfecta PII en texto libre, conserva la tabla de correspondencia en la base local del centro y vincula la identidad solo tras retornar al servidor escolar. |
 
 ## 14. Entrega y límites de las afirmaciones
 
@@ -74,4 +76,4 @@ Al usar el skill, entrega cambios de aplicación, configuración, mapa de datos 
 
 OWASP, NIST y ENISA aportan orientación técnica y metodológica. No son automáticamente derecho vinculante en España ni normas armonizadas del Reglamento de IA que establezcan presunción de conformidad. Completar una lista no equivale a certificado RGPD, evaluación de conformidad de IA de alto riesgo ni garantía contra ataques. Informa de propiedades verificadas concretas y riesgos restantes; no afirmes «100 % conforme al RGPD» sin evidencia.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.2, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

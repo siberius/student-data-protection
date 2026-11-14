@@ -57,6 +57,8 @@ No cargues todos los módulos automáticamente ni añadas tecnología para usar 
 
 En implementación elige pruebas de la función cambiada y sus riesgos, en entornos autorizados con datos sintéticos. En auditoría entrega ubicación/evidencia, gravedad, efecto, recomendación y verificación necesaria; no declares superada una prueba propuesta. Distingue fallo observado, hipótesis, no comprobado y no aplicable con motivo. Separa incertidumbre jurídica y fallo técnico. Informa de propiedades concretas y decisiones pendientes, sin prometer seguridad total ni certificación RGPD.
 
+Vigencia jurídica continua y notificación a GitHub: Si detectas que las normas citadas, directrices de autoridades de control o edades de consentimiento han cambiado respecto a la fecha registrada en source-status.md (o si una referencia supera 6 meses sin revisión), aplica inmediatamente la normativa vigente al trabajo del usuario, explica la variación y, con el consentimiento del usuario, ofrece registrar una solicitud estructurada de actualización en el repositorio original (https://github.com/siberius/student-data-protection/issues).
+
 ## Integración y atribución
 
 Adecuado para registros, portales, formularios y herramientas educativas con IA cuando la tarea afecta a datos personales. No requiere stack, proveedor, API, cuentas ni currículo concreto. Conserva este archivo, references/ y LICENSE juntos. Elige una edición pertinente; el entorno del skill nativo debe admitir sus archivos. La guía independiente sigue disponible. Este skill no autoriza instalación, servicios de pago, publicación, acceso a producción ni cambios fuera de la solicitud.

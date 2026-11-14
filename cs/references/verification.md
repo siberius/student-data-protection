@@ -68,6 +68,8 @@ Prováděj pouze v autorizovaném testovacím prostředí se syntetickými daty.
 | AT34 | Předlož stejný e-mail/jméno od jiných vydavatelů či škol a nedůvěryhodnou zaměstnaneckou roli. | Účty se potichu nesloučí a cizí členství ani privilegium nevznikne. |
 | AT35 | Odeber členství SSO, revokuj místní relaci a simuluj výpadek identity provideru. | Odebraná práva v aplikaci končí, výpadek neobchází ověření či MFA; náhrada a případné lhůty přenosu změn jsou výslovné. |
 | AT36 | Do AI zdroje/odpovědi vlož pokyn k odtoku dat, požaduj nepovolený cíl nástroje a simuluj neplatný výstup či timeout. | Hranice cíle a dat platí mimo prompt; nevznikne autoritativní zápis ani vymyšlená známka; nerozhodnuté hodnocení a práce zůstanou zachované. |
+| AT37 | Připrav syntetický export třídy obsahující 1 žáka s unikátní kombinací kvazi-identifikátorů (k = 1), více řádků téhož žáka a malou skupinu se shodnou známkou (l = 1); otestuj komplementární supresi v tabulce se součty. | Pipeline odmítne přímý export: odhalí k = 1 i falešnou k-anonymitu z opakovaných záznamů téže osoby, vynuť generalizaci či supresi na k >= 5 distinct žáků, odhalí riziko odvození u l = 1 a při potlačení buňky v souhrnné tabulce potlačí i komplementární hodnotu. |
+| AT38 | V režimu 1:1 nelokálního AI tutora odešli odpověď žáka obsahující v textu jeho jméno, telefon a název školy; prověř přítomnost student_id v API požadavku a oddělení mapovací tabulky. | Lokální pseudonymizační brána před voláním externího API odstraní student_id z payloadu, rediguje PII ve volném textu žáka, mapovací tabulku drží v lokální DB školy a identitu žáka k odpovědi přiřadí až po návratu odpovědi na server školy. |
 
 ## 14. Podoba předání a hranice tvrzení
 
@@ -75,4 +77,4 @@ Při použití skillu předej změny aplikace, konfiguraci, mapu osobních dat, 
 
 OWASP, NIST a ENISA zde poskytují technická a metodická vodítka. Nejsou automaticky povinnými českými zákony ani harmonizovanými normami AI Actu zakládajícími domněnku shody. Splněný checklist není certifikát GDPR, posouzení shody high-risk AI ani záruka proti útoku. Reportuj konkrétní ověřené vlastnosti a zbývající rizika; netvrď bez podkladů „100% GDPR compliant“.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.2 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

@@ -18,8 +18,8 @@ Recommend one mode with a reason and, when useful, a simpler alternative. Combin
 | M2 Limited collection: event signup | Collect only fields needed for the event; protect receipt and access; set a purpose-based deletion trigger. Treat an unverified submission as pending. | Foreign-record access, unexpected writable fields, submission limits and deletion. A shared code alone cannot establish identity for official records. |
 | M3 Resume learning: saved practice progress | Keep minimum progress; use verified school identity for personal history. Assess any pseudonymous access mechanism against its consequences. | Another learner's history, shared-device logout, changed class membership and recovery. A pseudonym is not automatically anonymous. |
 | M4 Official records: grades or attendance | Verified identity, trusted authorisation, controlled writes, conflict handling, correction history and recoverable storage; retention follows the actual agenda. | Forged owner or grade, revoked access, concurrent edits and recovery. Do not copy a generic practice-data deletion period. |
-| M5 Teacher reports and exports | Scope access to assigned classes and purpose; aggregate when sufficient; minimise fields and recheck permission on download. | Foreign class, expired/revoked link, CSV formula injection, revealing filenames and the lifecycle of downloaded copies. |
-| M6 AI tutoring | First consider reviewed static explanations. If AI is needed, define approved recipients, minimise input, keep service keys server-side and validate output. | Retrieval permissions, actual outbound data, injection, outage, provider retention and deletion. Model output alone must not write an official grade. |
+| M5 Teacher reports and exports | Scope access to assigned classes and purpose; aggregate when sufficient; minimise fields and recheck permission on download; apply k-anonymity (k >= 5) and l-diversity (l >= 2) for cohort exports sent to non-local processing. | Foreign class, expired/revoked link, CSV formula injection, revealing filenames and the lifecycle of downloaded copies. |
+| M6 AI tutoring | First consider reviewed static explanations or local models (L0). For non-local AI, establish a local pseudonymisation gateway (C1) for 1:1 prompts and a k-anonymity/aggregation pipeline (C2) for 1:N cohort analytics. Require approved recipients, minimal inputs, server-held keys, and validated output. | Retrieval permissions, actual outbound data, injection, outage, provider retention and deletion. Model output alone must not write an official grade. |
 
 For object access enforcement, use [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html). The mode table and school examples are this guide's recommendations; they are not a claim that OWASP evaluated these applications.
 
@@ -53,6 +53,7 @@ Situation and goal:
 Recommended mode and reason:
 Necessary fields and data to avoid:
 Data flow, recipients and storage:
+AI mode and data preparation (L0 local / C1 pseudonymisation gateway / C2 k-anonymity k>=5, l>=2 / N/A):
 Identity and permissions:
 Retention, deletion and recovery:
 Concrete implementation steps:
@@ -73,4 +74,4 @@ Map current behaviour and evidence first, then deliver prioritised findings with
 
 An audit request authorises assessment, not application changes. Propose fixes unless implementation is already authorised; apply only that authorised scope. Record whether each item is proposed, implemented but unverified, verified with stated evidence, or unresolved. Run intrusive checks only in an authorised environment; without execution, provide a check plan. Do not mark the application safe for real use solely because the audit produced no finding.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.2, based on the original October 2026 guide. Preserve author, license and modification notices.

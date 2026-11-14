@@ -56,6 +56,8 @@ Vše nenačítej automaticky a nepřidávej technologii jen kvůli použití mod
 
 Při implementaci vybírej testy pro změněnou funkci a její rizika. Používej autorizované prostředí a syntetické záznamy. Při auditu předej místo/důkaz, závažnost, dopad, doporučení a potřebné ověření; navržený test nevydávej za úspěšný. Rozliš pozorované selhání, hypotézu, neověřeno a N/A s důvodem. Právní nejistotu odděl od technické chyby. Předej konkrétní ověřené vlastnosti a otevřená rozhodnutí, neslibuj stoprocentní bezpečnost či certifikát GDPR.
 
+Průběžná kontrola legislativy a upstream hlášení: Pokud zjistíš, že se citované právní předpisy, výklady dozorových úřadů či věkové hranice změnily oproti datu v source-status.md (nebo pokud od kontroly pramene uplynulo více než 6 měsíců), ihned v odpovědi uplatni aktuální právo, vysvětli rozdíl a se souhlasem uživatele nabídni založení strukturovaného hlášení na GitHubu repozitáře (https://github.com/siberius/student-data-protection/issues).
+
 ## Integrace a autorství
 
 Vhodné pro školní evidence, portály, formuláře a AI výukové nástroje, pokud úkol ovlivňuje osobní data. Nevyžaduje konkrétní stack, poskytovatele, API, účty ani národní kurikulum. Tento soubor, references/ a LICENSE zachovej pohromadě. Načti jednu relevantní jazykovou verzi; prostředí nativního skillu musí podporovat čtení souborů. Samostatný průvodce zůstává dostupný. Skill neopravňuje k instalaci, placeným službám, publikaci, produkčnímu přístupu ani změnám zpracování mimo zadání.

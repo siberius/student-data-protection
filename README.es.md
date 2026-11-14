@@ -1,8 +1,28 @@
 # Protección de los datos del alumnado
 
-Perfil práctico para diseñar, implementar o auditar aplicaciones escolares que tratan datos personales del alumnado, de sus representantes legales o del personal. Cubre el ciclo de vida de los datos, identidad y permisos, formularios y archivos, cifrado, sesiones, almacenamiento, conservación, recuperación e incidentes. Incluye orientación condicional para IA, RAG y SSO y 36 escenarios de aceptación.
+[![Skills.sh](https://img.shields.io/badge/skills.sh-Install-blue)](https://skills.sh/siberius/student-data-protection)
 
-**Versión 1.1, edición española para España de 5 de noviembre de 2026.** La comprobación original de fuentes de 22 de octubre de 2026 es histórica. Las revisiones específicas posteriores deben identificarse en el registro de fuentes; no equivalen a una auditoría jurídica completa nueva ni a pruebas ejecutadas de proveedores.
+## Instalación y uso rápido
+
+Instala la edición que utilices en tu asistente de código (Claude Code, Cursor, Codex, Antigravity, OpenCode, Cline y otros) mediante la CLI de [skills.sh](https://skills.sh):
+
+```bash
+# Instalación de la edición en español (España / UE)
+npx skills add siberius/student-data-protection --skill proteccion-datos-alumnado --full-depth -g -a codex
+
+# O listar todas las 7 ediciones disponibles
+npx skills add siberius/student-data-protection --full-depth --list
+```
+
+Para probar el skill de forma temporal:
+
+```bash
+npx skills use siberius/student-data-protection --skill proteccion-datos-alumnado --full-depth --agent codex
+```
+
+Perfil práctico para diseñar, implementar o auditar aplicaciones escolares que tratan datos personales del alumnado, de sus representantes legales o del personal. Cubre el ciclo de vida de los datos, identidad y permisos, formularios y archivos, cifrado, sesiones, almacenamiento, conservación, recuperación e incidentes. Incluye orientación condicional para IA, RAG, SSO, k-anonimidad y 38 escenarios de aceptación.
+
+**Versión 1.2, edición española para España de 14 de noviembre de 2026.** La comprobación original de fuentes de 22 de octubre de 2026 es histórica. Las revisiones específicas posteriores deben identificarse en el registro de fuentes; no equivalen a una auditoría jurídica completa nueva ni a pruebas ejecutadas de proveedores.
 
 Antes del trabajo sustantivo el skill establece el contexto y pregunta por información decisiva pendiente. Reutiliza hechos y permisos aportados; las preguntas decisivas sin respuesta detienen solo el trabajo dependiente. La [entrada del procedimiento](es/references/workflow.md) cubre alcance, datos, público, destinatarios, ciclo de vida y entorno pertinentes.
 
@@ -18,6 +38,18 @@ La guía completa conserva su uso independiente; no la cargues junto con todas l
 
 - Paquete nativo: [es/SKILL.md](es/SKILL.md), acompañado de sus referencias. Conserva juntos los archivos y utiliza el mecanismo admitido por tu agente. Un archivo en disco no garantiza descubrimiento ni uso.
 - Documento independiente: [docs/proteccion-datos-alumnado.md](docs/proteccion-datos-alumnado.md). Contiene el perfil completo en español para un agente que pueda recibir instrucciones Markdown directamente.
+
+## Ediciones disponibles y skills nativos
+
+| Idioma / Jurisdicción | Skill nativo | Guía independiente | Registro de fuentes | Readme |
+|---|---|---|---|---|
+| **Español (España / UE)** | [es/SKILL.md](es/SKILL.md) | [docs/proteccion-datos-alumnado.md](docs/proteccion-datos-alumnado.md) | [docs/registro-fuentes.md](docs/registro-fuentes.md) | [README.es.md](README.es.md) |
+| **Čeština (Chequia / UE)** | [cs/SKILL.md](cs/SKILL.md) | [docs/ochrana-dat-zaku.md](docs/ochrana-dat-zaku.md) | [docs/registr-zdroju.md](docs/registr-zdroju.md) | [README.cs.md](README.cs.md) |
+| **English (UE / Contexto checo)** | [SKILL.md](SKILL.md) | [docs/student-data-protection.md](docs/student-data-protection.md) | [docs/source-register.md](docs/source-register.md) | [README.md](README.md) |
+| **Polski (Polonia / UE)** | [pl/SKILL.md](pl/SKILL.md) | [docs/ochrana-danych-uczniow.md](docs/ochrana-danych-uczniow.md) | [docs/rejestr-zrodel.md](docs/rejestr-zrodel.md) | [README.pl.md](README.pl.md) |
+| **Українська (Ucrania / UE)** | [uk/SKILL.md](uk/SKILL.md) | [docs/zakhyst-danykh-uchniv.md](docs/zakhyst-danykh-uchniv.md) | [docs/reiestr-dzherel.md](docs/reiestr-dzherel.md) | [README.uk.md](README.uk.md) |
+| **Deutsch (Alemania / UE)** | [de/SKILL.md](de/SKILL.md) | [docs/schuelerdatenschutz.md](docs/schuelerdatenschutz.md) | [docs/quellenregister.md](docs/quellenregister.md) | [README.de.md](README.de.md) |
+| **Français (Francia / UE)** | [fr/SKILL.md](fr/SKILL.md) | [docs/protection-donnees-eleves.md](docs/protection-donnees-eleves.md) | [docs/registre-sources.md](docs/registre-sources.md) | [README.fr.md](README.fr.md) |
 
 Utiliza un formato adecuado a tu entorno. No hace falta cargar ambas versiones a la vez. Leer esta guía no instala software, cambia el proyecto, crea cuentas ni autoriza enviar datos, utilizar servicios de pago o publicar contenido.
 

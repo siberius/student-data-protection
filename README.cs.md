@@ -1,5 +1,6 @@
 # Ochrana dat žáků ve školních aplikacích
 
+[![Skills.sh](https://img.shields.io/badge/skills.sh-Install-blue)](https://skills.sh/siberius/student-data-protection)
 [![Dokumentace](https://github.com/siberius/student-data-protection/actions/workflows/docs.yml/badge.svg)](https://github.com/siberius/student-data-protection/actions/workflows/docs.yml)
 
 > 📖 **Článek a rozbor na Vibemaker:** [Chrání vaše aplikace data žáků?](https://vibemaker.cz/clanek/bezpeci-dat-zaku/)
@@ -7,6 +8,27 @@
 [![Bezpečí dat žáků](docs/student-data-protection.gif)](https://vibemaker.cz/clanek/bezpeci-dat-zaku/)
 
 **English:** [README.md](README.md) · **Anglická verze průvodce:** [docs/student-data-protection.md](docs/student-data-protection.md)
+
+## Instalace a rychlé spuštění
+
+Nainstaluj vybranou jazykovou variantu do svého AI asistenta (Claude Code, Cursor, Codex, Antigravity, OpenCode, Cline aj.) přes CLI standard [skills.sh](https://skills.sh):
+
+```bash
+# Instalace české varianty (pro české ZŠ a SŠ)
+npx skills add siberius/student-data-protection --skill ochrana-dat-zaku --full-depth -g -a codex
+
+# Nebo instalace mezinárodní anglické verze
+npx skills add siberius/student-data-protection --skill student-data-protection --full-depth -g -a codex
+
+# Výpis všech 7 dostupných jazykových variant
+npx skills add siberius/student-data-protection --full-depth --list
+```
+
+Bez `--agent` příkaz `skills use` vypíše připravený prompt. Pro dočasné spuštění podporovaného asistenta se skillem:
+
+```bash
+npx skills use siberius/student-data-protection --skill ochrana-dat-zaku --full-depth --agent codex
+```
 
 Praktický průvodce pro učitele, školní IT a každého, kdo staví školní aplikace, které pracují s údaji žáků. Propojuje použitelný právní rámec s výslovně zvoleným bezpečnostním profilem a ověřitelnými implementačními kontrolami.
 
@@ -22,7 +44,19 @@ Kompletní průvodce zůstává samostatnou čtenářskou verzí; nenačítej je
 
 **Rozsah české/anglické verze:** české prostředí základních a středních škol (ZŠ a SŠ). **Časové vymezení:** říjen 2026. Uvedené datum ověření právních zdrojů je 22. 10. 2026; upřesnění rozsahu ze dne 30. 10. 2026 nepředstavuje nové právní ověření. Před pozdějším použitím zkontrolujte aktuálnost předpisů a jejich použitelnost v konkrétní škole.
 
-Česká a anglická verze jsou určeny českým ZŠ a SŠ, nikoli mateřským či vysokým školám. Španělská verze je samostatnou adaptací pro Španělsko; nepřenáší české právo do jiného státu.
+Česká a anglická verze jsou určeny českým ZŠ a SŠ, nikoli mateřským či vysokým školám. Španělská, polská, ukrajinská, německá a francouzská verze jsou samostatnými adaptacemi pro příslušné právní řády, nikoli pouhým přenesením českého práva.
+
+## Dostupné jazykové verze a nativní skilly
+
+| Jazyk / Jurisdikce | Nativní skill | Samostatný průvodce | Registr zdrojů | Readme |
+|---|---|---|---|---|
+| **Čeština (Česko / EU)** | [cs/SKILL.md](cs/SKILL.md) | [docs/ochrana-dat-zaku.md](docs/ochrana-dat-zaku.md) | [docs/registr-zdroju.md](docs/registr-zdroju.md) | [README.cs.md](README.cs.md) |
+| **English (EU / Czech context)** | [SKILL.md](SKILL.md) | [docs/student-data-protection.md](docs/student-data-protection.md) | [docs/source-register.md](docs/source-register.md) | [README.md](README.md) |
+| **Español (España / UE)** | [es/SKILL.md](es/SKILL.md) | [docs/proteccion-datos-alumnado.md](docs/proteccion-datos-alumnado.md) | [docs/registro-fuentes.md](docs/registro-fuentes.md) | [README.es.md](README.es.md) |
+| **Polski (Polska / UE)** | [pl/SKILL.md](pl/SKILL.md) | [docs/ochrana-danych-uczniow.md](docs/ochrana-danych-uczniow.md) | [docs/rejestr-zrodel.md](docs/rejestr-zrodel.md) | [README.pl.md](README.pl.md) |
+| **Українська (Україна / ЄС)** | [uk/SKILL.md](uk/SKILL.md) | [docs/zakhyst-danykh-uchniv.md](docs/zakhyst-danykh-uchniv.md) | [docs/reiestr-dzherel.md](docs/reiestr-dzherel.md) | [README.uk.md](README.uk.md) |
+| **Deutsch (Deutschland / EU)** | [de/SKILL.md](de/SKILL.md) | [docs/schuelerdatenschutz.md](docs/schuelerdatenschutz.md) | [docs/quellenregister.md](docs/quellenregister.md) | [README.de.md](README.de.md) |
+| **Français (France / UE)** | [fr/SKILL.md](fr/SKILL.md) | [docs/protection-donnees-eleves.md](docs/protection-donnees-eleves.md) | [docs/registre-sources.md](docs/registre-sources.md) | [README.fr.md](README.fr.md) |
 
 ## Co v průvodci najdete
 
@@ -35,7 +69,8 @@ Kompletní průvodce zůstává samostatnou čtenářskou verzí; nenačítej je
 - audit, retenci, zálohy a obnovu
 - reakci na incidenty a lhůtu 72 hodin
 - AI Act: rozsah, zakázané praktiky, high-risk použití ve vzdělávání, časovou osu
-- checklist před produkcí a 36 přijímacích scénářů včetně podmíněných kontrol AI/RAG a SSO
+- rozlišení lokální a nelokální AI (L0/C1/C2), k-anonymita (k >= 5) a l-diverzita (l >= 2) s deterministickou kontrolou skriptem
+- checklist před produkcí a 38 přijímacích scénářů včetně podmíněných kontrol AI/RAG, SSO a nelokální AI
 
 ## Nativní skill a samostatný průvodce
 
@@ -60,7 +95,7 @@ Není to právní posudek ani certifikát. Splněný checklist nedokazuje soulad
 
 ## Zdroje a verze
 
-Verze 1.1, vydání 5. 11. 2026. Původní datum ověření zdrojů je 22. 10. 2026. Dílčí doplnění byla ověřena 5. 11. 2026; nejde o nový úplný právní audit. Viz [registr zdrojů](docs/registr-zdroju.md). Průvodce odkazuje na GDPR, AI Act Service Desk, ÚOOÚ, EDPB, OWASP, NIST, ENISA a dokumentaci SQLite.
+Verze 1.2, vydání 14. 11. 2026. Ochrana pro nelokální AI, k-anonymita (k >= 5), l-diverzita (l >= 2) a deterministická kontrola skriptem doplněny 14. 11. 2026. Původní datum ověření zdrojů je 22. 10. 2026. Viz [registr zdrojů](docs/registr-zdroju.md). Průvodce odkazuje na GDPR, AI Act Service Desk, ÚOOÚ, EDPB, OWASP, NIST, ENISA a dokumentaci SQLite.
 
 ## Autor
 

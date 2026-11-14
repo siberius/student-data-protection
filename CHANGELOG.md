@@ -1,11 +1,21 @@
 # Changelog
 
-## Unreleased: style check fix (2026-11-11)
+## 1.2 (2026-11-14)
 
-- Replace em dashes in the English and Czech author blocks so `tools/check_text.py`
-  passes again.
-- No legal, security or acceptance content changed; reference regeneration and
-  link checks remain green.
+- Add non-local AI boundary guards: distinguish local/in-browser models (L0), 1:1 individual pseudonymisation domains (C1), and 1:N cohort analytics/exports (C2).
+- Integrate k-anonymity (default k >= 5 distinct learners) and l-diversity (l >= 2) with complementary suppression (PTAC) and row shuffling (AEPD) to prevent singling out, linkability, and inference under EDPB Guidelines 02/2026 on Anonymisation.
+- Add local pseudonymisation gateway requirements for 1:1 AI tutoring and feedback under EDPB Guidelines 01/2025 on Pseudonymisation, keeping lookup tables on school servers and redacting free-text PII.
+- Add deterministic validation script `scripts/check_k_anonymity.py` without external dependencies to evaluate CSV/JSON exports without chat context bloat.
+- Expand source registers with 8 authoritative sources: EDPB Guidelines 02/2026 (Anonymisation), EDPB Guidelines 01/2025 (Pseudonymisation), EDPB Opinion 28/2024 (AI Models), AEPD K-Anonymity Note & Guide, NIST SP 800-188, NIST AI 600-1, US DoE PTAC, and Czech MSMT/NPI AI guidance.
+- Add behavioral test BE09 and acceptance tests AT37 (k-anonymity/l-diversity/suppression) and AT38 (local pseudonymisation gateway).
+- Add continuous legal freshness checks (> 6 months) and an upstream GitHub feedback loop to report statutory amendments to https://github.com/siberius/student-data-protection/issues with user consent.
+- Add Section 2.4 comparative legal overview and age threshold matrix covering Germany (BDSG/DSK), France (CNIL/ENT), Poland (UODO), and Ukraine (Mrija/Draft Law 8153).
+- Synchronize English, Czech, and Spanish editions across standalone guides and modular native references.
+- Add four full language editions with complete standalone guides, legal registers, evaluation suites, native skills, and localized documentation:
+  - Polish edition (`pl`): `docs/ochrana-danych-uczniow.md`, `pl/SKILL.md`, `README.pl.md`, adapted to Polish UODO, Prawo oświatowe, and 16-year age threshold.
+  - Ukrainian edition (`uk`): `docs/zakhyst-danykh-uchniv.md`, `uk/SKILL.md`, `README.uk.md`, adapted to Ukrainian Law No. 2297-VI, Draft Law 8153, Mrija ecosystem, and displaced pupils in the EU.
+  - German edition (`de`): `docs/schuelerdatenschutz.md`, `de/SKILL.md`, `README.de.md`, adapted to BDSG § 16, 16 state school laws, and DSK rulings favoring local L0 execution.
+  - French edition (`fr`): `docs/protection-donnees-eleves.md`, `fr/SKILL.md`, `README.fr.md`, adapted to Loi Informatique et Libertés (15-year threshold), CNIL doctrines, and ENT/GAR platforms.
 
 ## 1.1 revised edition (2026-11-05)
 

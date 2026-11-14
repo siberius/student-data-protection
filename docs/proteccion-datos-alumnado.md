@@ -50,6 +50,14 @@ Antes de iniciar el trabajo sustantivo establece el contexto necesario. Reutiliz
 
 Pregunta solo por puntos aplicables. Una corrección pequeña de interfaz no requiere inventariar tratamientos ajenos. Si falta una respuesta decisiva, espera antes de la decisión de diseño, tratamiento o cambio dependiente; continúa solo inspección autorizada independiente o preparación sintética. No presupongas permiso, jurisdicción, datos reales ni alcance de publicación. Si el usuario no sabe, explica cómo averiguarlo y mantén el punto pendiente. Distingue aclaración necesaria de repetir aprobación ya concedida. Antes de continuar resume brevemente alcance entendido, supuestos relevantes y límites pendientes; el resumen no autoriza publicación ni acceso a producción.
 
+### 1.4 Control continuo de vigencia jurídica y notificación a GitHub
+
+El skill registra el estado y las fechas de verificación de las fuentes jurídicas en el registro de fuentes. Las normas y criterios de las autoridades evolucionan. Si el asistente detecta que una referencia activa supera los 6 meses sin revisión o identifica una modificación normativa (como reformas de leyes educativas, directrices finales del CEPD, resoluciones de la AEPD o cambios en edades de consentimiento):
+
+1. **Adaptación inmediata para el usuario:** El asistente no espera a una nueva versión del skill. Aplica de inmediato la normativa vigente a la tarea en curso y explica con transparencia la variación respecto al registro histórico.
+2. **Petición de consentimiento:** Al final de la respuesta, el asistente propone: *«Esta modificación normativa aún no está recogida en el repositorio oficial de student-data-protection. ¿Desea que, con su consentimiento, prepare una incidencia (Issue) en el GitHub del autor (@siberius)?»*
+3. **Creación de la incidencia en GitHub:** Si el usuario acepta, el asistente registra la Issue en `https://github.com/siberius/student-data-protection` mediante las herramientas disponibles (GitHub CLI `gh issue create` o MCP de GitHub). Si no hay credenciales activas, facilita el texto formateado en Markdown junto con el enlace directo para su apertura en un clic.
+
 ## 2. RGPD y marco español
 
 ### 2.1 Datos personales y categorías especiales
@@ -76,6 +84,27 @@ Fuentes locales: [LOPDGDD, Ley Orgánica 3/2018](https://www.boe.es/buscar/act.p
 [Z] Prepara información comprensible de los artículos 12–14: responsable y DPD, fines, bases, destinatarios, transferencias, conservación, derechos, reclamación y decisiones automatizadas relevantes. Asegura acceso, rectificación, limitación y demás derechos aplicables; la supresión no es absoluta y la portabilidad no cubre automáticamente todo expediente escolar. Verifica la identidad proporcionalmente sin recopilar copias de documentos de forma indiscriminada. El plazo general de respuesta es un mes; una ampliación exige sus condiciones y comunicación. Evalúa el artículo 22 para decisiones exclusivamente automatizadas de efecto jurídico o similar, incluso sin IA; un clic docente formal no demuestra revisión humana significativa.
 
 [Z] El RGPD no exige por sí solo alojamiento exclusivamente español o europeo. Evalúa transferencias fuera del EEE, incluido soporte remoto y subencargados. [P] El perfil estricto utiliza alojamiento y copias en el EEE; una alternativa requiere mecanismo válido, evaluación y medidas adicionales cuando procedan. La ubicación no sustituye comprobar los flujos. El criterio de una autoridad es orientación, no certificación del producto.
+
+
+### 2.4 Marco comparativo de jurisdicciones nacionales y edades de consentimiento [Z/P]
+
+Al diseñar una aplicación escolar o integrar un modelo de IA, determina siempre la jurisdicción real del centro docente y de su alumnado. El idioma de la interfaz no define por sí solo el derecho aplicable. El art. 8 del RGPD permite a los Estados miembros fijar la edad de consentimiento digital entre los 13 y los 16 años; la normativa educativa y el criterio de las autoridades de control respecto a la nube y la IA presentan notables divergencias nacionales:
+
+| País / Jurisdicción | Edad art. 8 RGPD | Autoridad de Control | Normativa Educativa y Restricciones de Nube / IA |
+|---|---|---|---|
+| **España (ES)** | 14 años (LOPDGDD art. 7) | AEPD + agencias autonómicas | LOE (DA 23); notas técnicas de la AEPD sobre k-anonimidad y obligatoriedad de DPD en centros docentes (art. 34.1.b LOPDGDD). |
+| **Chequia (CZ)** | 15 años (Ley 110/2019) | ÚOOÚ | Ley de Educación 561/2004 (§ 28); enfoque pragmático para nubes licenciadas; orientaciones del ministerio MŠMT y NPI (AIDIG). |
+| **Alemania (DE)** | 16 años (BDSG § 16) | DSK + 16 autoridades estatales (LfDI, BayLDA, LDI) | 16 leyes educativas estatales; prohibiciones o fuertes restricciones a nubes comerciales de EE. UU. (M365, Google); EIPD (DSFA) obligatoria para IA. |
+| **Francia (FR)** | 15 años (Loi Informatique et Libertés) | CNIL | Code de l'éducation; plataformas públicas ENT; circulares ministeriales contra nubes estadounidenses gratuitas; directrices CNIL contra cuentas de aula que revelan identidades. |
+| **Polonia (PL)** | 16 años (Ley de Protección de Datos 2018) | UODO | Prawo oświatowe; responsabilidad del director del centro como responsable; prohibición de introducir PII en IA sin contrato del art. 28; prohibición judicial de biometría en centros. |
+| **Ucrania (UA)** | 14-18 años (capacidad parcial según CC) | Comisionado del Parlamento (Defensor del Pueblo) | Ley 2297-VI y proyecto de ley 8153 armonizado con RGPD; ecosistema estatal Mrija; el alumnado refugiado en la UE se rige íntegramente por el RGPD. |
+
+#### Reglas de Implementación Transfronteriza y Específica por País
+
+1. **Despliegues en Alemania (Prioridad Local Absoluta):** [Z] Para centros alemanes, aplica el límite de 16 años y la descentralización de 16 estados federales. Siguiendo los acuerdos de la DSK sobre Microsoft 365 y Copilot, prioriza el tratamiento estrictamente local (L0) en servidores escolares o código abierto (Moodle, IServ). Toda salida de datos requiere una rigurosa EIPD (DSFA) sin telemetría.
+2. **Despliegues en Francia (Soberanía y Protección frente a la Identificación):** [Z] En centros franceses respeta la edad de 15 años y las directrices sobre entornos ENT. En despliegues de IA sigue las recomendaciones de la CNIL: prohíbe cuentas genéricas de aula donde los alumnos introduzcan cuasi-identificadores en sus consultas, y garantiza que las notas no dependan exclusivamente del modelo sin revisión docente.
+3. **Despliegues en Polonia (Responsabilidad Directiva y Prohibición de Biometría):** [Z] En Polonia la responsabilidad jurídica recae íntegramente en la dirección del centro. El profesorado no puede dar de alta herramientas de IA sin contrato formal de encargo (art. 28 RGPD). Respeta la edad de 16 años y la prohibición judicial tajante de lectores biométricos en colegios.
+4. **Despliegues en Ucrania (Integración en la UE y Estándares Europeos):** [Z] Para el alumnado ucraniano en centros escolares de la UE rige plenamente el RGPD europeo y la legislación de acogida. Para software desarrollado para el sistema ucraniano, ajusta el diseño al proyecto de ley 8153, a la plataforma Mrija y a la desidentificación obligatoria previa al uso de IA.
 
 ## 3. Reglamento de IA: aplicabilidad, clasificación y fechas
 
@@ -383,6 +412,8 @@ Realízalas solo en un entorno de pruebas autorizado con datos sintéticos. Prep
 | AT34 | Aporta mismo correo o nombre desde emisores o centros distintos y una declaración no confiable de papel de personal. | No fusiona cuentas silenciosamente ni concede pertenencia ajena o papel privilegiado. |
 | AT35 | Retira pertenencia SSO, revoca sesión local y simula caída del proveedor de identidad. | Los derechos retirados dejan de funcionar; caída no elude verificación ni MFA; alternativa y límites de propagación explícitos. |
 | AT36 | Inserta instrucciones de exfiltración en fuente o respuesta de IA, solicita destino no autorizado de herramienta y simula salida inválida o tiempo agotado. | Se mantienen límites de destino y datos fuera del prompt; sin escritura oficial ni nota inventada; se conservan trabajo y retroalimentación pendiente. |
+| AT37 | Prepara una exportación sintética de clase con 1 alumno con combinación única de cuasi-identificadores (k = 1), múltiples filas del mismo alumno y un grupo homogéneo con idéntica calificación (l = 1); prueba la supresión complementaria en tabla con totales. | La canalización rechaza la exportación directa: detecta k = 1 y falsa k-anonimidad por registros repetidos del mismo alumno, impone generalización o supresión a k >= 5 personas distintas, detecta riesgo de inferencia con l = 1 y suprime una celda complementaria al ocultar datos agrupados. |
+| AT38 | En modo tutor de IA no local 1:1 envía una respuesta de alumno que incluya en texto libre su nombre, teléfono y centro educativo; comprueba student_id en la petición API y la separación de la tabla de correspondencia. | La pasarela local de seudonimización retira student_id antes de llamar a la API externa, desinfecta PII en texto libre, conserva la tabla de correspondencia en la base local del centro y vincula la identidad solo tras retornar al servidor escolar. |
 
 ## 14. Entrega y límites de las afirmaciones
 
@@ -418,7 +449,25 @@ Si el modelo no está disponible o no se valida su salida, conserva trabajo y ma
 
 Orientación técnica: [OWASP RAG Security](https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html). Son controles de implementación, no sustituyen la clasificación jurídica y evaluación del proveedor separadas.
 
-## 16. Identificación federada escolar y SSO [P]
+### 15.4 Salvaguardas arquitectónicas para modelos de IA locales y no locales y k-anonimidad [P/Z]
+
+Cuando el creador proponga integrar un modelo de IA, distingue primero si el modelo se ejecuta **localmente en el perímetro del responsable (L0)** o si es un **modelo no local (en la nube / externo) (C1/C2)**. Con modelos no locales, alerta proactivamente de que debe establecerse una capa de transformación intermedia en la aplicación antes de transmitir datos fuera del centro escolar:
+
+| Modo arquitectónico de IA | Características del flujo | Salvaguardas obligatorias de preparación de datos [P] |
+|---|---|---|
+| **L0: IA local / en navegador** (modelo local en servidor escolar o navegador sin telemetría externa) | Los datos no salen del dispositivo ni del servidor del centro; sin destinatarios externos. | No requiere k-anonimidad externa ni contrato del art. 28 RGPD. Aplica permisos locales (sección 6) y limpia memoria/caché en equipos compartidos al cerrar sesión (sección 9). |
+| **C1: IA no local - Interacción individual (1:1)** (retroalimentación a la tarea de un alumno) | La consulta atañe a un único alumno; la k-anonimidad matemática no puede aplicarse a una petición aislada. | Crea una **pasarela de seudonimización local** (EDPB 01/2025): 1. Elimina identificadores directos (`nombre`, `correo`, `student_id`, `aula`). 2. Conserva la tabla de correspondencia (`lookup table`) exclusivamente en la base de datos local del centro. 3. Desinfecta el texto libre de PII (nombres, contactos, denominación del centro). 4. Utiliza llamadas sin estado con retención cero verificada con el proveedor. |
+| **C2: IA no local - Analítica de aula / grupo y exportaciones (1:N)** (análisis de tendencias, predicción de abandono, RAG grupal) | Se envían registros de múltiples alumnos. En un aula pequeña la seudonimización simple (`Alumno_01`) fracasa. | Crea una **canalización de agregación o k-anonimidad** (EDPB 02/2026, AEPD): 1. Prioriza el envío de **resúmenes agregados** (medias, distribución de errores sin microdatos individuales). 2. Si se requieren registros individuales, impone **k-anonimidad (`k >= 5` personas distintas)** y **l-diversidad (`l >= 2` valores sensibles distintos)** por clase de equivalencia. |
+
+#### Reglas para la canalización de k-anonimidad en IA no local y exportaciones (Modos C2 y M5)
+
+1. **Clasificación de atributos antes de transformar:** Los identificadores directos (`nombre`, `DNI/NIE`, `correo`, `teléfono`, `student_id`, `device_id`, `voz`, `foto`) se eliminan obligatoriamente (no utilices hash simple, que sigue siendo dato personal y permite correlación). Para cuasi-identificadores (`aula`, `fecha de nacimiento / edad`, `género`, `NEE/ACNEAE`, `municipio / CP`, `marca temporal`), aplica **generalización** (p. ej., `3º ESO B` -> `ESO`; `14 años` -> `13-16 años`; `hora exacta` -> `semana/mes`). Para atributos sensibles u objetivo (`calificación`, `tipo de error`, `evaluación cualitativa`, `informe psicopedagógico`), verifica la diversidad del grupo.
+2. **Contra el aislamiento de registros (No Record Isolation -> k-anonimidad):** Agrupa los registros según todos los cuasi-identificadores. Cada grupo (clase de equivalencia) DEBE incluir registros de al menos **5 personas físicas distintas (`k >= 5` calculado mediante `COUNT(DISTINCT student_id)`)**. Si un alumno tiene varias filas (serie temporal de intentos), 5 filas del mismo alumno NO constituyen `k = 5`. Los grupos con `k < 5` deben generalizarse más o suprimirse permanentemente (**supresión de registros / record suppression**).
+3. **Contra la correlación de registros (No Linkage):** Mezcla aleatoriamente el orden de las filas (**permutación / shuffling**) antes de exportar para impedir la identificación por orden alfabético o de registro. En tablas resumen con totales de fila y columna, aplica **supresión complementaria** (PTAC) para que una celda con `k < 5` no pueda deducirse por resta de totales.
+4. **Contra la inferencia (No Inference -> l-diversidad):** Si todos los alumnos de una clase de equivalencia comparten el mismo valor sensible (`l = 1`, p. ej., todos obtienen calificación insuficiente o comparten la misma adaptación curricular), se revela el dato sensible mediante ataque por homogeneidad. Exige al menos **`l >= 2` valores distintos** del atributo objetivo en cada grupo, o fusiona la clase con una categoría superior.
+5. **Límite jurídico (Perspectiva del encargado según EDPB 02/2026 y Dictamen 28/2024):** [Z] Si el proveedor de IA no local trata datos por cuenta del centro (encargado según art. 28 RGPD) y el centro conserva los datos identificados originales, la naturaleza de los datos se valora desde la perspectiva del responsable. La k-anonimidad técnica no exime de suscribir el contrato de encargo ni de comprobar la edad de consentimiento (en España, art. 7 LOPDGDD fija 14 años; condiciones de OpenAI y Google exigen a partir de 13 años con consentimiento de tutores). La k-anonimidad actúa como salvaguarda técnica esencial para mitigar el impacto (arts. 25 y 32 RGPD).
+
+## 16. Autenticación federada escolar y SSO [P]
 
 Aplica solo donde se use proveedor de identidad. No sustituyas un acceso funcional solo para introducir SSO. Utiliza biblioteca de protocolo mantenida e instrucciones actuales del proveedor; la autorización OAuth por sí sola no demuestra identidad.
 
@@ -450,8 +499,8 @@ Recomienda un modo con motivo y, cuando sirva, una alternativa más sencilla. Co
 | M2 Recogida limitada: inscripción en una actividad | Solo campos necesarios; recepción y acceso protegidos; evento de supresión según finalidad. Un envío no verificado queda pendiente. | Acceso a registros ajenos, campos modificables inesperados, límites de envío y supresión. Un código compartido no acredita identidad para registros oficiales. |
 | M3 Continuidad del aprendizaje: progreso guardado | Progreso mínimo; identidad escolar verificada para el historial personal. Evalúa el acceso seudónimo según las consecuencias de su abuso. | Historial ajeno, cierre en dispositivo compartido, cambios de grupo y recuperación. Un seudónimo no es automáticamente anónimo. |
 | M4 Registros oficiales: notas o asistencia | Identidad verificada, autorización fiable, escrituras controladas, concurrencia, historial de rectificaciones y almacenamiento recuperable; conservación según la gestión concreta. | Titular o nota falsificados, acceso revocado, ediciones simultáneas y restauración. No copies un plazo genérico de borrado de ejercicios. |
-| M5 Informes docentes y exportaciones | Acceso por grupos asignados y finalidad; agregación cuando baste; campos mínimos y nueva comprobación de permisos al descargar. | Grupo ajeno, enlace caducado/revocado, fórmulas en CSV, nombres reveladores y ciclo de vida de copias descargadas. |
-| M6 Tutor con IA | Considera primero explicaciones estáticas revisadas. Si hace falta IA, define destinatarios aprobados, entrada mínima, claves en servidor y salida validada. | Permisos de recuperación, datos realmente enviados, inyección, caída, conservación y supresión del proveedor. La salida del modelo por sí sola no escribe una nota oficial. |
+| M5 Informes docentes y exportaciones | Acceso por grupos asignados y finalidad; agregación cuando baste; campos mínimos y nueva comprobación de permisos al descargar; en exportaciones grupales para tratamiento no local aplica k-anonimidad (k >= 5) y l-diversidad (l >= 2). | Grupo ajeno, enlace caducado/revocado, fórmulas en CSV, nombres reveladores y ciclo de vida de copias descargadas. |
+| M6 Tutor con IA | Valora primero explicaciones estáticas revisadas o modelos locales (L0). Para IA no local establece una pasarela de seudonimización local (C1) en consultas 1:1 y una canalización de k-anonimidad/agregación (C2) para analítica 1:N. La IA necesaria cuenta con destinatarios autorizados, entrada mínima, claves en servidor y salida validada. | Permisos de recuperación, datos realmente enviados, inyección, caída, conservación y supresión del proveedor. La salida del modelo por sí sola no escribe una nota oficial. |
 
 Para permisos sobre objetos consulta [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html). La tabla y los ejemplos escolares son recomendaciones de esta guía; no afirman que OWASP haya evaluado esas aplicaciones.
 
@@ -485,6 +534,7 @@ Situación y objetivo:
 Modo recomendado y motivo:
 Datos necesarios y datos que evitar:
 Flujo, destinatarios y almacenamiento:
+Modo de IA y preparación de datos (L0 local / C1 pasarela de seudonimización / C2 k-anonimidad k>=5, l>=2 / N/A):
 Identidad y permisos:
 Conservación, supresión y recuperación:
 Pasos concretos de implementación:

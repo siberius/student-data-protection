@@ -76,4 +76,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.2 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

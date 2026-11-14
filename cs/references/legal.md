@@ -31,4 +31,25 @@ Prameny k tabulce: [ÚOOÚ: školství](https://uoou.gov.cz/profesional/qa-otazk
 
 [Z] GDPR obecně nenařizuje výhradně český ani unijní hosting. Předávání mimo EHP vyhodnoť podle kapitoly V, včetně vzdálené podpory a subdodavatelů. [P] Výchozí profil používá EHP hosting i zálohy; odchylku dolož použitelným mechanismem, případným posouzením předání a doplňkovými opatřeními. ÚOOÚ/EDPB metodiky jsou výkladové podklady, nikoli samostatná certifikace výrobku. [EDPB: role a mezinárodní předávání](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+
+### 2.4 Srovnávací přehled národních jurisdikcí a věkových hranic [Z/P]
+
+Při návrhu školní aplikace nebo integraci AI modelu vždy ověř skutečnou jurisdikci školy a cílové skupiny žáků. Jazyk rozhraní sám o sobě neurčuje použitelné národní právo. GDPR v čl. 8 dává členským státům možnost upravit věkovou hranici pro samostatný digitální souhlas dětí v rozmezí 13 až 16 let; školské zákony a postoje národních dozorových úřadů k externím cloudům a AI se v jednotlivých zemích výrazně liší:
+
+| Stát / jurisdikce | Věk dle čl. 8 GDPR | Dozorový úřad | Školský předpis a specifické omezení cloudu/AI |
+|---|---|---|---|
+| **Česko (CZ)** | 15 let (zákon č. 110/2019 Sb.) | ÚOOÚ | Školský zákon č. 561/2004 Sb. (§ 28); opatrný a pragmatický přístup k licencovaným cloudům; metodiky MŠMT a NPI ČR (AIDIG). |
+| **Španělsko (ES)** | 14 let (LOPDGDD čl. 7) | AEPD + autonomní úřady | LOE (DA 23); detailní metodiky AEPD ke k-anonymitě a povinnost jmenovat DPD ve školách (čl. 34.1.b LOPDGDD). |
+| **Německo (DE)** | 16 let (BDSG § 16) | DSK + 16 zemských úřadů (LfDI, BayLDA, LDI) | 16 zemských školských zákonů; striktní zákaz nebo omezení komerčních US cloudů (M365, Google) a telemetrie; povinná DSFA (DPIA) pro školní AI. |
+| **Francie (FR)** | 15 let (Loi Informatique et Libertés) | CNIL | Code de l'éducation; státní platformy ENT; ministerský zákaz bezplatných verzí US cloudů; metodika CNIL zakazující sdílené účty odhalující identitu v promptech. |
+| **Polsko (PL)** | 16 let (Ustawa o ODO 2018) | UODO | Prawo oświatowe; odpovědnost ředitele školy jako správce; zákaz vkládání údajů do AI bez smlouvy dle čl. 28 GDPR; judikatorní zákaz biometrie ve školách. |
+| **Ukrajina (UA)** | 14-18 let (částečná způsobilost dle OZ) | Ombudsman Ukrajiny (Уповноважений) | Zákon č. 2297-VI a chystaná plná harmonizace s GDPR (návrh č. 8153); státní ekosystém Mrija (Мрія); u žáků v EU platí plné GDPR a Lex Ukrajina. |
+
+#### Pravidla pro přeshraniční a specifické nasazení
+
+1. **Německý kontext (Striktní lokální režim):** [Z] Pokud aplikace míří do německých škol, předpokládej věk souhlasu 16 let a plnou decentralizaci podle 16 zemských zákonů. Z důvodu usnesení DSK k Microsoft 365 a Copilotu preferuj čistě lokální zpracování (L0) na školním serveru nebo open-source stacku (Moodle, IServ). Jakýkoli odchod dat mimo školu vyžaduje detailní posouzení DSFA a vyloučení telemetrie.
+2. **Francouzský kontext (Suverenita a ochrana před de-anonymizací):** [Z] Ve francouzských školách respektuj věkovou hranici 15 let a ministerská doporučení k platformám ENT. Při integraci AI dbej na metodiku CNIL: nepoužívej společné účty třídy, do nichž žáci vkládají prompty obsahující nepřímé identifikátory, a zajisti, aby hodnocení žáka nebylo svěřeno výstupu modelu bez učitele.
+3. **Polský kontext (Odpovědnost správce a zákaz biometrie):** [Z] V Polsku nese plnou odpovědnost škola zastoupená ředitelem (ADO). Učitel nesmí samostatně registrovat žáky do nástrojů AI bez formální smlouvy o pověření zpracování (umowa powierzenia dle čl. 28 GDPR). Respektuj věkovou hranici 16 let a zákaz jakékoli biometrické identifikace dětí (včetně docházky a jídelen).
+4. **Ukrajinský kontext (Integrace v EU a eurointegrační standardy):** [Z] Pro ukrajinské žáky integrované v českých, polských či jiných evropských školách platí v plném rozsahu unijní GDPR a místní právní předpisy (v ČR zákon Lex Ukrajina). Pro aplikace vyvíjené přímo pro ukrajinské vzdělávací prostředí zohledni chystaný evropský zákon č. 8153, platformu Mrija a povinné znečitelnění (zneosoblenňa) žákovských dat před předáním modelům AI.
+
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.2 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

@@ -1,10 +1,10 @@
-# 16. Federated school login and SSO [P]
+# 16. School federated authentication and SSO [P]
 
 <!-- Generated reference; edit the maintained standalone guide. -->
 
 Source sections: 16.
 
-## 16. Federated school login and SSO [P]
+## 16. School federated authentication and SSO [P]
 
 Apply only where an identity provider is used. Do not replace a working login just to introduce SSO. Use a maintained protocol library and the provider's current integration instructions; OAuth authorisation alone is not proof of user identity.
 
@@ -20,4 +20,4 @@ Technical guidance: [OWASP OAuth2](https://cheatsheetseries.owasp.org/cheatsheet
 
 Targeted additions (DPO role, RAG and SSO guidance) reviewed 5 November 2026. The original source-check date above is historical; this edition does not claim a new full legal audit. Consult the source register for checked and unverified claims.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.2, based on the original October 2026 guide. Preserve author, license and modification notices.

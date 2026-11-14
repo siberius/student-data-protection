@@ -54,6 +54,14 @@ Before starting substantive work, establish the necessary context for the reques
 
 Only ask applicable questions. For a narrow UI fix, a full inventory of unrelated processing is unnecessary. If a consequential answer is missing, wait before the dependent design decision, data processing or change; continue only independent authorised inspection or synthetic preparation. Do not silently assume permission, jurisdiction, real-data use or publication scope. If the user does not know, explain how to establish the fact and keep it unresolved until then. Distinguish a necessary scope question from redundant reapproval of an action already authorised. Briefly state understood scope, important assumptions and unresolved limits before proceeding; this summary does not itself authorise publication or production access.
 
+### 1.4 Continuous legal freshness and upstream GitHub feedback
+
+The skill tracks the verification status and dates of legal sources in the source register. Statutes and supervisory guidance evolve over time. If the assistant identifies that an active reference exceeds 6 months without review, or detects a newer enactment or regulatory change (such as an amended education act, final EDPB guidelines, a new supervisory decision, or altered digital consent ages):
+
+1. **Immediate Ad-Hoc Adaptation:** The assistant must not wait for a new skill release. It immediately applies the updated legal standard to the current task and transparently explains the variation from the recorded baseline.
+2. **User Consent Request:** At the end of the response, the assistant offers: *"This regulatory change is not yet recorded in the official student-data-protection repository. Would you like me, with your consent, to submit an update issue to the repository author (@siberius)?"*
+3. **Filing GitHub Issues:** Upon user confirmation, the assistant creates an Issue in `https://github.com/siberius/student-data-protection` using available tools (GitHub CLI `gh issue create` or GitHub MCP server). If automated tooling is not signed in, the assistant provides a prefilled Markdown block with a direct one-click link to create the issue.
+
 ## 2. GDPR and the Czech legal framework
 
 ### 2.1 What is and is not personal data
@@ -80,6 +88,27 @@ Sources for the table: [ÚOOÚ: education](https://uoou.gov.cz/profesional/qa-ot
 [Z] Prepare clear information under Articles 12–14: controller and DPO, purposes and bases, recipients, transfers, retention, rights, complaint, and relevant automated decision-making. Ensure access, rectification, restriction, and other applicable rights; erasure is not absolute. Portability does not automatically apply to every school processing. Verify the requester's identity proportionally, without blanket collection of ID copies. The default response time is one month; a statutory extension requires conditions and timely notification. Assess Article 22 for solely automated decisions with legal or similarly significant effects, even without AI. A formal teacher click is not meaningful human review. [GDPR, Articles 12–22](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 [Z] GDPR generally does not require Czech-only or EU-only hosting. Assess transfers outside the EEA under Chapter V, including remote support and subcontractors. [P] The default profile uses EEA hosting and backups; document any deviation with an applicable mechanism, a transfer assessment where needed, and supplementary measures. ÚOOÚ and EDPB methodologies are interpretative materials, not a separate product certification. [EDPB: roles and international transfers](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
+
+
+### 2.4 Comparative overview of national jurisdictions and age thresholds [Z/P]
+
+When designing a school application or integrating an AI model, always establish the actual jurisdiction of the school and its learners. An interface language alone does not select national law. Article 8 GDPR permits Member States to adjust the digital consent threshold between 13 and 16 years; national education codes and supervisory authority positions on cloud services and AI diverge substantially across jurisdictions:
+
+| Country / Jurisdiction | Article 8 GDPR Age | Supervisory Authority | Education Statute and Cloud/AI Restrictions |
+|---|---|---|---|
+| **Czech Republic (CZ)** | 15 years (Act No. 110/2019 Coll.) | ÚOOÚ | Education Act No. 561/2004 Coll. (Section 28); pragmatic approach to licensed clouds; Ministry (MŠMT) and NPI AI guidance (AIDIG). |
+| **Spain (ES)** | 14 years (LOPDGDD Art. 7) | AEPD + regional authorities | LOE (DA 23); authoritative AEPD k-anonymity guidance and mandatory school DPO appointments (Art. 34.1.b LOPDGDD). |
+| **Germany (DE)** | 16 years (BDSG Section 16) | DSK + 16 state DPAs (LfDI, BayLDA, LDI) | 16 state school acts; strict prohibitions or tight curbs on commercial US clouds (M365, Google) and telemetry; mandatory DPIA (DSFA) for school AI. |
+| **France (FR)** | 15 years (Loi Informatique et Libertés) | CNIL | Code de l'éducation; sovereign ENT platforms; ministerial circulars barring free US school clouds; CNIL guidance banning deanonymising class prompt accounts. |
+| **Poland (PL)** | 16 years (Data Protection Act 2018) | UODO | Prawo oświatowe; headmaster accountability as controller; ban on entering student PII into AI without Art. 28 contracts; strict judicial ban on school biometrics. |
+| **Ukraine (UA)** | 14-18 years (partial capacity under CC) | Ukrainian Parliament Commissioner (Ombudsman) | Law No. 2297-VI and pending full GDPR alignment (Draft Law No. 8153); state ecosystem Mrija; learners residing in the EU fall under full GDPR and national refuge legislation. |
+
+#### Implementation Rules for Cross-Border and Jurisdiction-Specific Deployments
+
+1. **German Deployments (Strict Local First):** [Z] When targeting German schools, assume a 16-year digital consent threshold and complete decentralisation across 16 federal states. In light of DSK rulings on Microsoft 365 and Copilot, prioritise local-only processing (L0) on school servers or open-source infrastructure (Moodle, IServ). Any external data flow requires an exhaustive DPIA (DSFA) and verified zero-telemetry terms.
+2. **French Deployments (Sovereignty and Deanonymisation Defence):** [Z] In French schools, apply the 15-year consent threshold and ministerial guidelines on ENT platforms. When deploying AI, enforce CNIL recommendations: do not use shared generic class accounts where pupils enter prompts with indirect identifiers, and ensure automated model output never replaces human teacher grading.
+3. **Polish Deployments (Controller Accountability and Biometrics Ban):** [Z] In Poland, full controller liability rests with the school headmaster. Teachers must not independently sign up classes for AI tools without a formal Art. 28 GDPR data processing agreement (umowa powierzenia). Enforce the 16-year age threshold and respect the strict judicial prohibition on biometric identification in schools.
+4. **Ukrainian Deployments (EU Diaspora and Euro-Integration):** [Z] For Ukrainian displaced learners in EU schools (Czechia, Poland, Germany), European GDPR and host-nation acts apply in full (e.g. Czech Lex Ukraine). For applications targeting schools in Ukraine, design against draft Law No. 8153, integrate safely with Mrija standards, and enforce strict dataset de-identification before any model processing.
 
 ## 3. AI Act: applicability, classification, and dates
 
@@ -388,6 +417,8 @@ Perform only in an authorised test environment with synthetic data. Prepare two 
 | AT34 | Supply the same email/name from different issuers or schools and an untrusted staff-role claim. | Accounts are not silently merged and no foreign membership or privileged role is granted. |
 | AT35 | Remove SSO membership, revoke the local session and simulate identity-provider failure. | Removed rights stop in the application; outage does not bypass verification or MFA; fallback and any propagation limits are explicit. |
 | AT36 | Insert exfiltration instructions in an AI source/answer, request an unauthorised tool destination and simulate invalid output or timeout. | Destination and data boundaries hold outside the prompt; no authoritative write or fabricated grade occurs; unresolved feedback and work are preserved. |
+| AT37 | Prepare a synthetic class export containing 1 learner with a unique combination of quasi-identifiers (k = 1), multiple rows for the same learner, and a small group with an identical grade (l = 1); test complementary suppression in a table with totals. | The pipeline rejects direct export: detects k = 1 and false k-anonymity from repeated rows of the same person, enforces generalization or suppression to k >= 5 distinct learners, detects inference risk at l = 1, and suppresses a complementary value when hiding a cell in an aggregated table. |
+| AT38 | In 1:1 non-local AI tutor mode, submit a learner response containing their name, phone number, and school name in free text; check the presence of student_id in the API request and verify lookup table separation. | The local pseudonymisation gateway strips student_id from the payload before calling the external API, redacts PII in learner free text, stores the lookup table exclusively in the school's local database, and links learner identity to the response only after returning to the school server. |
 
 ## 14. Handover and limits of claims
 
@@ -423,7 +454,25 @@ If the model is unavailable or its output cannot be validated, preserve the lear
 
 Technical guidance: [OWASP RAG Security](https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html). These are implementation controls, not a replacement for the separate legal classification and provider assessment.
 
-## 16. Federated school login and SSO [P]
+### 15.4 Architectural safeguards for local vs. non-local AI models and k-anonymity [P/Z]
+
+When a creator's proposal or new feature introduces an AI model, first determine whether the model runs **locally within the controller perimeter (L0)** or is a **non-local (cloud/external) model (C1/C2)**. For non-local models, proactively alert the creator that a transformation layer must be established within the application before transferring data outside the school boundary:
+
+| AI Architectural Mode | Flow Characteristics | Required Application Data-Preparation Controls [P] |
+|---|---|---|
+| **L0: Local / In-Browser AI** (e.g., local model on school server or client browser without telemetry) | Data never leave the school device or local server; no external recipient. | Does not require external k-anonymity or an Article 28 GDPR contract. Enforce local authorization (section 6) and clean shared device cache/memory on logout (section 9). |
+| **C1: Non-Local AI - Individual Interaction (1:1)** (e.g., automated feedback on an individual assignment) | Query pertains to a single learner; mathematical k-anonymity cannot be applied to an isolated prompt. | Establish a **local pseudonymisation domain** (EDPB 01/2025): 1. Strip direct identifiers (`name`, `email`, `student_id`, `class`). 2. Keep the mapping table (`lookup table`) strictly on the school's local server outside vendor reach. 3. Sanitize learner free text (redact names, contacts, school title). 4. Use stateless API calls with verified provider zero-retention terms. |
+| **C2: Non-Local AI - Cohort / Class Analytics & Exports (1:N)** (e.g., class error trends, dropout prediction, RAG over cohorts) | Multiple learner records sent to the model. In small classes, simple pseudonymisation (`Student_01`) fails. | Establish an **aggregation or k-anonymity pipeline** (EDPB 02/2026, AEPD): 1. Prefer sending **aggregated summaries** (class averages, error counts without microdata). 2. If granular records are required, enforce **k-anonymity (`k >= 5` distinct persons)** and **l-diversity (`l >= 2` distinct sensitive values)** per equivalence class. |
+
+#### Rules for k-Anonymity Pipelines in Non-Local AI and Cohort Exports (Modes C2 and M5)
+
+1. **Attribute Classification Before Transformation:** Direct identifiers (`name`, `birth_number`, `email`, `phone`, `student_id`, `device_id`, `voice`, `photo`) must be completely dropped (do not rely on simple hashing, which remains personal data and enables linkability). For quasi-identifiers (`class`, `date_of_birth / age`, `gender`, `SEN/IEP`, `municipality / postal_code`, `submission_timestamp`), apply **generalization** (e.g., `class 8B` -> `lower secondary`; `age 13` -> `12-15`; `timestamp` -> `week/month`). For sensitive/target attributes (`grade`, `error_type`, `qualitative_feedback`, `counseling_record`), verify diversity across each group.
+2. **Against Singling Out (No Record Isolation -> k-Anonymity):** Group records by all active quasi-identifiers. Every equivalence class MUST contain at least **5 distinct individual learners (`k >= 5` calculated via `COUNT(DISTINCT student_id)`)**. If a learner has multiple rows (time series of submissions), 5 rows from one learner do NOT satisfy `k = 5`. Groups with `k < 5` must be further generalized or dropped (**record suppression**).
+3. **Against Linkability (No Linkage):** Randomly shuffle row order (**permutation**) before export to avoid re-identification via class register order. In summary tables with row/column totals, apply **complementary suppression** (PTAC) so suppressed cells with `k < 5` cannot be recalculated by subtraction.
+4. **Against Inference (No Inference -> l-Diversity):** If all learners in an equivalence class share the same sensitive attribute value (`l = 1`, e.g., all received failing marks or share an identical learning disability), sensitive facts are disclosed via homogeneity attack. Enforce at least **`l >= 2` distinct values** per group, or merge the class into a wider category.
+5. **Legal Boundary (Processor Perspective under EDPB 02/2026 and Opinion 28/2024):** [Z] When a cloud AI vendor processes data on behalf of a school (Article 28 processor) and the school retains the original identifiable records, personal data status is assessed from the controller's perspective. Technical k-anonymity does not eliminate the need for a data processing agreement (DPA) or age-gate compliance (e.g., Czech digital consent age 15; vendor terms 13+ with parental consent). K-anonymity operates as an indispensable technical safeguard to minimize risk (Articles 25 and 32 GDPR).
+
+## 16. School federated authentication and SSO [P]
 
 Apply only where an identity provider is used. Do not replace a working login just to introduce SSO. Use a maintained protocol library and the provider's current integration instructions; OAuth authorisation alone is not proof of user identity.
 
@@ -453,8 +502,8 @@ Recommend one mode with a reason and, when useful, a simpler alternative. Combin
 | M2 Limited collection: event signup | Collect only fields needed for the event; protect receipt and access; set a purpose-based deletion trigger. Treat an unverified submission as pending. | Foreign-record access, unexpected writable fields, submission limits and deletion. A shared code alone cannot establish identity for official records. |
 | M3 Resume learning: saved practice progress | Keep minimum progress; use verified school identity for personal history. Assess any pseudonymous access mechanism against its consequences. | Another learner's history, shared-device logout, changed class membership and recovery. A pseudonym is not automatically anonymous. |
 | M4 Official records: grades or attendance | Verified identity, trusted authorisation, controlled writes, conflict handling, correction history and recoverable storage; retention follows the actual agenda. | Forged owner or grade, revoked access, concurrent edits and recovery. Do not copy a generic practice-data deletion period. |
-| M5 Teacher reports and exports | Scope access to assigned classes and purpose; aggregate when sufficient; minimise fields and recheck permission on download. | Foreign class, expired/revoked link, CSV formula injection, revealing filenames and the lifecycle of downloaded copies. |
-| M6 AI tutoring | First consider reviewed static explanations. If AI is needed, define approved recipients, minimise input, keep service keys server-side and validate output. | Retrieval permissions, actual outbound data, injection, outage, provider retention and deletion. Model output alone must not write an official grade. |
+| M5 Teacher reports and exports | Scope access to assigned classes and purpose; aggregate when sufficient; minimise fields and recheck permission on download; apply k-anonymity (k >= 5) and l-diversity (l >= 2) for cohort exports sent to non-local processing. | Foreign class, expired/revoked link, CSV formula injection, revealing filenames and the lifecycle of downloaded copies. |
+| M6 AI tutoring | First consider reviewed static explanations or local models (L0). For non-local AI, establish a local pseudonymisation gateway (C1) for 1:1 prompts and a k-anonymity/aggregation pipeline (C2) for 1:N cohort analytics. Require approved recipients, minimal inputs, server-held keys, and validated output. | Retrieval permissions, actual outbound data, injection, outage, provider retention and deletion. Model output alone must not write an official grade. |
 
 For object access enforcement, use [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html). The mode table and school examples are this guide's recommendations; they are not a claim that OWASP evaluated these applications.
 
@@ -488,6 +537,7 @@ Situation and goal:
 Recommended mode and reason:
 Necessary fields and data to avoid:
 Data flow, recipients and storage:
+AI mode and data preparation (L0 local / C1 pseudonymisation gateway / C2 k-anonymity k>=5, l>=2 / N/A):
 Identity and permissions:
 Retention, deletion and recovery:
 Concrete implementation steps:

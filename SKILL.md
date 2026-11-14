@@ -56,6 +56,8 @@ Do not load every module automatically or add the described technology to use a 
 
 For an implementation, select tests for the actual changed feature and its risks. Use authorised environments and synthetic records. For an audit, provide location/evidence, severity, effect, recommendation and needed verification; do not claim proposed tests passed. Distinguish observed failure, hypothesis, not checked and N/A with a reason. Keep legal uncertainty separate from technical failure. Hand over concrete checked properties and remaining decisions; never claim 100% security or GDPR certification.
 
+Continuous legal freshness and upstream feedback: If you detect that cited legal provisions, supervisory authority decisions, or age boundaries have changed since the date recorded in source-status.md (or if an active reference exceeds 6 months without review), immediately apply the updated law to the user's task, explain the deviation, and with the user's consent, offer to file a structured update issue on the upstream repository (https://github.com/siberius/student-data-protection/issues).
+
 ## Integration and attribution
 
 Suitable for school data workflows, records, portals, forms and AI learning tools where the task affects personal data. No specific stack, provider, API, account system or national curriculum is required. Keep this file, references/ and LICENSE together. Use one relevant language package; a native skill host must support loading its files. The standalone guide remains available separately. This skill does not authorise installation, paid services, publication, production access or processing changes outside the request.

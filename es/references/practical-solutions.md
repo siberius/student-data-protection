@@ -18,8 +18,8 @@ Recomienda un modo con motivo y, cuando sirva, una alternativa más sencilla. Co
 | M2 Recogida limitada: inscripción en una actividad | Solo campos necesarios; recepción y acceso protegidos; evento de supresión según finalidad. Un envío no verificado queda pendiente. | Acceso a registros ajenos, campos modificables inesperados, límites de envío y supresión. Un código compartido no acredita identidad para registros oficiales. |
 | M3 Continuidad del aprendizaje: progreso guardado | Progreso mínimo; identidad escolar verificada para el historial personal. Evalúa el acceso seudónimo según las consecuencias de su abuso. | Historial ajeno, cierre en dispositivo compartido, cambios de grupo y recuperación. Un seudónimo no es automáticamente anónimo. |
 | M4 Registros oficiales: notas o asistencia | Identidad verificada, autorización fiable, escrituras controladas, concurrencia, historial de rectificaciones y almacenamiento recuperable; conservación según la gestión concreta. | Titular o nota falsificados, acceso revocado, ediciones simultáneas y restauración. No copies un plazo genérico de borrado de ejercicios. |
-| M5 Informes docentes y exportaciones | Acceso por grupos asignados y finalidad; agregación cuando baste; campos mínimos y nueva comprobación de permisos al descargar. | Grupo ajeno, enlace caducado/revocado, fórmulas en CSV, nombres reveladores y ciclo de vida de copias descargadas. |
-| M6 Tutor con IA | Considera primero explicaciones estáticas revisadas. Si hace falta IA, define destinatarios aprobados, entrada mínima, claves en servidor y salida validada. | Permisos de recuperación, datos realmente enviados, inyección, caída, conservación y supresión del proveedor. La salida del modelo por sí sola no escribe una nota oficial. |
+| M5 Informes docentes y exportaciones | Acceso por grupos asignados y finalidad; agregación cuando baste; campos mínimos y nueva comprobación de permisos al descargar; en exportaciones grupales para tratamiento no local aplica k-anonimidad (k >= 5) y l-diversidad (l >= 2). | Grupo ajeno, enlace caducado/revocado, fórmulas en CSV, nombres reveladores y ciclo de vida de copias descargadas. |
+| M6 Tutor con IA | Valora primero explicaciones estáticas revisadas o modelos locales (L0). Para IA no local establece una pasarela de seudonimización local (C1) en consultas 1:1 y una canalización de k-anonimidad/agregación (C2) para analítica 1:N. La IA necesaria cuenta con destinatarios autorizados, entrada mínima, claves en servidor y salida validada. | Permisos de recuperación, datos realmente enviados, inyección, caída, conservación y supresión del proveedor. La salida del modelo por sí sola no escribe una nota oficial. |
 
 Para permisos sobre objetos consulta [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html). La tabla y los ejemplos escolares son recomendaciones de esta guía; no afirman que OWASP haya evaluado esas aplicaciones.
 
@@ -53,6 +53,7 @@ Situación y objetivo:
 Modo recomendado y motivo:
 Datos necesarios y datos que evitar:
 Flujo, destinatarios y almacenamiento:
+Modo de IA y preparación de datos (L0 local / C1 pasarela de seudonimización / C2 k-anonimidad k>=5, l>=2 / N/A):
 Identidad y permisos:
 Conservación, supresión y recuperación:
 Pasos concretos de implementación:
@@ -73,4 +74,4 @@ Mapea comportamiento y evidencias actuales; entrega hallazgos priorizados con ub
 
 Pedir auditoría autoriza evaluación, no cambios en la aplicación. Propón correcciones salvo que la implementación ya esté autorizada; ejecuta solo ese alcance. Distingue propuesta, implementado sin verificar, verificado con evidencias concretas y pendiente. Las comprobaciones intrusivas requieren un entorno autorizado; sin ejecución entrega un plan. La ausencia de hallazgos por sí sola no acredita seguridad para datos reales.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.2, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

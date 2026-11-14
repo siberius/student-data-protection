@@ -50,7 +50,11 @@ def check_bundles() -> list[str]:
     }
     editions = [('.', 'student-data-protection.md', 'source-register.md'),
                 ('cs', 'ochrana-dat-zaku.md', 'registr-zdroju.md'),
-                ('es', 'proteccion-datos-alumnado.md', 'registro-fuentes.md')]
+                ('es', 'proteccion-datos-alumnado.md', 'registro-fuentes.md'),
+                ('pl', 'ochrana-danych-uczniow.md', 'rejestr-zrodel.md'),
+                ('uk', 'zakhyst-danykh-uchniv.md', 'reiestr-dzherel.md'),
+                ('de', 'schuelerdatenschutz.md', 'quellenregister.md'),
+                ('fr', 'protection-donnees-eleves.md', 'registre-sources.md')]
     for directory, filename, register in editions:
         source = ROOT / 'docs' / filename
         bundle = ROOT / directory
@@ -65,7 +69,7 @@ def check_bundles() -> list[str]:
             errors.append(f'Unexpected source sections: {source}')
             continue
         ids = re.findall(r'^\| (AT\d+) \|', text, re.M)
-        if ids != [f'AT{i:02d}' for i in range(1, 37)]:
+        if ids != [f'AT{i:02d}' for i in range(1, 39)]:
             errors.append(f'Acceptance scenario coverage/order changed: {source}')
         for name, numbers in groups.items():
             target = bundle / 'references' / (name + '.md')

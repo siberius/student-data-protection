@@ -44,4 +44,12 @@ Před zahájením vlastní práce zjisti potřebný kontext zadaného úkolu. Vy
 
 Ptej se jen na použitelné body. Drobná úprava rozhraní nepotřebuje úplný inventář nesouvisejícího zpracování. Chybí-li rozhodující odpověď, před závislým návrhovým rozhodnutím, zpracováním dat či změnou vyčkej; pokračuj pouze nezávislým autorizovaným průzkumem nebo syntetickou přípravou. Potichu nepředpokládej oprávnění, jurisdikci, reálná data ani rozsah publikace. Pokud uživatel neví, vysvětli způsob zjištění a bod ponech otevřený. Nutný dotaz k rozsahu odliš od zbytečného opakování již uděleného souhlasu. Před pokračováním krátce shrň pochopený rozsah, podstatné předpoklady a otevřené limity; shrnutí samo neopravňuje k publikaci či produkčnímu přístupu.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+### 1.4 Kontrola čerstvosti legislativy a upstream hlášení na GitHub
+
+Skill eviduje stav a datum ověření právních pramenů v registru zdrojů. Právní předpisy a výklady úřadů se v čase vyvíjejí. Pokud asistent při práci na úkolu zjistí, že od ověření pramene uplynulo více než 6 měsíců, nebo narazí na novější znění předpisu (např. novelu školského zákona, schválení chystaného zákona, nové stanovisko EDPB/ÚOOÚ či změnu věkové hranice):
+
+1. **Okamžitá ad-hoc náprava:** Asistent nesmí čekat na vydání nové verze skillu. Ihned v probíhající odpovědi aplikuje aktuální právní stav a v úvodu transparentně vysvětlí rozdíl oproti evidovanému stavu.
+2. **Žádost o souhlas:** Na závěr odpovědi asistent uživateli navrhne: *„Tato legislativní změna ještě není zanesena v oficiálním repozitáři skillu student-data-protection. Přejete si, abych s vaším souhlasem vytvořil hlášení (Issue) na GitHubu autora (@siberius)?“*
+3. **Založení Issue na GitHubu:** Pokud uživatel souhlasí, asistent prostřednictvím dostupného nástroje (GitHub CLI `gh issue create` nebo GitHub MCP server) založí Issue v repozitáři `https://github.com/siberius/student-data-protection`. Není-li nástroj autorizován, předloží uživateli předvyplněný Markdown s přímým odkazem na vytvoření nového Issue.
+
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.2 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

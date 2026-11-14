@@ -44,4 +44,12 @@ Antes de iniciar el trabajo sustantivo establece el contexto necesario. Reutiliz
 
 Pregunta solo por puntos aplicables. Una corrección pequeña de interfaz no requiere inventariar tratamientos ajenos. Si falta una respuesta decisiva, espera antes de la decisión de diseño, tratamiento o cambio dependiente; continúa solo inspección autorizada independiente o preparación sintética. No presupongas permiso, jurisdicción, datos reales ni alcance de publicación. Si el usuario no sabe, explica cómo averiguarlo y mantén el punto pendiente. Distingue aclaración necesaria de repetir aprobación ya concedida. Antes de continuar resume brevemente alcance entendido, supuestos relevantes y límites pendientes; el resumen no autoriza publicación ni acceso a producción.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+### 1.4 Control continuo de vigencia jurídica y notificación a GitHub
+
+El skill registra el estado y las fechas de verificación de las fuentes jurídicas en el registro de fuentes. Las normas y criterios de las autoridades evolucionan. Si el asistente detecta que una referencia activa supera los 6 meses sin revisión o identifica una modificación normativa (como reformas de leyes educativas, directrices finales del CEPD, resoluciones de la AEPD o cambios en edades de consentimiento):
+
+1. **Adaptación inmediata para el usuario:** El asistente no espera a una nueva versión del skill. Aplica de inmediato la normativa vigente a la tarea en curso y explica con transparencia la variación respecto al registro histórico.
+2. **Petición de consentimiento:** Al final de la respuesta, el asistente propone: *«Esta modificación normativa aún no está recogida en el repositorio oficial de student-data-protection. ¿Desea que, con su consentimiento, prepare una incidencia (Issue) en el GitHub del autor (@siberius)?»*
+3. **Creación de la incidencia en GitHub:** Si el usuario acepta, el asistente registra la Issue en `https://github.com/siberius/student-data-protection` mediante las herramientas disponibles (GitHub CLI `gh issue create` o MCP de GitHub). Si no hay credenciales activas, facilita el texto formateado en Markdown junto con el enlace directo para su apertura en un clic.
+
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.2, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

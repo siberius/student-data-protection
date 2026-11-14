@@ -1,10 +1,10 @@
-# 16. Identificación federada escolar y SSO [P]
+# 16. Autenticación federada escolar y SSO [P]
 
 <!-- Referencia generada; edita la guía independiente mantenida. -->
 
 Secciones de origen: 16.
 
-## 16. Identificación federada escolar y SSO [P]
+## 16. Autenticación federada escolar y SSO [P]
 
 Aplica solo donde se use proveedor de identidad. No sustituyas un acceso funcional solo para introducir SSO. Utiliza biblioteca de protocolo mantenida e instrucciones actuales del proveedor; la autorización OAuth por sí sola no demuestra identidad.
 
@@ -22,4 +22,4 @@ Las adiciones específicas sobre papel del DPD, RAG y SSO se revisaron el 5 de n
 
 Autor: Luděk Sušický. Licencia [MIT](https://opensource.org/license/mit). Conserva la atribución y el aviso de licencia al compartir o adaptar este documento.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.1, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Edición revisada de la versión 1.2, basada en la guía original de octubre de 2026. Conserva autor, licencia y avisos de cambios.

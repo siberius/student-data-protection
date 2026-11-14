@@ -68,6 +68,8 @@ Perform only in an authorised test environment with synthetic data. Prepare two 
 | AT34 | Supply the same email/name from different issuers or schools and an untrusted staff-role claim. | Accounts are not silently merged and no foreign membership or privileged role is granted. |
 | AT35 | Remove SSO membership, revoke the local session and simulate identity-provider failure. | Removed rights stop in the application; outage does not bypass verification or MFA; fallback and any propagation limits are explicit. |
 | AT36 | Insert exfiltration instructions in an AI source/answer, request an unauthorised tool destination and simulate invalid output or timeout. | Destination and data boundaries hold outside the prompt; no authoritative write or fabricated grade occurs; unresolved feedback and work are preserved. |
+| AT37 | Prepare a synthetic class export containing 1 learner with a unique combination of quasi-identifiers (k = 1), multiple rows for the same learner, and a small group with an identical grade (l = 1); test complementary suppression in a table with totals. | The pipeline rejects direct export: detects k = 1 and false k-anonymity from repeated rows of the same person, enforces generalization or suppression to k >= 5 distinct learners, detects inference risk at l = 1, and suppresses a complementary value when hiding a cell in an aggregated table. |
+| AT38 | In 1:1 non-local AI tutor mode, submit a learner response containing their name, phone number, and school name in free text; check the presence of student_id in the API request and verify lookup table separation. | The local pseudonymisation gateway strips student_id from the payload before calling the external API, redacts PII in learner free text, stores the lookup table exclusively in the school's local database, and links learner identity to the response only after returning to the school server. |
 
 ## 14. Handover and limits of claims
 
@@ -75,4 +77,4 @@ When using the skill, hand over the application changes, configuration, personal
 
 OWASP, NIST, and ENISA provide technical and methodological guidance. They are not automatically binding Czech law or harmonised AI Act standards establishing a presumption of conformity. A completed checklist is not a GDPR certificate, a high-risk AI conformity assessment, or a guarantee against attack. Report specific verified properties and remaining risks; do not claim "100% GDPR compliant" without evidence.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.2, based on the original October 2026 guide. Preserve author, license and modification notices.

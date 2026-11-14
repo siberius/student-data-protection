@@ -31,4 +31,25 @@ Sources for the table: [ÚOOÚ: education](https://uoou.gov.cz/profesional/qa-ot
 
 [Z] GDPR generally does not require Czech-only or EU-only hosting. Assess transfers outside the EEA under Chapter V, including remote support and subcontractors. [P] The default profile uses EEA hosting and backups; document any deviation with an applicable mechanism, a transfer assessment where needed, and supplementary measures. ÚOOÚ and EDPB methodologies are interpretative materials, not a separate product certification. [EDPB: roles and international transfers](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+
+### 2.4 Comparative overview of national jurisdictions and age thresholds [Z/P]
+
+When designing a school application or integrating an AI model, always establish the actual jurisdiction of the school and its learners. An interface language alone does not select national law. Article 8 GDPR permits Member States to adjust the digital consent threshold between 13 and 16 years; national education codes and supervisory authority positions on cloud services and AI diverge substantially across jurisdictions:
+
+| Country / Jurisdiction | Article 8 GDPR Age | Supervisory Authority | Education Statute and Cloud/AI Restrictions |
+|---|---|---|---|
+| **Czech Republic (CZ)** | 15 years (Act No. 110/2019 Coll.) | ÚOOÚ | Education Act No. 561/2004 Coll. (Section 28); pragmatic approach to licensed clouds; Ministry (MŠMT) and NPI AI guidance (AIDIG). |
+| **Spain (ES)** | 14 years (LOPDGDD Art. 7) | AEPD + regional authorities | LOE (DA 23); authoritative AEPD k-anonymity guidance and mandatory school DPO appointments (Art. 34.1.b LOPDGDD). |
+| **Germany (DE)** | 16 years (BDSG Section 16) | DSK + 16 state DPAs (LfDI, BayLDA, LDI) | 16 state school acts; strict prohibitions or tight curbs on commercial US clouds (M365, Google) and telemetry; mandatory DPIA (DSFA) for school AI. |
+| **France (FR)** | 15 years (Loi Informatique et Libertés) | CNIL | Code de l'éducation; sovereign ENT platforms; ministerial circulars barring free US school clouds; CNIL guidance banning deanonymising class prompt accounts. |
+| **Poland (PL)** | 16 years (Data Protection Act 2018) | UODO | Prawo oświatowe; headmaster accountability as controller; ban on entering student PII into AI without Art. 28 contracts; strict judicial ban on school biometrics. |
+| **Ukraine (UA)** | 14-18 years (partial capacity under CC) | Ukrainian Parliament Commissioner (Ombudsman) | Law No. 2297-VI and pending full GDPR alignment (Draft Law No. 8153); state ecosystem Mrija; learners residing in the EU fall under full GDPR and national refuge legislation. |
+
+#### Implementation Rules for Cross-Border and Jurisdiction-Specific Deployments
+
+1. **German Deployments (Strict Local First):** [Z] When targeting German schools, assume a 16-year digital consent threshold and complete decentralisation across 16 federal states. In light of DSK rulings on Microsoft 365 and Copilot, prioritise local-only processing (L0) on school servers or open-source infrastructure (Moodle, IServ). Any external data flow requires an exhaustive DPIA (DSFA) and verified zero-telemetry terms.
+2. **French Deployments (Sovereignty and Deanonymisation Defence):** [Z] In French schools, apply the 15-year consent threshold and ministerial guidelines on ENT platforms. When deploying AI, enforce CNIL recommendations: do not use shared generic class accounts where pupils enter prompts with indirect identifiers, and ensure automated model output never replaces human teacher grading.
+3. **Polish Deployments (Controller Accountability and Biometrics Ban):** [Z] In Poland, full controller liability rests with the school headmaster. Teachers must not independently sign up classes for AI tools without a formal Art. 28 GDPR data processing agreement (umowa powierzenia). Enforce the 16-year age threshold and respect the strict judicial prohibition on biometric identification in schools.
+4. **Ukrainian Deployments (EU Diaspora and Euro-Integration):** [Z] For Ukrainian displaced learners in EU schools (Czechia, Poland, Germany), European GDPR and host-nation acts apply in full (e.g. Czech Lex Ukraine). For applications targeting schools in Ukraine, design against draft Law No. 8153, integrate safely with Mrija standards, and enforce strict dataset de-identification before any model processing.
+
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.2, based on the original October 2026 guide. Preserve author, license and modification notices.

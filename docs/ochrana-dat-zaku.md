@@ -54,6 +54,14 @@ Před zahájením vlastní práce zjisti potřebný kontext zadaného úkolu. Vy
 
 Ptej se jen na použitelné body. Drobná úprava rozhraní nepotřebuje úplný inventář nesouvisejícího zpracování. Chybí-li rozhodující odpověď, před závislým návrhovým rozhodnutím, zpracováním dat či změnou vyčkej; pokračuj pouze nezávislým autorizovaným průzkumem nebo syntetickou přípravou. Potichu nepředpokládej oprávnění, jurisdikci, reálná data ani rozsah publikace. Pokud uživatel neví, vysvětli způsob zjištění a bod ponech otevřený. Nutný dotaz k rozsahu odliš od zbytečného opakování již uděleného souhlasu. Před pokračováním krátce shrň pochopený rozsah, podstatné předpoklady a otevřené limity; shrnutí samo neopravňuje k publikaci či produkčnímu přístupu.
 
+### 1.4 Kontrola čerstvosti legislativy a upstream hlášení na GitHub
+
+Skill eviduje stav a datum ověření právních pramenů v registru zdrojů. Právní předpisy a výklady úřadů se v čase vyvíjejí. Pokud asistent při práci na úkolu zjistí, že od ověření pramene uplynulo více než 6 měsíců, nebo narazí na novější znění předpisu (např. novelu školského zákona, schválení chystaného zákona, nové stanovisko EDPB/ÚOOÚ či změnu věkové hranice):
+
+1. **Okamžitá ad-hoc náprava:** Asistent nesmí čekat na vydání nové verze skillu. Ihned v probíhající odpovědi aplikuje aktuální právní stav a v úvodu transparentně vysvětlí rozdíl oproti evidovanému stavu.
+2. **Žádost o souhlas:** Na závěr odpovědi asistent uživateli navrhne: *„Tato legislativní změna ještě není zanesena v oficiálním repozitáři skillu student-data-protection. Přejete si, abych s vaším souhlasem vytvořil hlášení (Issue) na GitHubu autora (@siberius)?“*
+3. **Založení Issue na GitHubu:** Pokud uživatel souhlasí, asistent prostřednictvím dostupného nástroje (GitHub CLI `gh issue create` nebo GitHub MCP server) založí Issue v repozitáři `https://github.com/siberius/student-data-protection`. Není-li nástroj autorizován, předloží uživateli předvyplněný Markdown s přímým odkazem na vytvoření nového Issue.
+
 ## 2. GDPR a český právní rámec
 
 ### 2.1 Co je a není osobní údaj
@@ -80,6 +88,27 @@ Prameny k tabulce: [ÚOOÚ: školství](https://uoou.gov.cz/profesional/qa-otazk
 [Z] Připrav srozumitelnou informaci dle čl. 12–14: správce/pověřenec, účely a tituly, příjemci, předávání, retence, práva, stížnost a relevantní automatizované rozhodování. Zajisti přístup, opravu, omezení a další použitelná práva; výmaz není absolutní. Přenositelnost se nevztahuje automaticky na každé školní zpracování. Identitu žadatele ověř přiměřeně, bez plošného sběru kopií dokladů. Výchozí lhůta vyřízení je jeden měsíc; zákonné prodloužení vyžaduje podmínky a včasné informování. Čl. 22 posuzuj u výhradně automatizovaných rozhodnutí s právním nebo obdobně významným účinkem, i bez AI. Formální kliknutí učitele není smysluplný lidský přezkum. [GDPR, čl. 12–22](https://eur-lex.europa.eu/eli/reg/2016/679/oj/ces).
 
 [Z] GDPR obecně nenařizuje výhradně český ani unijní hosting. Předávání mimo EHP vyhodnoť podle kapitoly V, včetně vzdálené podpory a subdodavatelů. [P] Výchozí profil používá EHP hosting i zálohy; odchylku dolož použitelným mechanismem, případným posouzením předání a doplňkovými opatřeními. ÚOOÚ/EDPB metodiky jsou výkladové podklady, nikoli samostatná certifikace výrobku. [EDPB: role a mezinárodní předávání](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
+
+
+### 2.4 Srovnávací přehled národních jurisdikcí a věkových hranic [Z/P]
+
+Při návrhu školní aplikace nebo integraci AI modelu vždy ověř skutečnou jurisdikci školy a cílové skupiny žáků. Jazyk rozhraní sám o sobě neurčuje použitelné národní právo. GDPR v čl. 8 dává členským státům možnost upravit věkovou hranici pro samostatný digitální souhlas dětí v rozmezí 13 až 16 let; školské zákony a postoje národních dozorových úřadů k externím cloudům a AI se v jednotlivých zemích výrazně liší:
+
+| Stát / jurisdikce | Věk dle čl. 8 GDPR | Dozorový úřad | Školský předpis a specifické omezení cloudu/AI |
+|---|---|---|---|
+| **Česko (CZ)** | 15 let (zákon č. 110/2019 Sb.) | ÚOOÚ | Školský zákon č. 561/2004 Sb. (§ 28); opatrný a pragmatický přístup k licencovaným cloudům; metodiky MŠMT a NPI ČR (AIDIG). |
+| **Španělsko (ES)** | 14 let (LOPDGDD čl. 7) | AEPD + autonomní úřady | LOE (DA 23); detailní metodiky AEPD ke k-anonymitě a povinnost jmenovat DPD ve školách (čl. 34.1.b LOPDGDD). |
+| **Německo (DE)** | 16 let (BDSG § 16) | DSK + 16 zemských úřadů (LfDI, BayLDA, LDI) | 16 zemských školských zákonů; striktní zákaz nebo omezení komerčních US cloudů (M365, Google) a telemetrie; povinná DSFA (DPIA) pro školní AI. |
+| **Francie (FR)** | 15 let (Loi Informatique et Libertés) | CNIL | Code de l'éducation; státní platformy ENT; ministerský zákaz bezplatných verzí US cloudů; metodika CNIL zakazující sdílené účty odhalující identitu v promptech. |
+| **Polsko (PL)** | 16 let (Ustawa o ODO 2018) | UODO | Prawo oświatowe; odpovědnost ředitele školy jako správce; zákaz vkládání údajů do AI bez smlouvy dle čl. 28 GDPR; judikatorní zákaz biometrie ve školách. |
+| **Ukrajina (UA)** | 14-18 let (částečná způsobilost dle OZ) | Ombudsman Ukrajiny (Уповноважений) | Zákon č. 2297-VI a chystaná plná harmonizace s GDPR (návrh č. 8153); státní ekosystém Mrija (Мрія); u žáků v EU platí plné GDPR a Lex Ukrajina. |
+
+#### Pravidla pro přeshraniční a specifické nasazení
+
+1. **Německý kontext (Striktní lokální režim):** [Z] Pokud aplikace míří do německých škol, předpokládej věk souhlasu 16 let a plnou decentralizaci podle 16 zemských zákonů. Z důvodu usnesení DSK k Microsoft 365 a Copilotu preferuj čistě lokální zpracování (L0) na školním serveru nebo open-source stacku (Moodle, IServ). Jakýkoli odchod dat mimo školu vyžaduje detailní posouzení DSFA a vyloučení telemetrie.
+2. **Francouzský kontext (Suverenita a ochrana před de-anonymizací):** [Z] Ve francouzských školách respektuj věkovou hranici 15 let a ministerská doporučení k platformám ENT. Při integraci AI dbej na metodiku CNIL: nepoužívej společné účty třídy, do nichž žáci vkládají prompty obsahující nepřímé identifikátory, a zajisti, aby hodnocení žáka nebylo svěřeno výstupu modelu bez učitele.
+3. **Polský kontext (Odpovědnost správce a zákaz biometrie):** [Z] V Polsku nese plnou odpovědnost škola zastoupená ředitelem (ADO). Učitel nesmí samostatně registrovat žáky do nástrojů AI bez formální smlouvy o pověření zpracování (umowa powierzenia dle čl. 28 GDPR). Respektuj věkovou hranici 16 let a zákaz jakékoli biometrické identifikace dětí (včetně docházky a jídelen).
+4. **Ukrajinský kontext (Integrace v EU a eurointegrační standardy):** [Z] Pro ukrajinské žáky integrované v českých, polských či jiných evropských školách platí v plném rozsahu unijní GDPR a místní právní předpisy (v ČR zákon Lex Ukrajina). Pro aplikace vyvíjené přímo pro ukrajinské vzdělávací prostředí zohledni chystaný evropský zákon č. 8153, platformu Mrija a povinné znečitelnění (zneosoblenňa) žákovských dat před předáním modelům AI.
 
 ## 3. AI Act: použitelnost, klasifikace a termíny
 
@@ -388,6 +417,8 @@ Prováděj pouze v autorizovaném testovacím prostředí se syntetickými daty.
 | AT34 | Předlož stejný e-mail/jméno od jiných vydavatelů či škol a nedůvěryhodnou zaměstnaneckou roli. | Účty se potichu nesloučí a cizí členství ani privilegium nevznikne. |
 | AT35 | Odeber členství SSO, revokuj místní relaci a simuluj výpadek identity provideru. | Odebraná práva v aplikaci končí, výpadek neobchází ověření či MFA; náhrada a případné lhůty přenosu změn jsou výslovné. |
 | AT36 | Do AI zdroje/odpovědi vlož pokyn k odtoku dat, požaduj nepovolený cíl nástroje a simuluj neplatný výstup či timeout. | Hranice cíle a dat platí mimo prompt; nevznikne autoritativní zápis ani vymyšlená známka; nerozhodnuté hodnocení a práce zůstanou zachované. |
+| AT37 | Připrav syntetický export třídy obsahující 1 žáka s unikátní kombinací kvazi-identifikátorů (k = 1), více řádků téhož žáka a malou skupinu se shodnou známkou (l = 1); otestuj komplementární supresi v tabulce se součty. | Pipeline odmítne přímý export: odhalí k = 1 i falešnou k-anonymitu z opakovaných záznamů téže osoby, vynuť generalizaci či supresi na k >= 5 distinct žáků, odhalí riziko odvození u l = 1 a při potlačení buňky v souhrnné tabulce potlačí i komplementární hodnotu. |
+| AT38 | V režimu 1:1 nelokálního AI tutora odešli odpověď žáka obsahující v textu jeho jméno, telefon a název školy; prověř přítomnost student_id v API požadavku a oddělení mapovací tabulky. | Lokální pseudonymizační brána před voláním externího API odstraní student_id z payloadu, rediguje PII ve volném textu žáka, mapovací tabulku drží v lokální DB školy a identitu žáka k odpovědi přiřadí až po návratu odpovědi na server školy. |
 
 ## 14. Podoba předání a hranice tvrzení
 
@@ -423,6 +454,24 @@ Při výpadku nebo neplatném výstupu zachovej práci a označ hodnocení jako 
 
 Technické vodítko: [OWASP RAG Security](https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html). Jde o implementační ochrany; nenahrazují právní klasifikaci ani posouzení poskytovatele.
 
+### 15.4 Architektonické podmínky pro lokální vs. nelokální modely AI a k-anonymita [P/Z]
+
+Pokud záměr tvůrce (návrh projektu nebo nová funkce) směřuje k zapojení AI modelu, nejprve rozliš, zda model běží **lokálně v perimetru správce (L0)**, nebo jde o **nelokální (cloudový/externí) model (C1/C2)**. U nelokálního modelu tvůrce vždy proaktivně upozorni, že před odesláním dat mimo školu je nutné v aplikaci vytvořit transformační mezivrstvu:
+
+| Architektonický režim AI | Charakteristika toku | Povinné podmínky přípravy dat v aplikaci [P] |
+|---|---|---|
+| **L0: Lokální / In-Browser AI** (lokální model na školním serveru či v prohlížeči bez telemetrie) | Data neopouštějí zařízení nebo server školy; žádný externí příjemce. | Nevyžaduje externí k-anonymitu ani smlouvu dle čl. 28 GDPR. Zajisti lokální oprávnění (sekce 6) a vyčištění paměti/cache na sdíleném zařízení po odhlášení (sekce 9). |
+| **C1: Nelokální AI - Individuální interakce (1:1)** (zpětná vazba k úloze jednoho žáka) | Dotaz se týká jednotlivce; matematickou k-anonymitu nelze na jediný izolovaný záznam aplikovat. | Vytvoř **lokální pseudonymizační bránu** (EDPB 01/2025): 1. Odstraň přímé identifikátory (, , , ). 2. Mapovací tabulku () drž výhradně v lokální DB školy mimo dosah AI poskytovatele. 3. Volný text žáka očisti od PII (redakce jmen, kontaktů a názvu školy). 4. Použij bezestavové volání s ověřenou retencí u poskytovatele. |
+| **C2: Nelokální AI - Skupinová / třídní analytika a exporty (1:N)** (rozbor výsledků třídy, hledání trendů, RAG nad více žáky) | Do modelu odchází soubor záznamů více žáků. V malé třídě prostá pseudonymizace () selhává. | Vytvoř **agregační nebo k-anonymizační pipeline** (EDPB 02/2026, AEPD): 1. Preferuj odeslání pouze **agregovaných souhrnů** (průměry, četnosti chyb bez řádkových záznamů jednotlivců). 2. Pokud účel vyžaduje řádková mikrodata, vynuť **k-anonymitu ( různých osob)** a **l-diverzitu ( různých hodnot citlivého atributu)** v každé třídě ekvivalence. |
+
+#### Pravidla pro vytvoření k-anonymizační pipeline u nelokální AI a exportů (Režim C2 a M5)
+
+1. **Klasifikace polí před transformací:** Přímé identifikátory (, , , , , , , ) bezvýjimečně odstraň (nepoužívej prostý hash, který zůstává osobním údajem a umožňuje propojení záznamů). Na kvazi-identifikátory (, , , , , ) aplikuj **generalizaci** (např.  -> ;  -> ;  -> ). U citlivých a cílových atributů (, , , ) kontroluj diverzitu hodnot ve skupině.
+2. **Proti vyčlenění (No Record Isolation -> k-anonymita):** Seskup záznamy podle všech přítomných kvazi-identifikátorů. Každá skupina (třída ekvivalence) MUSÍ obsahovat záznamy alespoň **5 různých fyzických osob ( počítáno přes )**. Pokud má žák v tabulce více řádků (časová řada pokusů), 5 řádků téhož žáka NENÍ . Skupiny s  dále generalizuj nebo trvale odstraň (**suprese záznamu / record suppression**).
+3. **Proti propojení (No Linkage):** Před exportem náhodně promíchej pořadí řádků (**shuffling**), aby pořadí neodpovídalo abecednímu seznamu v třídním výkazu. U přehledových tabulek se součty aplikuj **komplementární supresi** (PTAC), aby potlačenou buňku s  nebylo možné dopočítat odečtením od řádkového či sloupcového součtu.
+4. **Proti odvození (No Inference -> l-diverzita):** Pokud všichni žáci ve stejné třídě ekvivalence sdílejí tutéž citlivou hodnotu (, např. všichni mají známku 5 nebo stejné SVP), dochází k prozrazení citlivého údaje útokem homogenitou. Vynuť alespoň ** různé hodnoty** cílového atributu v každé skupině, jinak skupinu sluč s širší kategorií nebo potlač.
+5. **Právní hranice (Perspektiva zpracovatele dle EDPB 02/2026 a Stanoviska 28/2024):** [Z] Pokud poskytovatel nelokální AI zpracovává data jménem školy (zpracovatel dle čl. 28 GDPR) a škola drží původní identifikované záznamy, posuzuje se povaha dat z perspektivy správce. Ani technická k-anonymita na straně školy nesnímá povinnost mít uzavřenou zpracovatelskou smlouvu a prověřit soulad s věkovými limity (např. v ČR 15 let pro samostatný digitální souhlas; podmínky OpenAI a Google od 13 let se souhlasem zástupce). K-anonymita slouží jako zásadní technické opatření minimalizace dopadu (čl. 25 a 32 GDPR).
+
 ## 16. Školní federované přihlášení a SSO [P]
 
 Použij jen při zapojení poskytovatele identity. Funkční přihlášení nenahrazuj pouze kvůli zavedení SSO. Použij udržovanou protokolovou knihovnu a aktuální integrační pokyny poskytovatele; autorizace OAuth sama nepotvrzuje identitu uživatele.
@@ -453,8 +502,8 @@ Doporuč jeden režim s důvodem a případně jednodušší alternativu. Režim
 | M2 Omezený sběr: přihláška na akci | Jen údaje potřebné pro akci; chráněný příjem a přístup; spouštěč výmazu podle účelu. Neověřené podání zůstává nepotvrzené. | Přístup k cizím záznamům, nečekaná zapisovatelná pole, limity podání a výmaz. Společný kód sám neověřuje identitu pro úřední evidenci. |
 | M3 Navazující učení: uložený pokrok | Uchovávej minimum pokroku; osobní historii zpřístupni přes ověřenou školní identitu. Pseudonymní přístup posuď podle následků jeho zneužití. | Cizí historie, odhlášení na sdíleném zařízení, změna členství ve třídě a obnova. Pseudonym není automaticky anonymní. |
 | M4 Úřední evidence: známky či docházka | Ověřená identita, důvěryhodná autorizace, řízený zápis, řešení souběhu, historie oprav a obnovitelné úložiště; retence podle konkrétní agendy. | Podvržený vlastník či známka, odebraný přístup, souběžné úpravy a obnova. Nepřebírej obecnou lhůtu výmazu cvičných dat. |
-| M5 Přehledy učitele a exporty | Přístup podle přidělených tříd a účelu; agregace, když stačí; minimum polí a nové ověření oprávnění při stažení. | Cizí třída, prošlý/odvolaný odkaz, vzorce v CSV, prozrazující názvy souborů a životní cyklus stažených kopií. |
-| M6 AI tutor | Nejprve zvaž zkontrolovaná statická vysvětlení. Potřebná AI má schválené příjemce, minimální vstup, klíče na serveru a validovaný výstup. | Oprávnění při vyhledávání, skutečně odesílaná data, injekce, výpadek, retence a výmaz u poskytovatele. Samotný výstup modelu nesmí zapsat úřední známku. |
+| M5 Přehledy učitele a exporty | Přístup podle přidělených tříd a účelu; agregace, když stačí; minimum polí a nové ověření oprávnění při stažení; u hromadných exportů pro nelokální zpracování aplikace k-anonymity (k >= 5) a l-diverzity (l >= 2). | Cizí třída, prošlý/odvolaný odkaz, vzorce v CSV, prozrazující názvy souborů a životní cyklus stažených kopií. |
+| M6 AI tutor | Nejprve zvaž zkontrolovaná statická vysvětlení nebo lokální model (L0). U nelokální AI vytvoř pro 1:1 dotazy lokální pseudonymizační bránu (C1) a pro 1:N třídní data k-anonymizační/agregační pipeline (C2). Potřebná AI má schválené příjemce, minimální vstup, klíče na serveru a validovaný výstup. | Oprávnění při vyhledávání, skutečně odesílaná data, injekce, výpadek, retence a výmaz u poskytovatele. Samotný výstup modelu nesmí zapsat úřední známku. |
 
 Pro vynucení objektových oprávnění použij [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html). Tabulka a školní příklady jsou doporučením tohoto průvodce; netvrdí, že OWASP uvedené aplikace posuzoval.
 
@@ -488,6 +537,7 @@ Situace a cíl:
 Doporučený režim a důvod:
 Potřebné údaje a údaje, které nesbírat:
 Tok dat, příjemci a místo ukládání:
+Režim AI a příprava dat (L0 lokální / C1 pseudonymizační brána / C2 k-anonymita k>=5, l>=2 / N/A):
 Identita a oprávnění:
 Uchovávání, výmaz a obnova:
 Konkrétní kroky realizace:

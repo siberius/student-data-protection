@@ -18,8 +18,8 @@ Doporuč jeden režim s důvodem a případně jednodušší alternativu. Režim
 | M2 Omezený sběr: přihláška na akci | Jen údaje potřebné pro akci; chráněný příjem a přístup; spouštěč výmazu podle účelu. Neověřené podání zůstává nepotvrzené. | Přístup k cizím záznamům, nečekaná zapisovatelná pole, limity podání a výmaz. Společný kód sám neověřuje identitu pro úřední evidenci. |
 | M3 Navazující učení: uložený pokrok | Uchovávej minimum pokroku; osobní historii zpřístupni přes ověřenou školní identitu. Pseudonymní přístup posuď podle následků jeho zneužití. | Cizí historie, odhlášení na sdíleném zařízení, změna členství ve třídě a obnova. Pseudonym není automaticky anonymní. |
 | M4 Úřední evidence: známky či docházka | Ověřená identita, důvěryhodná autorizace, řízený zápis, řešení souběhu, historie oprav a obnovitelné úložiště; retence podle konkrétní agendy. | Podvržený vlastník či známka, odebraný přístup, souběžné úpravy a obnova. Nepřebírej obecnou lhůtu výmazu cvičných dat. |
-| M5 Přehledy učitele a exporty | Přístup podle přidělených tříd a účelu; agregace, když stačí; minimum polí a nové ověření oprávnění při stažení. | Cizí třída, prošlý/odvolaný odkaz, vzorce v CSV, prozrazující názvy souborů a životní cyklus stažených kopií. |
-| M6 AI tutor | Nejprve zvaž zkontrolovaná statická vysvětlení. Potřebná AI má schválené příjemce, minimální vstup, klíče na serveru a validovaný výstup. | Oprávnění při vyhledávání, skutečně odesílaná data, injekce, výpadek, retence a výmaz u poskytovatele. Samotný výstup modelu nesmí zapsat úřední známku. |
+| M5 Přehledy učitele a exporty | Přístup podle přidělených tříd a účelu; agregace, když stačí; minimum polí a nové ověření oprávnění při stažení; u hromadných exportů pro nelokální zpracování aplikace k-anonymity (k >= 5) a l-diverzity (l >= 2). | Cizí třída, prošlý/odvolaný odkaz, vzorce v CSV, prozrazující názvy souborů a životní cyklus stažených kopií. |
+| M6 AI tutor | Nejprve zvaž zkontrolovaná statická vysvětlení nebo lokální model (L0). U nelokální AI vytvoř pro 1:1 dotazy lokální pseudonymizační bránu (C1) a pro 1:N třídní data k-anonymizační/agregační pipeline (C2). Potřebná AI má schválené příjemce, minimální vstup, klíče na serveru a validovaný výstup. | Oprávnění při vyhledávání, skutečně odesílaná data, injekce, výpadek, retence a výmaz u poskytovatele. Samotný výstup modelu nesmí zapsat úřední známku. |
 
 Pro vynucení objektových oprávnění použij [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html). Tabulka a školní příklady jsou doporučením tohoto průvodce; netvrdí, že OWASP uvedené aplikace posuzoval.
 
@@ -53,6 +53,7 @@ Situace a cíl:
 Doporučený režim a důvod:
 Potřebné údaje a údaje, které nesbírat:
 Tok dat, příjemci a místo ukládání:
+Režim AI a příprava dat (L0 lokální / C1 pseudonymizační brána / C2 k-anonymita k>=5, l>=2 / N/A):
 Identita a oprávnění:
 Uchovávání, výmaz a obnova:
 Konkrétní kroky realizace:
@@ -73,4 +74,4 @@ Nejprve zmapuj současné chování a důkazy, potom předej seřazené nálezy 
 
 Zadání auditu opravňuje k posouzení, nikoli ke změnám aplikace. Opravy navrhni, pokud implementace již není autorizována; prováděj jen schválený rozsah. U každého bodu rozliš návrh, provedeno bez ověření, ověřeno s konkrétními důkazy a nevyřešeno. Zásahové kontroly prováděj jen v autorizovaném prostředí; bez provedení předej plán. Absence nálezu sama nedokládá bezpečnost aplikace pro reálná data.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.1 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revidované vydání verze 1.2 vychází z původního průvodce z října 2026. Zachovej autora, licenci a oznámení úprav.

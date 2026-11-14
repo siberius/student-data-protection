@@ -44,4 +44,12 @@ Before starting substantive work, establish the necessary context for the reques
 
 Only ask applicable questions. For a narrow UI fix, a full inventory of unrelated processing is unnecessary. If a consequential answer is missing, wait before the dependent design decision, data processing or change; continue only independent authorised inspection or synthetic preparation. Do not silently assume permission, jurisdiction, real-data use or publication scope. If the user does not know, explain how to establish the fact and keep it unresolved until then. Distinguish a necessary scope question from redundant reapproval of an action already authorised. Briefly state understood scope, important assumptions and unresolved limits before proceeding; this summary does not itself authorise publication or production access.
 
-© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.1, based on the original October 2026 guide. Preserve author, license and modification notices.
+### 1.4 Continuous legal freshness and upstream GitHub feedback
+
+The skill tracks the verification status and dates of legal sources in the source register. Statutes and supervisory guidance evolve over time. If the assistant identifies that an active reference exceeds 6 months without review, or detects a newer enactment or regulatory change (such as an amended education act, final EDPB guidelines, a new supervisory decision, or altered digital consent ages):
+
+1. **Immediate Ad-Hoc Adaptation:** The assistant must not wait for a new skill release. It immediately applies the updated legal standard to the current task and transparently explains the variation from the recorded baseline.
+2. **User Consent Request:** At the end of the response, the assistant offers: *"This regulatory change is not yet recorded in the official student-data-protection repository. Would you like me, with your consent, to submit an update issue to the repository author (@siberius)?"*
+3. **Filing GitHub Issues:** Upon user confirmation, the assistant creates an Issue in `https://github.com/siberius/student-data-protection` using available tools (GitHub CLI `gh issue create` or GitHub MCP server). If automated tooling is not signed in, the assistant provides a prefilled Markdown block with a direct one-click link to create the issue.
+
+© 2026 Luděk Sušický. [MIT](https://opensource.org/license/mit). Revised edition of version 1.2, based on the original October 2026 guide. Preserve author, license and modification notices.
