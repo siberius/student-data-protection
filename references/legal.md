@@ -13,7 +13,7 @@ Source sections: 2.
 ### 2.2 School and supplier decisions
 
 | Area | Duty, decision, and required evidence |
-|---|---|
+| --- | --- |
 | Purpose and legal basis | [Z] For each purpose, determine the Article 6 basis, the necessary data, and retention. School assignments typically rely on Article 6(1)(c) or (e), with specific support and a necessity assessment. Section 28 of the Czech School Act is not a blanket permission to store arbitrary telemetry. |
 | Consent | [Z] Do not automatically require parental consent for compulsory education. Where you actually rely on consent, it must be freely given, specific, and withdrawable. The Czech age threshold of 15 for Article 8 concerns consent for information society services offered directly to a child, not all school processing. |
 | Responsibility | [Z] The school is usually the controller; the hosted application provider is the processor. The actual role decides; a supplier that only delivers software without access to data may not be a processor. |
@@ -31,13 +31,12 @@ Sources for the table: [ÚOOÚ: education](https://uoou.gov.cz/profesional/qa-ot
 
 [Z] GDPR generally does not require Czech-only or EU-only hosting. Assess transfers outside the EEA under Chapter V, including remote support and subcontractors. [P] The default profile uses EEA hosting and backups; document any deviation with an applicable mechanism, a transfer assessment where needed, and supplementary measures. ÚOOÚ and EDPB methodologies are interpretative materials, not a separate product certification. [EDPB: roles and international transfers](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
 
-
 ### 2.4 Comparative overview of national jurisdictions and age thresholds [Z/P]
 
 When designing a school application or integrating an AI model, always establish the actual jurisdiction of the school and its learners. An interface language alone does not select national law. Article 8 GDPR permits Member States to adjust the digital consent threshold between 13 and 16 years; national education codes and supervisory authority positions on cloud services and AI diverge substantially across jurisdictions:
 
 | Country / Jurisdiction | Article 8 GDPR Age | Supervisory Authority | Education Statute and Cloud/AI Restrictions |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Czech Republic (CZ)** | 15 years (Act No. 110/2019 Coll.) | ÚOOÚ | Education Act No. 561/2004 Coll. (Section 28); pragmatic approach to licensed clouds; Ministry (MŠMT) and NPI AI guidance (AIDIG). |
 | **Spain (ES)** | 14 years (LOPDGDD Art. 7) | AEPD + regional authorities | LOE (DA 23); authoritative AEPD k-anonymity guidance and mandatory school DPO appointments (Art. 34.1.b LOPDGDD). |
 | **Germany (DE)** | 16 years (BDSG Section 16) | DSK + 16 state DPAs (LfDI, BayLDA, LDI) | 16 state school acts; strict prohibitions or tight curbs on commercial US clouds (M365, Google) and telemetry; mandatory DPIA (DSFA) for school AI. |

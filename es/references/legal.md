@@ -13,7 +13,7 @@ Secciones de origen: 2.
 ### 2.2 Decisiones del responsable y del proveedor
 
 | Área | Requisito o decisión y evidencia |
-|---|---|
+| --- | --- |
 | Finalidad y base | [Z] Determina por finalidad la base del artículo 6, datos necesarios y conservación. La AEPD explica el encaje de la enseñanza reglada en la función educativa y la disposición adicional 23 de la LOE; esto no autoriza cualquier telemetría ni uso comercial secundario. |
 | Consentimiento | [Z] No exijas consentimiento familiar para todo tratamiento educativo. Si la base es consentimiento, aplica el artículo 7 de la LOPDGDD, incluidos los supuestos de menores de 14 años y sus excepciones legales. Esa regla no es una edad universal de acceso a cualquier aplicación ni justifica todo tratamiento escolar. |
 | Responsabilidad | [Z/O] Identifica al responsable real: centro o Administración educativa según titularidad y tratamiento. Un proveedor que trata por instrucciones puede ser encargado; la entrega de software sin acceso a datos no basta para asignarle ese rol. |
@@ -31,13 +31,12 @@ Fuentes locales: [LOPDGDD, Ley Orgánica 3/2018](https://www.boe.es/buscar/act.p
 
 [Z] El RGPD no exige por sí solo alojamiento exclusivamente español o europeo. Evalúa transferencias fuera del EEE, incluido soporte remoto y subencargados. [P] El perfil estricto utiliza alojamiento y copias en el EEE; una alternativa requiere mecanismo válido, evaluación y medidas adicionales cuando procedan. La ubicación no sustituye comprobar los flujos. El criterio de una autoridad es orientación, no certificación del producto.
 
-
 ### 2.4 Marco comparativo de jurisdicciones nacionales y edades de consentimiento [Z/P]
 
 Al diseñar una aplicación escolar o integrar un modelo de IA, determina siempre la jurisdicción real del centro docente y de su alumnado. El idioma de la interfaz no define por sí solo el derecho aplicable. El art. 8 del RGPD permite a los Estados miembros fijar la edad de consentimiento digital entre los 13 y los 16 años; la normativa educativa y el criterio de las autoridades de control respecto a la nube y la IA presentan notables divergencias nacionales:
 
 | País / Jurisdicción | Edad art. 8 RGPD | Autoridad de Control | Normativa Educativa y Restricciones de Nube / IA |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **España (ES)** | 14 años (LOPDGDD art. 7) | AEPD + agencias autonómicas | LOE (DA 23); notas técnicas de la AEPD sobre k-anonimidad y obligatoriedad de DPD en centros docentes (art. 34.1.b LOPDGDD). |
 | **Chequia (CZ)** | 15 años (Ley 110/2019) | ÚOOÚ | Ley de Educación 561/2004 (§ 28); enfoque pragmático para nubes licenciadas; orientaciones del ministerio MŠMT y NPI (AIDIG). |
 | **Alemania (DE)** | 16 años (BDSG § 16) | DSK + 16 autoridades estatales (LfDI, BayLDA, LDI) | 16 leyes educativas estatales; prohibiciones o fuertes restricciones a nubes comerciales de EE. UU. (M365, Google); EIPD (DSFA) obligatoria para IA. |

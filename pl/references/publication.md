@@ -9,6 +9,7 @@ Sekcje źródłowe: 18.
 ### 18.1 Zasady publikacji wizerunku i prac uczniów
 
 [D/O] Publikacja zdjęć uczniów na stronie internetowej szkoły lub profilach społecznościowych:
+
 - **Zgoda opiekunów:** Wymagana dobrowolna, pisemna zgoda rodziców (art. 6 ust. 1 lit. a RODO oraz prawo autorskie i prawo prasowe).
 - **Zasada rozdzielności:** Zgoda na publikację wizerunku nie może być łączona z innymi zgodami ani traktowana jako obowiązek rekrutacyjny.
 - **Brak łączenia z danymi:** Unikaj podpisywania zdjęć pełnym imieniem i nazwiskiem ucznia wraz z klasą w mediach publicznych.

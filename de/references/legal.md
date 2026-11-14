@@ -9,6 +9,7 @@ Quellabschnitte: 2.
 ### 2.1 Rechtsgrundlagen an deutschen Schulen
 
 [G] Jede Verarbeitung von Schülerdaten bedarf einer wirksamen Rechtsgrundlage (Art. 6 und Art. 9 DSGVO):
+
 - **Art. 6 Abs. 1 lit. c DSGVO i. V. m. Landesrecht (Rechtliche Verpflichtung):** Führung von Schülerakten, Klassenbüchern, Notenlisten und Zeugnissen nach den Schulgesetzen der 16 Bundesländer (z. B. BayEUG, SchulG NRW, HSchG).
 - **Art. 6 Abs. 1 lit. e DSGVO (Wahrnehmung einer Aufgabe im öffentlichen Interesse):** Erfüllung des staatlichen Bildungs- und Erziehungsauftrags.
 - **Art. 6 Abs. 1 lit. a DSGVO (Einwilligung):** Nur für freiwillige Angebote (Veröffentlichung von Schülerfotos, freiwillige Arbeitsgemeinschaften, optionale Exkursionen). Die Einwilligung darf keine Voraussetzung für die Teilnahme am regulären Unterricht sein (§ 16 BDSG setzt das Schutzalter auf 16 Jahre fest; darunter ist die Zustimmung der Eltern zwingend).
@@ -17,6 +18,7 @@ Quellabschnitte: 2.
 ### 2.2 Verantwortlichkeit und Datenschutzbeauftragter
 
 [G] Verantwortlicher für die Datenverarbeitung ist die jeweilige Schule, vertreten durch die Schulleitung.
+
 - **Vertrag zur Auftragsverarbeitung (AVV / ADV, Art. 28 DSGVO):** Jeder externe Clouddienst, Lernplattform-Betreiber oder KI-Dienstleister erfordert vor Beginn der Verarbeitung einen formalen AV-Vertrag.
 - **Behördlicher Datenschutzbeauftragter (bDSB):** Öffentliche Schulen sind gesetzlich verpflichtet, einen DSB zu benennen. Der DSB muss vor Einführung neuer IT-Lösungen frühzeitig beratend hinzugezogen werden.
 - **Beschlüsse der Datenschutzkonferenz (DSK):** Strikte Anforderungen an Microsoft 365 und Cloud-Dienste: Übermittlung von Telemetriedaten in Drittländer ohne Angemessenheitsbeschluss ist unzulässig. Vorrang für datenschutzfreundliche Alternativen und Open-Source-Systeme (L0 / Moodle).
@@ -25,6 +27,7 @@ Quellabschnitte: 2.
 ### 2.3 Informationspflichten und Betroffenenrechte
 
 [G] Die Schule muss Schüler und Eltern transparent nach Art. 13-14 DSGVO in altersgerechter Sprache informieren.
+
 - Rechte auf Auskunft (Art. 15), Berichtigung (Art. 16) und Einschränkung (Art. 18).
 - Das Recht auf Löschung (Art. 17) besteht bei gesetzlich vorgeschriebenen Schulakten während der gesetzlichen Aufbewahrungsfristen nicht.
 - Beschwerderecht bei der zuständigen Landesbeauftragten für den Datenschutz (LfDI).
@@ -36,7 +39,7 @@ Quellabschnitte: 2.
 Bei der Entwicklung von Lernanwendungen stets den rechtlichen Rahmen der Schule berücksichtigen:
 
 | Land / Rechtsordnung | Schutzalter nach Art. 8 DSGVO | Aufsichtsbehörde | Schulrechtliche Besonderheiten und Cloud/KI-Vorgaben |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Deutschland (DE)** | 16 Jahre (§ 16 BDSG) | DSK + 16 Landesbeauftragte (LfDI) | 16 Landesschulgesetze; strenge DSK-Beschlüsse zu M365/Telemetrie; Vorrang für On-Premise/Open-Source (L0); DSFA für KI. |
 | **Polen (PL)** | 16 Jahre (Ustawa o ODO 2018) | UODO | Prawo oświatowe; Verantwortung der Schulleitung; Verbot von Schülerbiometrie; ADV nach Art. 28 DSGVO. |
 | **Tschechien (CZ)** | 15 Jahre (Gesetz Nr. 110/2019 Sb.) | ÚOOÚ | Schulgesetz Nr. 561/2004 Sb.; Leitlinien von MŠMT und NPI zu KI in Schulen. |

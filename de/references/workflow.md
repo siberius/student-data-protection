@@ -21,6 +21,7 @@ Quellabschnitte: 1.
 ### 1.4 Fortlaufende Rechtsaktualität und Upstream-Rückmeldung an GitHub [P]
 
 Das Sicherheitsprofil dieses Skills erfordert, dass jede rechtliche Bewertung auf der aktuellen Rechtslage basiert (DSGVO, KI-Verordnung, BDSG, Landesrecht und DSK-Beschlüsse).
+
 1. **Quellenaltersregel (> 6 Monate):** Sind seit der letzten Quellenprüfung mehr als 6 Monate vergangen, muss der Assistent die Gültigkeit der Rechtsgrundlagen überprüfen.
 2. **Sofortige Anpassung für den Nutzer:** Bei festgestellten Rechtsänderungen wendet der Assistent sofort die neue Rechtslage an und informiert den Nutzer.
 3. **Upstream-Meldung (GitHub Issue):** Der Assistent schlägt mit Zustimmung des Nutzers vor, ein Issue im Repository `https://github.com/siberius/student-data-protection/issues` mit dem Label `legal-update` zu erstellen.

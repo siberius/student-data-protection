@@ -45,7 +45,7 @@ Podklady: [OWASP Session Management](https://cheatsheetseries.owasp.org/cheatshe
 ## 6. Role, oprávnění a integrita záznamů [P]
 
 | Role | Povolený rozsah |
-|---|---|
+| --- | --- |
 | Nepřihlášený | Veřejný obsah a případné omezené podání; žádné čtení osobních evidencí. |
 | Jednorázový účastník | Pouze právě povolená aktivita/podání; bez historie a cizích záznamů. |
 | Ověřený žák | Vlastní údaje a funkce určené žákovi; historii jen v rozsahu účelu a oprávnění. Nemění úředně potvrzené údaje pouhou editací profilu. |

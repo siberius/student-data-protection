@@ -9,6 +9,7 @@ Sections sources: 18.
 ### 18.1 Règles relatives aux photographies et créations d'élèves
 
 [R/V] Diffusion sur le site de l'établissement et supports d'information:
+
 - **Consentement écrit préalable:** Accord explicite des responsables légaux avant toute publication d'image d'un élève mineur.
 - **Principe de dissociation:** Le formulaire de droit à l'image ne doit pas être inclus dans le dossier général d'inscription administrative.
 - **Anonymat des publications:** Ne pas associer le nom complet et la classe d'un élève à sa photographie sur des plateformes publiques.

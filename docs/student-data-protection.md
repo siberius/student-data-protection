@@ -71,7 +71,7 @@ The skill tracks the verification status and dates of legal sources in the sourc
 ### 2.2 School and supplier decisions
 
 | Area | Duty, decision, and required evidence |
-|---|---|
+| --- | --- |
 | Purpose and legal basis | [Z] For each purpose, determine the Article 6 basis, the necessary data, and retention. School assignments typically rely on Article 6(1)(c) or (e), with specific support and a necessity assessment. Section 28 of the Czech School Act is not a blanket permission to store arbitrary telemetry. |
 | Consent | [Z] Do not automatically require parental consent for compulsory education. Where you actually rely on consent, it must be freely given, specific, and withdrawable. The Czech age threshold of 15 for Article 8 concerns consent for information society services offered directly to a child, not all school processing. |
 | Responsibility | [Z] The school is usually the controller; the hosted application provider is the processor. The actual role decides; a supplier that only delivers software without access to data may not be a processor. |
@@ -89,13 +89,12 @@ Sources for the table: [ÚOOÚ: education](https://uoou.gov.cz/profesional/qa-ot
 
 [Z] GDPR generally does not require Czech-only or EU-only hosting. Assess transfers outside the EEA under Chapter V, including remote support and subcontractors. [P] The default profile uses EEA hosting and backups; document any deviation with an applicable mechanism, a transfer assessment where needed, and supplementary measures. ÚOOÚ and EDPB methodologies are interpretative materials, not a separate product certification. [EDPB: roles and international transfers](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
 
-
 ### 2.4 Comparative overview of national jurisdictions and age thresholds [Z/P]
 
 When designing a school application or integrating an AI model, always establish the actual jurisdiction of the school and its learners. An interface language alone does not select national law. Article 8 GDPR permits Member States to adjust the digital consent threshold between 13 and 16 years; national education codes and supervisory authority positions on cloud services and AI diverge substantially across jurisdictions:
 
 | Country / Jurisdiction | Article 8 GDPR Age | Supervisory Authority | Education Statute and Cloud/AI Restrictions |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Czech Republic (CZ)** | 15 years (Act No. 110/2019 Coll.) | ÚOOÚ | Education Act No. 561/2004 Coll. (Section 28); pragmatic approach to licensed clouds; Ministry (MŠMT) and NPI AI guidance (AIDIG). |
 | **Spain (ES)** | 14 years (LOPDGDD Art. 7) | AEPD + regional authorities | LOE (DA 23); authoritative AEPD k-anonymity guidance and mandatory school DPO appointments (Art. 34.1.b LOPDGDD). |
 | **Germany (DE)** | 16 years (BDSG Section 16) | DSK + 16 state DPAs (LfDI, BayLDA, LDI) | 16 state school acts; strict prohibitions or tight curbs on commercial US clouds (M365, Google) and telemetry; mandatory DPIA (DSFA) for school AI. |
@@ -153,7 +152,7 @@ For public authorities and private providers of public services, assess a FRIA u
 ### 3.6 Timeline and level of legal verification
 
 | Date | Significance for the assessment |
-|---|---|
+| --- | --- |
 | 1 August 2024 | The original AI Act enters into force. |
 | 2 February 2025 | Chapters I and II apply, including Article 4 and the original Article 5 prohibitions. |
 | 2 August 2025 | Selected parts apply, including GPAI and governance and supervision; consider transitional provisions for older models. |
@@ -232,7 +231,7 @@ Background: [OWASP Session Management](https://cheatsheetseries.owasp.org/cheats
 ## 6. Roles, permissions, and record integrity [P]
 
 | Role | Permitted scope |
-|---|---|
+| --- | --- |
 | Unauthenticated | Public content and any limited submission; no reading of personal records. |
 | One-time participant | Only the currently permitted activity or submission; no history or other people's records. |
 | Verified student | Their own data and student-facing functions; history only within the purpose and permission. They do not change officially confirmed data by merely editing a profile. |
@@ -321,7 +320,7 @@ Store the audit in an append-only target that the ordinary application cannot de
 [Z] Keep data only for the period necessary for the purpose and applicable duties. GDPR does not set a universal number of days for all school applications. [P] The following values are a proposal to be confirmed by the school; legal duties and the file and retention plan take precedence.
 
 | Category | Default proposal |
-|---|---|
+| --- | --- |
 | Entry code or QR secret | Invalidate after expiry or closing entry; do not keep a usable secret. |
 | Session secret | Revoke immediately on logout or expiry, remove inactive verifiers within 24 hours; audit without secrets can be kept longer. |
 | Temporary participation and device ID for a one-time activity | Remove within 24 hours after it ends, unless another necessary purpose is documented. |
@@ -380,7 +379,7 @@ Separately assess any duties under the Czech Cybersecurity Act and the AI Act if
 Perform only in an authorised test environment with synthetic data. Prepare two schools, two teachers with different classes, two students with the same name, an anonymous visitor, a shared browser, and a mobile PWA. Add a guardian account and a service account if they exist. Run tests for QR, WebSocket, PWA, attachments, and AI only for features that are present; always justify N/A. Time tests use controlled test clocks. For each test, keep the configuration or version, procedure, expectation, actual result, and evidence without personal data.
 
 | ID | Scenario or procedure | Acceptance result |
-|---|---|---|
+| --- | --- | --- |
 | AT01 | User B enters user A's name in a form, profile, or one-time entry. | They do not get A's account or history and do not overwrite A's record; the submission remains unconfirmed until authorised verification. |
 | AT02 | Change `school_id`, `student_id`, `record_id` in a path, JSON, export, and WebSocket. | The server grants neither other data nor a change; a 403 or 404 response or equivalent without leaking existence. |
 | AT03 | A student calls a teacher API; teacher A exports school or class B. | Everything is refused without personal data and without creating a file in the background. |
@@ -459,7 +458,7 @@ Technical guidance: [OWASP RAG Security](https://cheatsheetseries.owasp.org/chea
 When a creator's proposal or new feature introduces an AI model, first determine whether the model runs **locally within the controller perimeter (L0)** or is a **non-local (cloud/external) model (C1/C2)**. For non-local models, proactively alert the creator that a transformation layer must be established within the application before transferring data outside the school boundary:
 
 | AI Architectural Mode | Flow Characteristics | Required Application Data-Preparation Controls [P] |
-|---|---|---|
+| --- | --- | --- |
 | **L0: Local / In-Browser AI** (e.g., local model on school server or client browser without telemetry) | Data never leave the school device or local server; no external recipient. | Does not require external k-anonymity or an Article 28 GDPR contract. Enforce local authorization (section 6) and clean shared device cache/memory on logout (section 9). |
 | **C1: Non-Local AI - Individual Interaction (1:1)** (e.g., automated feedback on an individual assignment) | Query pertains to a single learner; mathematical k-anonymity cannot be applied to an isolated prompt. | Establish a **local pseudonymisation domain** (EDPB 01/2025): 1. Strip direct identifiers (`name`, `email`, `student_id`, `class`). 2. Keep the mapping table (`lookup table`) strictly on the school's local server outside vendor reach. 3. Sanitize learner free text (redact names, contacts, school title). 4. Use stateless API calls with verified provider zero-retention terms. |
 | **C2: Non-Local AI - Cohort / Class Analytics & Exports (1:N)** (e.g., class error trends, dropout prediction, RAG over cohorts) | Multiple learner records sent to the model. In small classes, simple pseudonymisation (`Student_01`) fails. | Establish an **aggregation or k-anonymity pipeline** (EDPB 02/2026, AEPD): 1. Prefer sending **aggregated summaries** (class averages, error counts without microdata). 2. If granular records are required, enforce **k-anonymity (`k >= 5` distinct persons)** and **l-diversity (`l >= 2` distinct sensitive values)** per equivalence class. |
@@ -497,7 +496,7 @@ Targeted additions (DPO role, RAG and SSO guidance) reviewed 5 November 2026. Th
 Recommend one mode with a reason and, when useful, a simpler alternative. Combine modes only for the affected features: an anonymous exercise and an identified teacher report can have different boundaries. Do not force every application into the most complex mode. Real-data use still needs the applicable processing decision and safeguards.
 
 | Mode and school example | Minimum design | Checks before real use |
-|---|---|---|
+| --- | --- | --- |
 | M1 One-off practice: fractions exercise | No learner name or account when unnecessary; answers in working memory; clear on finish. A local/static activity can avoid a central record. | Reload, history and the next user must not reveal answers; inspect actual requests, logs, telemetry and browser storage before claiming anonymity. |
 | M2 Limited collection: event signup | Collect only fields needed for the event; protect receipt and access; set a purpose-based deletion trigger. Treat an unverified submission as pending. | Foreign-record access, unexpected writable fields, submission limits and deletion. A shared code alone cannot establish identity for official records. |
 | M3 Resume learning: saved practice progress | Keep minimum progress; use verified school identity for personal history. Assess any pseudonymous access mechanism against its consequences. | Another learner's history, shared-device logout, changed class membership and recovery. A pseudonym is not automatically anonymous. |

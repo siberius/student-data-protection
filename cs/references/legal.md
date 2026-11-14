@@ -13,7 +13,7 @@ Zdrojové oddíly: 2.
 ### 2.2 Rozhodnutí školy a dodavatele
 
 | Oblast | Povinnost / rozhodnutí a požadovaný důkaz |
-|---|---|
+| --- | --- |
 | Účel a titul | [Z] Pro každý účel určete titul dle čl. 6, nezbytná data a dobu uchování. U školních úkolů typicky čl. 6 odst. 1 písm. c) nebo e), s konkrétní oporou a posouzením nezbytnosti. § 28 školského zákona není plošné oprávnění ukládat libovolnou telemetrii. |
 | Souhlas | [Z] Nevyžadujte automaticky souhlas rodičů pro povinnou výuku. Kde se skutečně opíráte o souhlas, musí být svobodný, konkrétní a odvolatelný. Česká hranice 15 let pro čl. 8 se týká souhlasu u přímo nabízených služeb informační společnosti, nikoli všech školních zpracování. |
 | Odpovědnost | [Z] Škola bývá správcem, poskytovatel hostované aplikace zpracovatelem. Rozhoduje skutečná role; dodavatel pouze předávající software bez přístupu k datům nemusí být zpracovatel. |
@@ -31,13 +31,12 @@ Prameny k tabulce: [ÚOOÚ: školství](https://uoou.gov.cz/profesional/qa-otazk
 
 [Z] GDPR obecně nenařizuje výhradně český ani unijní hosting. Předávání mimo EHP vyhodnoť podle kapitoly V, včetně vzdálené podpory a subdodavatelů. [P] Výchozí profil používá EHP hosting i zálohy; odchylku dolož použitelným mechanismem, případným posouzením předání a doplňkovými opatřeními. ÚOOÚ/EDPB metodiky jsou výkladové podklady, nikoli samostatná certifikace výrobku. [EDPB: role a mezinárodní předávání](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en).
 
-
 ### 2.4 Srovnávací přehled národních jurisdikcí a věkových hranic [Z/P]
 
 Při návrhu školní aplikace nebo integraci AI modelu vždy ověř skutečnou jurisdikci školy a cílové skupiny žáků. Jazyk rozhraní sám o sobě neurčuje použitelné národní právo. GDPR v čl. 8 dává členským státům možnost upravit věkovou hranici pro samostatný digitální souhlas dětí v rozmezí 13 až 16 let; školské zákony a postoje národních dozorových úřadů k externím cloudům a AI se v jednotlivých zemích výrazně liší:
 
 | Stát / jurisdikce | Věk dle čl. 8 GDPR | Dozorový úřad | Školský předpis a specifické omezení cloudu/AI |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Česko (CZ)** | 15 let (zákon č. 110/2019 Sb.) | ÚOOÚ | Školský zákon č. 561/2004 Sb. (§ 28); opatrný a pragmatický přístup k licencovaným cloudům; metodiky MŠMT a NPI ČR (AIDIG). |
 | **Španělsko (ES)** | 14 let (LOPDGDD čl. 7) | AEPD + autonomní úřady | LOE (DA 23); detailní metodiky AEPD ke k-anonymitě a povinnost jmenovat DPD ve školách (čl. 34.1.b LOPDGDD). |
 | **Německo (DE)** | 16 let (BDSG § 16) | DSK + 16 zemských úřadů (LfDI, BayLDA, LDI) | 16 zemských školských zákonů; striktní zákaz nebo omezení komerčních US cloudů (M365, Google) a telemetrie; povinná DSFA (DPIA) pro školní AI. |

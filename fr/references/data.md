@@ -7,6 +7,7 @@ Sections sources: 4.
 ## 4. Modèle de données, collecte et minimisation [P]
 
 [P] Le modèle de données de l'application DOIT respecter le principe de minimisation:
+
 - **Identifiants:** Utiliser des UUIDv4 synthétiques comme clés primaires. Ne jamais exposer le numéro d'identification national (INE en France) ni le nom de l'élève dans les URL ou le stockage local.
 - **Champs facultatifs:** Les numéros de téléphone personnel, adresses postales et photographies ne doivent pas être obligatoires dans les applications disciplinaires.
 - **Données sensibles:** Les applications pédagogiques NE DOIVENT PAS collecter de diagnostics médicaux. Pour les aménagements d'épreuves (tiers-temps), seul un paramètre technique (`extra_time_multiplier: 1.33`) doit être conservé.

@@ -8,7 +8,7 @@ Statut des sources réglementaires et calendrier de révision pour la protection
 ## Textes réglementaires et lignes directrices officielles
 
 | Identifiant | Autorité / Organisme | Titre du document | Statut / Date | Champ d'application |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | RGPD-2016 | UE (PE et Conseil) | Règlement (UE) 2016/679 (RGPD) | En vigueur depuis le 25.05.2018 | UE / transfrontalier |
 | AIA-2024 | UE (PE et Conseil) | Règlement (UE) 2024/1689 (Règlement sur l'IA / AI Act) | En vigueur depuis le 02.08.2024 | UE |
 | EDPB-ANON | CEPD / G29 | Avis 05/2014 sur les techniques d'anonymisation | En vigueur (WP216) | UE |
@@ -25,6 +25,7 @@ Statut des sources réglementaires et calendrier de révision pour la protection
 ## Procédure d'actualisation juridique amont (GitHub Issue)
 
 Si une modification législative ou doctrinale de la CNIL est identifiée lors de l'utilisation du skill (ou si plus de 6 mois se sont écoulés depuis la dernière vérification) :
+
 1. L'assistant applique immédiatement l'état du droit actuel dans sa réponse et en informe l'utilisateur.
 2. L'assistant propose, avec l'accord de l'utilisateur, d'ouvrir une issue sur le dépôt du projet :
    `https://github.com/siberius/student-data-protection/issues` avec le label `legal-update`.

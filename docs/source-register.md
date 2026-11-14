@@ -3,7 +3,7 @@
 Version 1.2. This register records the scope of checks, not a certificate. Dates from the original edition are historical declarations, not new execution. Other citations remain inherited until separately reviewed.
 
 | ID | Source | Date | Status and limit |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | DPO | [DPO](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en) | 2026-11-05 | Targeted read: independent advice/monitoring; controller decisions remain with the controller. |
 | AI4 | [AI4](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4) | 2026-11-05 | Targeted read of Commission text. Full Official Journal not independently revalidated in this change. |
 | AI113 | [AI113](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113) | 2026-11-05 | Targeted read of Commission application dates. Confirm the actual duty and transition for deployment. |

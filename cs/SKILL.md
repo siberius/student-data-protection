@@ -37,7 +37,7 @@ Podrobnosti rozsahu, přísného profilu a řízení čti podle potřeby v [prac
 Při žádosti o praktické řešení doporuč vhodný režim dat a rozpracuj jen vybraný postup. Šest režimů dat se liší od výše uvedených pracovních režimů. Praktickou příručku načti jen pro tuto volbu. Jádro drž krátké; samostatné skilly zvaž až při vlastním postupu incidentu, auditu či implementace s odlišnými vstupy a oprávněními.
 
 | Práce | Reference |
-|---|---|
+| --- | --- |
 | Publikování, dokumenty, generovaný web a odvozené výstupy | [Publikování a výstupy](references/publication.md) |
 | Praktická volba režimu dat a karta řešení | [Praktická řešení](references/practical-solutions.md) |
 | Sběr, pole, soubory, importy a konektory | [Datové toky](references/data.md) |
@@ -56,7 +56,7 @@ Vše nenačítej automaticky a nepřidávej technologii jen kvůli použití mod
 
 Při implementaci vybírej testy pro změněnou funkci a její rizika. Používej autorizované prostředí a syntetické záznamy. Při auditu předej místo/důkaz, závažnost, dopad, doporučení a potřebné ověření; navržený test nevydávej za úspěšný. Rozliš pozorované selhání, hypotézu, neověřeno a N/A s důvodem. Právní nejistotu odděl od technické chyby. Předej konkrétní ověřené vlastnosti a otevřená rozhodnutí, neslibuj stoprocentní bezpečnost či certifikát GDPR.
 
-Průběžná kontrola legislativy a upstream hlášení: Pokud zjistíš, že se citované právní předpisy, výklady dozorových úřadů či věkové hranice změnily oproti datu v source-status.md (nebo pokud od kontroly pramene uplynulo více než 6 měsíců), ihned v odpovědi uplatni aktuální právo, vysvětli rozdíl a se souhlasem uživatele nabídni založení strukturovaného hlášení na GitHubu repozitáře (https://github.com/siberius/student-data-protection/issues).
+Průběžná kontrola legislativy a upstream hlášení: Pokud zjistíš, že se citované právní předpisy, výklady dozorových úřadů či věkové hranice změnily oproti datu v source-status.md (nebo pokud od kontroly pramene uplynulo více než 6 měsíců), ihned v odpovědi uplatni aktuální právo, vysvětli rozdíl a se souhlasem uživatele nabídni založení strukturovaného hlášení na GitHubu repozitáře (<https://github.com/siberius/student-data-protection/issues>).
 
 ## Integrace a autorství
 

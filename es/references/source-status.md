@@ -3,7 +3,7 @@
 Versión 1.2. Este registro documenta el alcance, no una certificación. Las fechas originales son declaraciones históricas, no comprobaciones nuevas. Otras citas quedan heredadas hasta revisión específica.
 
 | ID | Fuente | Fecha | Estado y límite |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | DPO | [DPO](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en) | 2026-11-05 | Lectura parcial: asesoramiento y supervisión independientes; decide el responsable. |
 | AI4 | [AI4](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4) | 2026-11-05 | Lectura del texto de la Comisión. No se ha vuelto a verificar íntegramente el Diario Oficial. |
 | AI113 | [AI113](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113) | 2026-11-05 | Lectura de fechas de la Comisión; comprueba obligación y transición concretas antes del despliegue. |

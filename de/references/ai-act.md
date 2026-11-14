@@ -14,6 +14,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ### 3.2 Verbotene KI-Praktiken im Bildungsbereich (Art. 5)
 
 [G] Strikt verboten sind an Schulen:
+
 1. **Emotionserkennung:** Systeme, die emotionale Zustände von Schülern anhand von Mimik oder Stimme im Unterricht ableiten (Art. 5 Abs. 1 lit. f).
 2. **Social Scoring:** Bewertung oder Klassifizierung des Schülerverhaltens, die zu Benachteiligungen führt (Art. 5 Abs. 1 lit. c).
 3. **Biometrische Kategorisierung:** Ableitung sensibler Merkmale aus biometrischen Daten.
@@ -22,6 +23,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ### 3.3 Hochrisiko-KI-Systeme in der Bildung (Art. 6 und Anhang III)
 
 [G] Als Hochrisiko-KI (High-Risk AI) gelten Systeme für:
+
 - Zulassung und Zuweisung zu Bildungsgängen oder Schulen.
 - Bewertung von Lernergebnissen und automatisierte Prüfungsbewertung mit Einfluss auf Noten.
 - Verhaltensüberwachung und Aufdeckung von Täuschungsversuchen bei Prüfungen (Proctoring).

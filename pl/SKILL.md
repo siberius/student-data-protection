@@ -32,7 +32,7 @@ Szczegóły procedury i rygorystycznego profilu czytaj w [procedurze pracy](refe
 Przy prośbie o rozwiązanie praktyczne dobierz odpowiedni tryb danych i rozpracuj tylko wybraną ścieżkę. Sześć trybów danych różni się od powyższych trybów pracy.
 
 | Obszar | Moduł referencyjny |
-|---|---|
+| --- | --- |
 | Publikacja, dokumenty, generowane strony i wyroby pochodne | [Publikacja i wyroby](references/publication.md) |
 | Dobór trybu danych i karta wdrożeniowa | [Praktyczne rozwiązania](references/practical-solutions.md) |
 | Zbieranie, pola, pliki, importy i integracje | [Przepływy danych](references/data.md) |

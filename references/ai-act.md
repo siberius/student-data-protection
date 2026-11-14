@@ -47,7 +47,7 @@ For public authorities and private providers of public services, assess a FRIA u
 ### 3.6 Timeline and level of legal verification
 
 | Date | Significance for the assessment |
-|---|---|
+| --- | --- |
 | 1 August 2024 | The original AI Act enters into force. |
 | 2 February 2025 | Chapters I and II apply, including Article 4 and the original Article 5 prohibitions. |
 | 2 August 2025 | Selected parts apply, including GPAI and governance and supervision; consider transitional provisions for older models. |

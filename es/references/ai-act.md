@@ -47,7 +47,7 @@ Para autoridades públicas y prestadores privados de servicios públicos, evalú
 ### 3.6 Calendario y nivel de verificación jurídica
 
 | Fecha | Relevancia para la evaluación |
-|---|---|
+| --- | --- |
 | 1 de agosto de 2024 | Entrada en vigor del Reglamento de IA original. |
 | 2 de febrero de 2025 | Aplicación de capítulos I y II, incluido artículo 4 y prohibiciones originales del artículo 5. |
 | 2 de agosto de 2025 | Aplicación de partes seleccionadas, incluidas IA de uso general, gobernanza y supervisión; considerar transiciones de modelos anteriores. |

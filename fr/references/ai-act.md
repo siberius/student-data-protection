@@ -14,6 +14,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ### 3.2 Pratiques interdites en milieu scolaire (Article 5)
 
 [J] Sont strictement interdits dans les établissements scolaires:
+
 1. **Reconnaissance des émotions:** Utilisation de l'IA pour déduire l'état émotionnel des élèves à partir de la caméra ou de la voix (art. 5 par. 1 point f).
 2. **Notation sociale (Social Scoring):** Classement ou évaluation des élèves menant à un traitement préjudiciable hors du contexte initial (art. 5 par. 1 point c).
 3. **Catégorisation biométrique:** Déduction de caractéristiques sensibles (origines, opinions, croyances) à partir de données biométriques.
@@ -22,6 +23,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ### 3.3 Systèmes d'IA à haut risque dans l'éducation (Article 6 et Annexe III)
 
 [J] Sont classés à haut risque (High-Risk AI) les systèmes d'IA destinés à:
+
 - Déterminer l'admission ou l'orientation des élèves vers des filières scolaires.
 - Évaluer les acquis d'apprentissage et corriger automatiquement des épreuves influant sur l'orientation ou les notes.
 - Surveiller le comportement et détecter les fraudes lors d'examens (proctoring).

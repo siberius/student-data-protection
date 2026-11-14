@@ -27,6 +27,7 @@ Unterscheiden Sie zwischen **dauerhaftem Konto mit verifizierter Identität**, *
 ### 1.4 Fortlaufende Rechtsaktualität und Upstream-Rückmeldung an GitHub [P]
 
 Das Sicherheitsprofil dieses Skills erfordert, dass jede rechtliche Bewertung auf der aktuellen Rechtslage basiert (DSGVO, KI-Verordnung, BDSG, Landesrecht und DSK-Beschlüsse).
+
 1. **Quellenaltersregel (> 6 Monate):** Sind seit der letzten Quellenprüfung mehr als 6 Monate vergangen, muss der Assistent die Gültigkeit der Rechtsgrundlagen überprüfen.
 2. **Sofortige Anpassung für den Nutzer:** Bei festgestellten Rechtsänderungen wendet der Assistent sofort die neue Rechtslage an und informiert den Nutzer.
 3. **Upstream-Meldung (GitHub Issue):** Der Assistent schlägt mit Zustimmung des Nutzers vor, ein Issue im Repository `https://github.com/siberius/student-data-protection/issues` mit dem Label `legal-update` zu erstellen.
@@ -36,6 +37,7 @@ Das Sicherheitsprofil dieses Skills erfordert, dass jede rechtliche Bewertung au
 ### 2.1 Rechtsgrundlagen an deutschen Schulen
 
 [G] Jede Verarbeitung von Schülerdaten bedarf einer wirksamen Rechtsgrundlage (Art. 6 und Art. 9 DSGVO):
+
 - **Art. 6 Abs. 1 lit. c DSGVO i. V. m. Landesrecht (Rechtliche Verpflichtung):** Führung von Schülerakten, Klassenbüchern, Notenlisten und Zeugnissen nach den Schulgesetzen der 16 Bundesländer (z. B. BayEUG, SchulG NRW, HSchG).
 - **Art. 6 Abs. 1 lit. e DSGVO (Wahrnehmung einer Aufgabe im öffentlichen Interesse):** Erfüllung des staatlichen Bildungs- und Erziehungsauftrags.
 - **Art. 6 Abs. 1 lit. a DSGVO (Einwilligung):** Nur für freiwillige Angebote (Veröffentlichung von Schülerfotos, freiwillige Arbeitsgemeinschaften, optionale Exkursionen). Die Einwilligung darf keine Voraussetzung für die Teilnahme am regulären Unterricht sein (§ 16 BDSG setzt das Schutzalter auf 16 Jahre fest; darunter ist die Zustimmung der Eltern zwingend).
@@ -44,6 +46,7 @@ Das Sicherheitsprofil dieses Skills erfordert, dass jede rechtliche Bewertung au
 ### 2.2 Verantwortlichkeit und Datenschutzbeauftragter
 
 [G] Verantwortlicher für die Datenverarbeitung ist die jeweilige Schule, vertreten durch die Schulleitung.
+
 - **Vertrag zur Auftragsverarbeitung (AVV / ADV, Art. 28 DSGVO):** Jeder externe Clouddienst, Lernplattform-Betreiber oder KI-Dienstleister erfordert vor Beginn der Verarbeitung einen formalen AV-Vertrag.
 - **Behördlicher Datenschutzbeauftragter (bDSB):** Öffentliche Schulen sind gesetzlich verpflichtet, einen DSB zu benennen. Der DSB muss vor Einführung neuer IT-Lösungen frühzeitig beratend hinzugezogen werden.
 - **Beschlüsse der Datenschutzkonferenz (DSK):** Strikte Anforderungen an Microsoft 365 und Cloud-Dienste: Übermittlung von Telemetriedaten in Drittländer ohne Angemessenheitsbeschluss ist unzulässig. Vorrang für datenschutzfreundliche Alternativen und Open-Source-Systeme (L0 / Moodle).
@@ -52,6 +55,7 @@ Das Sicherheitsprofil dieses Skills erfordert, dass jede rechtliche Bewertung au
 ### 2.3 Informationspflichten und Betroffenenrechte
 
 [G] Die Schule muss Schüler und Eltern transparent nach Art. 13-14 DSGVO in altersgerechter Sprache informieren.
+
 - Rechte auf Auskunft (Art. 15), Berichtigung (Art. 16) und Einschränkung (Art. 18).
 - Das Recht auf Löschung (Art. 17) besteht bei gesetzlich vorgeschriebenen Schulakten während der gesetzlichen Aufbewahrungsfristen nicht.
 - Beschwerderecht bei der zuständigen Landesbeauftragten für den Datenschutz (LfDI).
@@ -63,7 +67,7 @@ Das Sicherheitsprofil dieses Skills erfordert, dass jede rechtliche Bewertung au
 Bei der Entwicklung von Lernanwendungen stets den rechtlichen Rahmen der Schule berücksichtigen:
 
 | Land / Rechtsordnung | Schutzalter nach Art. 8 DSGVO | Aufsichtsbehörde | Schulrechtliche Besonderheiten und Cloud/KI-Vorgaben |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Deutschland (DE)** | 16 Jahre (§ 16 BDSG) | DSK + 16 Landesbeauftragte (LfDI) | 16 Landesschulgesetze; strenge DSK-Beschlüsse zu M365/Telemetrie; Vorrang für On-Premise/Open-Source (L0); DSFA für KI. |
 | **Polen (PL)** | 16 Jahre (Ustawa o ODO 2018) | UODO | Prawo oświatowe; Verantwortung der Schulleitung; Verbot von Schülerbiometrie; ADV nach Art. 28 DSGVO. |
 | **Tschechien (CZ)** | 15 Jahre (Gesetz Nr. 110/2019 Sb.) | ÚOOÚ | Schulgesetz Nr. 561/2004 Sb.; Leitlinien von MŠMT und NPI zu KI in Schulen. |
@@ -86,6 +90,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ### 3.2 Verbotene KI-Praktiken im Bildungsbereich (Art. 5)
 
 [G] Strikt verboten sind an Schulen:
+
 1. **Emotionserkennung:** Systeme, die emotionale Zustände von Schülern anhand von Mimik oder Stimme im Unterricht ableiten (Art. 5 Abs. 1 lit. f).
 2. **Social Scoring:** Bewertung oder Klassifizierung des Schülerverhaltens, die zu Benachteiligungen führt (Art. 5 Abs. 1 lit. c).
 3. **Biometrische Kategorisierung:** Ableitung sensibler Merkmale aus biometrischen Daten.
@@ -94,6 +99,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ### 3.3 Hochrisiko-KI-Systeme in der Bildung (Art. 6 und Anhang III)
 
 [G] Als Hochrisiko-KI (High-Risk AI) gelten Systeme für:
+
 - Zulassung und Zuweisung zu Bildungsgängen oder Schulen.
 - Bewertung von Lernergebnissen und automatisierte Prüfungsbewertung mit Einfluss auf Noten.
 - Verhaltensüberwachung und Aufdeckung von Täuschungsversuchen bei Prüfungen (Proctoring).
@@ -112,6 +118,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 4. Datenmodell, Erhebung und Datenminimierung [P]
 
 [P] Das Datenmodell MUSS dem Grundsatz der Datenminimierung entsprechen (Art. 5 Abs. 1 lit. c DSGVO):
+
 - **Identifikatoren:** Generierte UUIDv4-Schlüssel als Primärschlüssel verwenden. Niemals Schüleraktennummern oder Klarnamen in URLs, Dateinamen oder Client-Speichern nutzen.
 - **Optionale Felder:** Telefonnummern, Wohnanschriften oder Fotos dürfen in fachbezogenen Lern-Apps keine Pflichtfelder sein.
 - **Besondere Kategorien:** Keine Speicherung von Krankheitsdiagnosen. Für Nachteilsausgleiche (z. B. Zeitzugabe) genügt ein technischer Parameter (`extra_time_factor: 1.25`) ohne Angabe des medizinischen Befunds.
@@ -120,6 +127,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 5. Authentifizierung, Einladungen und Sitzungen [P]
 
 [P] Sicherheitsanforderungen:
+
 - **Passwörter:** Mindestens 12 Zeichen, Abgleich gegen Wörterbücher kompromittierter Passwörter. Passwort-Hashing zwingend mit Argon2id oder bcrypt (hoher Work-Factor).
 - **PIN- und QR-Codes:** Nur für jüngere Schüler für zeitlich begrenzte Unterrichtseinheiten im Klassenraum zulässig.
 - **Sitzungen:** Kryptografisch sichere Sitzungs-IDs (mindestens 128 Bit Entropie). Cookies mit `HttpOnly`, `Secure` und `SameSite=Lax/Strict`.
@@ -128,6 +136,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 6. Rollen, Berechtigungen und Integrität [P]
 
 [P] Zugriffskontrolle:
+
 - **RBAC-Modell:** Definierte Rollen: Schüler, Lehrkraft, Eltern/Erziehungsberechtigte, Schulleitung/Administrator.
 - **Mandantentrennung:** Berechtigungsprüfung bei jeder Datenbankabfrage. Schüler sehen nur eigene Noten; Eltern nur eigene Kinder; Lehrkräfte nur die eigenen Klassen.
 - **Schutz vor IDOR:** Manipulation von Objekt-IDs im Request muss serverseitig mit 403 Forbidden blockiert werden.
@@ -136,6 +145,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 7. Verschlüsselung und Schlüsselverwaltung [P]
 
 [P] Kryptografische Standards:
+
 - **Ruhende Daten (At Rest):** Verschlüsselung von Datenbanken und Backups mit AES-256-GCM oder ChaCha20-Poly1305.
 - **Übertragene Daten (In Transit):** Erzwingung von TLS 1.3 (mindestens TLS 1.2 mit Forward Secrecy). Aktiviertes HSTS für mindestens 1 Jahr (`max-age=31536000; includeSubDomains`).
 - **Schlüsselmanagement:** Keine kryptografischen Schlüssel im Quellcode oder Repository. Verwendung sicherer Secret-Stores oder Umgebungsvariablen.
@@ -143,6 +153,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 8. CSV und SQLite [P]
 
 [P] Lokale Datenspeicherung und Exporte:
+
 - **CSV-Injektionsschutz:** Felder, die mit `=`, `+`, `-`, `@`, Tabulator oder Zeilenumbruch beginnen, MÜSSEN beim Export durch ein vorangestelltes Apostroph (`'`) neutralisiert werden, um Makroausführung in Tabellenkalkulationen (Excel, Calc) zu verhindern.
 - **SQLite:** Einsatz des WAL-Modus (Write-Ahead Logging) und Aktivierung von Fremdschlüsseln (`PRAGMA foreign_keys = ON;`). Die Datenbankdatei darf nicht im öffentlich erreichbaren Web-Root liegen.
 - **Prepared Statements:** Ausschließlich parametrisierte SQL-Abfragen zur Verhinderung von SQL-Injektionen.
@@ -150,6 +161,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 9. Web, PWA und geteilte Geräte [P]
 
 [P] Sicherheit an Schulgeräten:
+
 - **Geteilte Rechner im Computerraum:** Bei Klick auf „Abmelden“ MÜSSEN `localStorage`, `sessionStorage` und `IndexedDB` vollständig von personenbezogenen Daten und Tokens bereinigt werden.
 - **Content Security Policy (CSP):** Strikte CSP-Header verhindern das Nachladen von Skripten Dritter und unautorisierten Inline-Code.
 - **Keine Werbetracker:** Vollständiges Verbot von Google Analytics, Meta Pixel oder Marketing-Trackern in schulischen Anwendungen.
@@ -157,6 +169,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 10. Audit, Aufbewahrung und Wiederherstellung [P/G]
 
 [P/G] Protokollierung und Datenlebenszyklus:
+
 - **Protokolldaten:** Aufzeichnung von Anmeldungen, Fehlversuchen, Rechteänderungen und Notenbearbeitungen.
 - **Minimierte Logs:** Keine Klartext-Passwörter oder sensiblen Schülerdaten in Protokolldateien.
 - **Löschfristen:** Temporäre Unterrichtsdaten nach Schuljahresende löschen; amtliche Nachweise gemäß den Archivvorschriften des jeweiligen Bundeslandes sichern.
@@ -165,6 +178,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 11. Sicherheitsvorfälle (Incidents) [G/P]
 
 [G] Vorgehen bei Datenschutzverletzungen (Art. 33-34 DSGVO):
+
 - **Meldung an Aufsichtsbehörde:** Meldung an die zuständige Landesbeauftragte für den Datenschutz (LfDI) innerhalb von 72 Stunden nach Bekanntwerden, sofern ein Risiko für die Rechte der Schüler besteht.
 - **Benachrichtigung der Betroffenen:** Bei hohem Risiko unverzügliche Information der Eltern und Schüler.
 - **Vorfallregister:** Dokumentation aller Sicherheitsvorfälle im internen Verzeichnis der Schule.
@@ -172,6 +186,7 @@ Klassische regelbasierte Algorithmen, deterministische Punkteberechnungen und Da
 ## 12. Checkliste vor Produktivbetrieb
 
 Vor dem Echtbetrieb überprüfen:
+
 1. Rechtsgrundlage dokumentiert und Abstimmung mit dem behördlichen DSB erfolgt.
 2. AV-Vertrag (Art. 28 DSGVO) mit allen IT- und Cloud-Dienstleistern abgeschlossen.
 3. Datenschutzhinweise nach Art. 13-14 DSGVO in verständlicher Sprache bereitgestellt.
@@ -188,7 +203,7 @@ Vor dem Echtbetrieb überprüfen:
 Tabelle der 38 verbindlichen Prüfszenarien:
 
 | Kennung | Bereich | Testszenario | Erwartetes Ergebnis |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | AT01 | Rechtsgrundlage | Verarbeitung von Schülerdaten im amtlichen Verzeichnis | Nachweis von Art. 6 Abs. 1 lit. c DSGVO i. V. m. Schulgesetz |
 | AT02 | Einwilligung | Teilnahme am verpflichtenden Informatikunterricht | Keine Einwilligungserklärung als Zugangsvoraussetzung |
 | AT03 | Sensible Daten | Registrierung in einer Mathematik-Lern-App | Keine Felder zu Religion, Herkunft oder Gesundheit |
@@ -203,7 +218,7 @@ Tabelle der 38 verbindlichen Prüfszenarien:
 | AT12 | Elterntrennung | Elternteil versucht fremdes Zeugnis abzurufen | Zugriff gesperrt, nur eigene Kinder sichtbar |
 | AT13 | Transportverschlüsselung | Unverschlüsselter Aufruf per HTTP | Automatische 301-Weiterleitung auf HTTPS (TLS 1.3) |
 | AT14 | HSTS-Header | Überprüfung der HTTP-Sicherheitsheader | Header Strict-Transport-Security aktiv |
-| AT15 | CSV-Injektion | Name enthält `=1+2';cmd|' ...` | Exportiertes CSV stellt Apostroph vor die Zelle |
+| AT15 | CSV-Injektion | Name enthält `=1+2';cmd&#124;' ...` | Exportiertes CSV stellt Apostroph vor die Zelle |
 | AT16 | SQLite-Injektion | Eingabe von `' OR 1=1 --` in Suchmaske | Abfrage parametrisiert, kein Datenabfluss |
 | AT17 | SQLite-Ablage | Direkter Aufruf der `.sqlite`-Datei im Browser | Zugriff verweigert (403/404), Datei außerhalb Web-Root |
 | AT18 | Geteilte Rechner | Klick auf „Abmelden“ im Computerraum | LocalStorage und Tokens rückstandslos gelöscht |
@@ -231,6 +246,7 @@ Tabelle der 38 verbindlichen Prüfszenarien:
 ## 14. Form der Übergabe und Grenzen von Zusagen
 
 Bei der Übergabe von Auditberichten oder Dokumentation:
+
 - Feststellungen sachlich, präzise und konstruktiv formulieren.
 - Beobachtete Code-Tatsachen klar von allgemeinen Empfehlungen trennen.
 - Niemals Formulierungen wie „100% DSGVO-konform“ oder „garantiert rechtssicher“ verwenden; Datenschutz ist ein fortlaufender organisatorischer Prozess.
@@ -240,12 +256,14 @@ Bei der Übergabe von Auditberichten oder Dokumentation:
 ### 15.1 Sprachmodelle im Unterricht
 
 [P/Ü] Einsatz von KI-Sprachmodellen (LLM) als Tutoren:
+
 - **Zero-Data Retention (ZDR):** Verträge mit Anbietern müssen garantieren, dass Prompts nicht dauerhaft gespeichert und nicht für das Training künftiger Modelle verwendet werden.
 - **Prompt-Hygiene:** Schüler werden unterwiesen, keine Klarnamen, Adressen oder persönlichen Erlebnisse in Prompt-Felder einzugeben.
 
 ### 15.2 Retrieval-Augmented Generation (RAG)
 
 [P] Bei schulischen RAG-Architekturen:
+
 - Nur lehrplanrelevante Unterrichtsmaterialien und Aufgaben vektorisieren.
 - Keine Zeugnisse, Förderpläne oder Schülerprofile in Vektordatenbanken ablegen.
 
@@ -258,12 +276,15 @@ Bei der Übergabe von Auditberichten oder Dokumentation:
 [P] Dreistufiges Sicherheitsmodell für KI-Lernanwendungen:
 
 #### 1. Verarbeitungsstufen (L0 / C1 / C2)
+
 - **Stufe L0 (Vollständig lokal):** Modell läuft ausschließlich im Schulnetz oder auf dem Endgerät (z. B. Ollama, llama.cpp). Keine Daten verlassen die Schule. Höchste Datenschutzstufe.
 - **Stufe C1 (Cloud mit AVV und ZDR):** Europäischer Anbieter mit AVV (Art. 28 DSGVO) und vertraglichem Zero-Data-Retention. Direkte Schülerdaten (Namen, IDs) MÜSSEN vor Absenden des Prompts pseudonymisiert oder entfernt werden.
 - **Stufe C2 (Öffentliche kommerzielle KI ohne Schulvertrag):** Nur vollständig anonymisierte, verallgemeinerte Anfragen ohne jeglichen Schüler- oder Schulbezug zulässig.
 
 #### 2. Vorgaben zu k-Anonymität (k >= 5) und l-Diversität (l >= 2)
+
 Bei der Aggregation von Schülerdaten für Analysen oder Vorhersagemodelle:
+
 - **k-Anonymitätsschwelle:** Jede Gruppe mit identischen Quasi-Identifikatoren (z. B. Alter, Klasse, Geschlecht) MUSS mindestens $k = 5$ verschiedene Schüler umfassen. Kleinere Gruppen sind zu unterdrücken oder zu vergröbern.
 - **l-Diversitätsschwelle:** Sensible Attribute innerhalb einer Gruppe müssen mindestens $l = 2$ verschiedene Ausprägungen aufweisen, um Homogenitätsangriffe zu verhindern.
 - **Validierungsskript:** Einsatz des deterministischen Prüfskripts (`scripts/check_k_anonymity.py`) vor jedem Datenexport.
@@ -271,6 +292,7 @@ Bei der Aggregation von Schülerdaten für Analysen oder Vorhersagemodelle:
 ## 16. Schulisches Single Sign-On (SSO) [P]
 
 [P] Föderierte Authentifizierung:
+
 - Verwendung von Standards wie OpenID Connect (OIDC) oder SAML 2.0 (z. B. Shibboleth).
 - Minimale Attributübermittlung (nur pseudonyme User-ID und Schulzugehörigkeit). Keine Übergabe kompletter Profile.
 - Schutz von Tokens im Backend; keine Speicherung im ungeschützten Browser-Speicher.
@@ -280,6 +302,7 @@ Bei der Aggregation von Schülerdaten für Analysen oder Vorhersagemodelle:
 ### 17.1 Bereitstellungsmodi (M1 - M6)
 
 Folgende Modi werden unterstützt:
+
 - **M1 (Vollständig lokal / Offline):** Läuft lokal beim Lehrer ohne Internet (SQLite, CSV).
 - **M2 (Schuleigener Server):** Web-Applikation auf schuleigenem Server oder Rechenzentrum.
 - **M3 (Bildungs-Cloud mit AVV):** Offiziell beschaffte Plattform mit ADV-Vertrag.
@@ -289,7 +312,7 @@ Folgende Modi werden unterstützt:
 
 ### 17.2 Referenzarchitektur
 
-```
+```text
 [ Schüler-Browser / PWA ]
              │
              │ HTTPS (TLS 1.3 + HSTS)
@@ -311,6 +334,7 @@ Folgende Modi werden unterstützt:
 ### 17.5 Vorlage für Modul-Steckbrief
 
 Für jedes Anwendungsmodul ist ein Steckbrief zu erstellen:
+
 1. **Modulname und didaktischer Zweck:** Kurzbeschreibung.
 2. **Datenkategorien:** Erfasste Felder.
 3. **Rechtsgrundlage:** Artikel der DSGVO und landesrechtliche Norm.
@@ -322,6 +346,7 @@ Für jedes Anwendungsmodul ist ein Steckbrief zu erstellen:
 ### 18.1 Veröffentlichung von Schülerfotos und Schülerarbeiten
 
 [E/Ü] Auftritt der Schule in Web und Medien:
+
 - **Schriftliche Einwilligung:** Freiwillige schriftliche Zustimmung der Erziehungsberechtigten vorab (Art. 6 Abs. 1 lit. a DSGVO, KUG).
 - **Kopplungsverbot:** Die Foto-Einwilligung darf nicht mit der Schulanmeldung verknüpft werden.
 - **Keine Klarnamen-Zuordnung:** Fotos im Web nicht mit vollständigem Vor- und Nachnamen und Klasse beschriften.

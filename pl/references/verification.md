@@ -7,6 +7,7 @@ Sekcje źródłowe: 12, 13, 14.
 ## 12. Lista kontrolna weryfikacji przed wdrożeniem
 
 Przed uruchomieniem aplikacji w środowisku szkolnym sprawdź:
+
 1. Podstawa prawna i konsultacja z IOD szkoły udokumentowana.
 2. Umowa powierzenia przetwarzania danych (art. 28 RODO) podpisana ze wszystkimi dostawcami chmury i AI.
 3. Obowiązek informacyjny (art. 13-14 RODO) przygotowany w zrozumiałym języku.
@@ -23,7 +24,7 @@ Przed uruchomieniem aplikacji w środowisku szkolnym sprawdź:
 Poniższa tabela zawiera zestaw 38 scenariuszy testowych weryfikujących spełnienie wymagań prawnych i technicznych:
 
 | Identyfikator | Obszar | Scenariusz testowy | Oczekiwany wynik |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | AT01 | Podstawa prawna | Przetwarzanie danych ucznia w ewidencji obowiązkowej | Wskazany art. 6 ust. 1 lit. c RODO i Prawo oświatowe |
 | AT02 | Zgoda | Udział w obowiązkowej lekcji informatyki | Brak żądania zgody rodzica jako warunku wstępnego |
 | AT03 | Dane wrażliwe | Rejestracja ucznia w aplikacji do matematyki | Formularz nie zawiera pól dotyczących zdrowia ani wyznania |
@@ -38,7 +39,7 @@ Poniższa tabela zawiera zestaw 38 scenariuszy testowych weryfikujących spełni
 | AT12 | Izolacja rodzica | Rodzic próbuje pobrać raport innego dziecka | Dostęp zablokowany, widoczne wyłącznie własne dzieci |
 | AT13 | Szyfrowanie tranzytu | Próba połączenia przez nieszyfrowany protokół HTTP | Automatyczne przekierowanie 301/308 na HTTPS (TLS 1.3) |
 | AT14 | HSTS | Weryfikacja nagłówków odpowiedzi HTTP | Obecny nagłówek Strict-Transport-Security |
-| AT15 | Iniekcja CSV | Uczeń wpisuje w nazwisku `=1+2';cmd|' ...` | Eksportowany plik CSV poprzedza komórkę apostrofem |
+| AT15 | Iniekcja CSV | Uczeń wpisuje w nazwisku `=1+2';cmd&#124;' ...` | Eksportowany plik CSV poprzedza komórkę apostrofem |
 | AT16 | SQLite Injection | Wprowadzenie `' OR 1=1 --` w wyszukiwarce | Zapytanie parametryzowane, brak błędu i wycieku danych |
 | AT17 | SQLite lokalizacja | Próba pobrania pliku `.sqlite` przez przeglądarkę | Serwer zwraca kod 404 lub 403, plik poza publicznym rootem |
 | AT18 | Współdzielone PC | Kliknięcie "Wyloguj" w pracowni szkolnej | Dane z localStorage i sesja całkowicie wyczyszczone |
@@ -66,6 +67,7 @@ Poniższa tabela zawiera zestaw 38 scenariuszy testowych weryfikujących spełni
 ## 14. Forma przekazania i granice twierdzeń
 
 Podczas przekazywania wyników audytu lub dokumentacji technicznej:
+
 - Prezentuj ustalenia w sposób rzeczowy, precyzyjny i konstruktywny.
 - Wyraźnie rozróżniaj fakty zaobserwowane w kodzie od założeń i rekomendacji.
 - Nigdy nie używaj zwrotów gwarantujących "100% zgodność z prawem" ani "certyfikację RODO", gdyż zgodność jest procesem ciągłym zależnym od wdrożenia i organizacji.

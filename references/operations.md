@@ -17,7 +17,7 @@ Store the audit in an append-only target that the ordinary application cannot de
 [Z] Keep data only for the period necessary for the purpose and applicable duties. GDPR does not set a universal number of days for all school applications. [P] The following values are a proposal to be confirmed by the school; legal duties and the file and retention plan take precedence.
 
 | Category | Default proposal |
-|---|---|
+| --- | --- |
 | Entry code or QR secret | Invalidate after expiry or closing entry; do not keep a usable secret. |
 | Session secret | Revoke immediately on logout or expiry, remove inactive verifiers within 24 hours; audit without secrets can be kept longer. |
 | Temporary participation and device ID for a one-time activity | Remove within 24 hours after it ends, unless another necessary purpose is documented. |

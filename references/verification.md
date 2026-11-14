@@ -31,7 +31,7 @@ Source sections: 12, 13, 14.
 Perform only in an authorised test environment with synthetic data. Prepare two schools, two teachers with different classes, two students with the same name, an anonymous visitor, a shared browser, and a mobile PWA. Add a guardian account and a service account if they exist. Run tests for QR, WebSocket, PWA, attachments, and AI only for features that are present; always justify N/A. Time tests use controlled test clocks. For each test, keep the configuration or version, procedure, expectation, actual result, and evidence without personal data.
 
 | ID | Scenario or procedure | Acceptance result |
-|---|---|---|
+| --- | --- | --- |
 | AT01 | User B enters user A's name in a form, profile, or one-time entry. | They do not get A's account or history and do not overwrite A's record; the submission remains unconfirmed until authorised verification. |
 | AT02 | Change `school_id`, `student_id`, `record_id` in a path, JSON, export, and WebSocket. | The server grants neither other data nor a change; a 403 or 404 response or equivalent without leaking existence. |
 | AT03 | A student calls a teacher API; teacher A exports school or class B. | Everything is refused without personal data and without creating a file in the background. |

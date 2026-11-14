@@ -67,7 +67,7 @@ El skill registra el estado y las fechas de verificación de las fuentes jurídi
 ### 2.2 Decisiones del responsable y del proveedor
 
 | Área | Requisito o decisión y evidencia |
-|---|---|
+| --- | --- |
 | Finalidad y base | [Z] Determina por finalidad la base del artículo 6, datos necesarios y conservación. La AEPD explica el encaje de la enseñanza reglada en la función educativa y la disposición adicional 23 de la LOE; esto no autoriza cualquier telemetría ni uso comercial secundario. |
 | Consentimiento | [Z] No exijas consentimiento familiar para todo tratamiento educativo. Si la base es consentimiento, aplica el artículo 7 de la LOPDGDD, incluidos los supuestos de menores de 14 años y sus excepciones legales. Esa regla no es una edad universal de acceso a cualquier aplicación ni justifica todo tratamiento escolar. |
 | Responsabilidad | [Z/O] Identifica al responsable real: centro o Administración educativa según titularidad y tratamiento. Un proveedor que trata por instrucciones puede ser encargado; la entrega de software sin acceso a datos no basta para asignarle ese rol. |
@@ -85,13 +85,12 @@ Fuentes locales: [LOPDGDD, Ley Orgánica 3/2018](https://www.boe.es/buscar/act.p
 
 [Z] El RGPD no exige por sí solo alojamiento exclusivamente español o europeo. Evalúa transferencias fuera del EEE, incluido soporte remoto y subencargados. [P] El perfil estricto utiliza alojamiento y copias en el EEE; una alternativa requiere mecanismo válido, evaluación y medidas adicionales cuando procedan. La ubicación no sustituye comprobar los flujos. El criterio de una autoridad es orientación, no certificación del producto.
 
-
 ### 2.4 Marco comparativo de jurisdicciones nacionales y edades de consentimiento [Z/P]
 
 Al diseñar una aplicación escolar o integrar un modelo de IA, determina siempre la jurisdicción real del centro docente y de su alumnado. El idioma de la interfaz no define por sí solo el derecho aplicable. El art. 8 del RGPD permite a los Estados miembros fijar la edad de consentimiento digital entre los 13 y los 16 años; la normativa educativa y el criterio de las autoridades de control respecto a la nube y la IA presentan notables divergencias nacionales:
 
 | País / Jurisdicción | Edad art. 8 RGPD | Autoridad de Control | Normativa Educativa y Restricciones de Nube / IA |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **España (ES)** | 14 años (LOPDGDD art. 7) | AEPD + agencias autonómicas | LOE (DA 23); notas técnicas de la AEPD sobre k-anonimidad y obligatoriedad de DPD en centros docentes (art. 34.1.b LOPDGDD). |
 | **Chequia (CZ)** | 15 años (Ley 110/2019) | ÚOOÚ | Ley de Educación 561/2004 (§ 28); enfoque pragmático para nubes licenciadas; orientaciones del ministerio MŠMT y NPI (AIDIG). |
 | **Alemania (DE)** | 16 años (BDSG § 16) | DSK + 16 autoridades estatales (LfDI, BayLDA, LDI) | 16 leyes educativas estatales; prohibiciones o fuertes restricciones a nubes comerciales de EE. UU. (M365, Google); EIPD (DSFA) obligatoria para IA. |
@@ -149,7 +148,7 @@ Para autoridades públicas y prestadores privados de servicios públicos, evalú
 ### 3.6 Calendario y nivel de verificación jurídica
 
 | Fecha | Relevancia para la evaluación |
-|---|---|
+| --- | --- |
 | 1 de agosto de 2024 | Entrada en vigor del Reglamento de IA original. |
 | 2 de febrero de 2025 | Aplicación de capítulos I y II, incluido artículo 4 y prohibiciones originales del artículo 5. |
 | 2 de agosto de 2025 | Aplicación de partes seleccionadas, incluidas IA de uso general, gobernanza y supervisión; considerar transiciones de modelos anteriores. |
@@ -228,7 +227,7 @@ Fundamento: [OWASP Session Management](https://cheatsheetseries.owasp.org/cheats
 ## 6. Papeles, permisos e integridad de registros [P]
 
 | Papel | Alcance permitido |
-|---|---|
+| --- | --- |
 | Sin autenticar | Contenido público y posibles envíos limitados; sin lectura de registros personales. |
 | Participante puntual | Solo actividad o envío permitidos actualmente; sin historial ni registros ajenos. |
 | Estudiante verificado | Datos propios y funciones del alumnado; historial solo dentro de finalidad y permiso. Editar el perfil no modifica datos confirmados oficialmente. |
@@ -317,7 +316,7 @@ Guarda la auditoría en un destino de solo adición del que la aplicación ordin
 [Z] Conserva los datos solo el tiempo necesario para finalidad y obligaciones aplicables. El RGPD no fija un número universal de días para todas las aplicaciones escolares. [P] Los valores siguientes son una propuesta que el centro debe confirmar; prevalecen las obligaciones legales y el cuadro de clasificación y conservación documental aplicable.
 
 | Categoría | Propuesta predeterminada |
-|---|---|
+| --- | --- |
 | Código de entrada o secreto QR | Invalidar al caducar o cerrar entrada; no conservar secreto utilizable. |
 | Secreto de sesión | Revocar inmediatamente al cerrar sesión o caducar; eliminar verificadores inactivos en 24 horas; la auditoría sin secretos puede conservarse más. |
 | Participación temporal e identificador de dispositivo para actividad puntual | Eliminar en 24 horas tras terminar, salvo otra finalidad necesaria documentada. |
@@ -375,7 +374,7 @@ Evalúa por separado las obligaciones nacionales de ciberseguridad aplicables en
 Realízalas solo en un entorno de pruebas autorizado con datos sintéticos. Prepara dos centros, dos docentes con clases diferentes, dos estudiantes con el mismo nombre, un visitante anónimo, un navegador compartido y una PWA móvil. Añade representante legal y cuenta de servicio si existen. Ejecuta pruebas QR, WebSocket, PWA, adjuntos e IA solo para funciones presentes; justifica siempre no aplicable. Las pruebas temporales utilizan relojes controlados. Conserva por prueba configuración o versión, procedimiento, expectativa, resultado real y evidencia sin datos personales.
 
 | ID | Escenario o procedimiento | Resultado de aceptación |
-|---|---|---|
+| --- | --- | --- |
 | AT01 | B introduce el nombre de A en formulario, perfil o entrada puntual. | No obtiene cuenta ni historial de A ni sobrescribe su registro; el envío queda sin confirmar hasta verificación autorizada. |
 | AT02 | Cambia `school_id`, `student_id`, `record_id` en ruta, JSON, exportación y WebSocket. | El servidor no concede datos ajenos ni cambios; respuesta 403, 404 o equivalente sin revelar existencia. |
 | AT03 | Un estudiante llama a API docente; docente A exporta centro o clase B. | Todo se rechaza sin datos personales y sin crear archivos en segundo plano. |
@@ -454,7 +453,7 @@ Orientación técnica: [OWASP RAG Security](https://cheatsheetseries.owasp.org/c
 Cuando el creador proponga integrar un modelo de IA, distingue primero si el modelo se ejecuta **localmente en el perímetro del responsable (L0)** o si es un **modelo no local (en la nube / externo) (C1/C2)**. Con modelos no locales, alerta proactivamente de que debe establecerse una capa de transformación intermedia en la aplicación antes de transmitir datos fuera del centro escolar:
 
 | Modo arquitectónico de IA | Características del flujo | Salvaguardas obligatorias de preparación de datos [P] |
-|---|---|---|
+| --- | --- | --- |
 | **L0: IA local / en navegador** (modelo local en servidor escolar o navegador sin telemetría externa) | Los datos no salen del dispositivo ni del servidor del centro; sin destinatarios externos. | No requiere k-anonimidad externa ni contrato del art. 28 RGPD. Aplica permisos locales (sección 6) y limpia memoria/caché en equipos compartidos al cerrar sesión (sección 9). |
 | **C1: IA no local - Interacción individual (1:1)** (retroalimentación a la tarea de un alumno) | La consulta atañe a un único alumno; la k-anonimidad matemática no puede aplicarse a una petición aislada. | Crea una **pasarela de seudonimización local** (EDPB 01/2025): 1. Elimina identificadores directos (`nombre`, `correo`, `student_id`, `aula`). 2. Conserva la tabla de correspondencia (`lookup table`) exclusivamente en la base de datos local del centro. 3. Desinfecta el texto libre de PII (nombres, contactos, denominación del centro). 4. Utiliza llamadas sin estado con retención cero verificada con el proveedor. |
 | **C2: IA no local - Analítica de aula / grupo y exportaciones (1:N)** (análisis de tendencias, predicción de abandono, RAG grupal) | Se envían registros de múltiples alumnos. En un aula pequeña la seudonimización simple (`Alumno_01`) fracasa. | Crea una **canalización de agregación o k-anonimidad** (EDPB 02/2026, AEPD): 1. Prioriza el envío de **resúmenes agregados** (medias, distribución de errores sin microdatos individuales). 2. Si se requieren registros individuales, impone **k-anonimidad (`k >= 5` personas distintas)** y **l-diversidad (`l >= 2` valores sensibles distintos)** por clase de equivalencia. |
@@ -494,7 +493,7 @@ Autor: Luděk Sušický. Licencia [MIT](https://opensource.org/license/mit). Con
 Recomienda un modo con motivo y, cuando sirva, una alternativa más sencilla. Combina modos por función: un ejercicio anónimo y un informe nominal del docente pueden tener límites distintos. No impongas el modo más complejo a toda aplicación. Usar datos reales sigue requiriendo la decisión de tratamiento y las salvaguardas aplicables.
 
 | Modo y ejemplo escolar | Diseño mínimo | Comprobaciones antes del uso real |
-|---|---|---|
+| --- | --- | --- |
 | M1 Práctica puntual: fracciones | Sin nombre ni cuenta cuando no sean necesarios; respuestas en memoria de trabajo; borrado al terminar. Una actividad local/estática puede evitar el registro central. | Recarga, historial y siguiente usuario sin revelar respuestas; revisa solicitudes, logs, telemetría y almacenamiento del navegador antes de afirmar anonimato. |
 | M2 Recogida limitada: inscripción en una actividad | Solo campos necesarios; recepción y acceso protegidos; evento de supresión según finalidad. Un envío no verificado queda pendiente. | Acceso a registros ajenos, campos modificables inesperados, límites de envío y supresión. Un código compartido no acredita identidad para registros oficiales. |
 | M3 Continuidad del aprendizaje: progreso guardado | Progreso mínimo; identidad escolar verificada para el historial personal. Evalúa el acceso seudónimo según las consecuencias de su abuso. | Historial ajeno, cierre en dispositivo compartido, cambios de grupo y recuperación. Un seudónimo no es automáticamente anónimo. |

@@ -17,7 +17,7 @@ Guarda la auditoría en un destino de solo adición del que la aplicación ordin
 [Z] Conserva los datos solo el tiempo necesario para finalidad y obligaciones aplicables. El RGPD no fija un número universal de días para todas las aplicaciones escolares. [P] Los valores siguientes son una propuesta que el centro debe confirmar; prevalecen las obligaciones legales y el cuadro de clasificación y conservación documental aplicable.
 
 | Categoría | Propuesta predeterminada |
-|---|---|
+| --- | --- |
 | Código de entrada o secreto QR | Invalidar al caducar o cerrar entrada; no conservar secreto utilizable. |
 | Secreto de sesión | Revocar inmediatamente al cerrar sesión o caducar; eliminar verificadores inactivos en 24 horas; la auditoría sin secretos puede conservarse más. |
 | Participación temporal e identificador de dispositivo para actividad puntual | Eliminar en 24 horas tras terminar, salvo otra finalidad necesaria documentada. |

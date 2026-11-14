@@ -3,7 +3,7 @@
 Verze 1.2. Registr zachycuje rozsah kontroly, není certifikát. Data původního vydání jsou historická deklarace, nikoli nové provedení. Ostatní citace zůstávají převzaté do samostatného ověření.
 
 | ID | Zdroj | Datum | Stav a omezení |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | DPO | [DPO](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en) | 2026-11-05 | Dílčí čtení: nezávislá rada/monitoring; rozhodnutí správce zůstává správci. |
 | AI4 | [AI4](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4) | 2026-11-05 | Dílčí čtení textu Komise. Úplný Úřední věstník nebyl v této změně znovu nezávisle ověřen. |
 | AI113 | [AI113](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113) | 2026-11-05 | Dílčí čtení termínů Komise. Před provozem ověř konkrétní povinnost a přechod. |

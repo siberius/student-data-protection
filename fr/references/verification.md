@@ -7,6 +7,7 @@ Sections sources: 12, 13, 14.
 ## 12. Liste de contrôle avant mise en production
 
 Points de contrôle obligatoires:
+
 1. Base légale identifiée et DPO consulté.
 2. Contrat de sous-traitance (art. 28 RGPD) signé avec tous les prestataires cloud et IA.
 3. Mentions d'information (art. 13-14 RGPD) rédigées dans un langage clair et adapté.
@@ -23,7 +24,7 @@ Points de contrôle obligatoires:
 Tableau des 38 scénarios de test d'acceptation obligatoires:
 
 | Identifiant | Domaine | Scénario de test | Résultat attendu |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | AT01 | Base légale | Traitement de données dans le registre obligatoire des élèves | Référence à l'obligation légale et au Code de l'éducation |
 | AT02 | Consentement | Inscription à un cours obligatoire du programme scolaire | Absence de demande de consentement parental comme condition |
 | AT03 | Données sensibles | Inscription d'un élève sur un exerciseur de mathématiques | Le formulaire ne contient aucun champ de santé ou de religion |
@@ -38,7 +39,7 @@ Tableau des 38 scénarios de test d'acceptation obligatoires:
 | AT12 | Cloisonnement famille | Un parent tente d'afficher les résultats d'un autre enfant | Accès refusé, affichage limité aux seuls enfants rattachés |
 | AT13 | Chiffrement en transit | Tentative d'accès via le protocole non sécurisé HTTP | Redirection automatique 301/308 vers HTTPS (TLS 1.3) |
 | AT14 | En-tête HSTS | Analyse des en-têtes HTTP de réponse | En-tête Strict-Transport-Security actif |
-| AT15 | Injection CSV | Un nom d'élève contient `=1+2';cmd|' ...` | L'export CSV insère une apostrophe en tête de cellule |
+| AT15 | Injection CSV | Un nom d'élève contient `=1+2';cmd&#124;' ...` | L'export CSV insère une apostrophe en tête de cellule |
 | AT16 | Injection SQLite | Saisie de la chaîne `' OR 1=1 --` dans la recherche | Requête préparée exécutée, aucune fuite ni erreur |
 | AT17 | Emplacement SQLite | Tentative de téléchargement direct du fichier `.sqlite` | Requête rejetée (403/404), fichier hors de la racine Web |
 | AT18 | Postes partagés | Clic sur « Se déconnecter » en salle informatique | Nettoyage complet du localStorage et suppression des jetons |
@@ -66,6 +67,7 @@ Tableau des 38 scénarios de test d'acceptation obligatoires:
 ## 14. Modalités de restitution et limites des déclarations
 
 Lors de la remise de rapports ou de préconisations techniques:
+
 - Formulez les constats de manière rigoureuse, factuelle et constructive.
 - Distinguez formellement les faits techniques constatés dans le code des recommandations générales.
 - Ne garantissez jamais une « conformité RGPD à 100% » ni une « certification absolue », la conformité relevant d'une démarche continue et organisationnelle.

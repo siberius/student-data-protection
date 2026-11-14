@@ -9,6 +9,7 @@ Quellabschnitte: 18.
 ### 18.1 Veröffentlichung von Schülerfotos und Schülerarbeiten
 
 [E/Ü] Auftritt der Schule in Web und Medien:
+
 - **Schriftliche Einwilligung:** Freiwillige schriftliche Zustimmung der Erziehungsberechtigten vorab (Art. 6 Abs. 1 lit. a DSGVO, KUG).
 - **Kopplungsverbot:** Die Foto-Einwilligung darf nicht mit der Schulanmeldung verknüpft werden.
 - **Keine Klarnamen-Zuordnung:** Fotos im Web nicht mit vollständigem Vor- und Nachnamen und Klasse beschriften.

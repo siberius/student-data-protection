@@ -30,7 +30,7 @@ Secciones de origen: 12, 13, 14.
 Realízalas solo en un entorno de pruebas autorizado con datos sintéticos. Prepara dos centros, dos docentes con clases diferentes, dos estudiantes con el mismo nombre, un visitante anónimo, un navegador compartido y una PWA móvil. Añade representante legal y cuenta de servicio si existen. Ejecuta pruebas QR, WebSocket, PWA, adjuntos e IA solo para funciones presentes; justifica siempre no aplicable. Las pruebas temporales utilizan relojes controlados. Conserva por prueba configuración o versión, procedimiento, expectativa, resultado real y evidencia sin datos personales.
 
 | ID | Escenario o procedimiento | Resultado de aceptación |
-|---|---|---|
+| --- | --- | --- |
 | AT01 | B introduce el nombre de A en formulario, perfil o entrada puntual. | No obtiene cuenta ni historial de A ni sobrescribe su registro; el envío queda sin confirmar hasta verificación autorizada. |
 | AT02 | Cambia `school_id`, `student_id`, `record_id` en ruta, JSON, exportación y WebSocket. | El servidor no concede datos ajenos ni cambios; respuesta 403, 404 o equivalente sin revelar existencia. |
 | AT03 | Un estudiante llama a API docente; docente A exporta centro o clase B. | Todo se rechaza sin datos personales y sin crear archivos en segundo plano. |

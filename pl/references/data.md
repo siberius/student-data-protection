@@ -7,6 +7,7 @@ Sekcje źródłowe: 4.
 ## 4. Model danych, zbieranie i minimalizacja [P]
 
 [P] Model danych aplikacji szkolnej MUSI realizować zasadę minimalizacji danych (art. 5 ust. 1 lit. c RODO):
+
 - **Identyfikatory:** Stosuj sztuczne identyfikatory wewnętrzne (UUIDv4) jako klucze główne. Nigdy nie używaj numeru PESEL ani oficjalnego identyfikatora z SIO jako klucza w adresach URL, nazwach plików lub sesjach.
 - **Pola opcjonalne:** Numer telefonu, adres zamieszkania, zdjęcie profilowe nie mogą być polami obowiązkowymi w aplikacjach wspierających naukę przedmiotową.
 - **Dane wrażliwe (art. 9 RODO):** Aplikacje przedmiotowe, quizy i platformy ćwiczeniowe NIE MOGĄ przetwarzać danych o zdrowiu, pochodzeniu etnicznym, przekonaniach czy danych biometrycznych. Jeśli wsparcie ucznia wymaga dostosowania (np. dysleksja), przechowuj wyłącznie techniczny znacznik konfiguracyjny (np. `extra_time_ratio: 1.25`) bez ujawniania diagnozy medycznej.

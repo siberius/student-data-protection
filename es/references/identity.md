@@ -45,7 +45,7 @@ Fundamento: [OWASP Session Management](https://cheatsheetseries.owasp.org/cheats
 ## 6. Papeles, permisos e integridad de registros [P]
 
 | Papel | Alcance permitido |
-|---|---|
+| --- | --- |
 | Sin autenticar | Contenido público y posibles envíos limitados; sin lectura de registros personales. |
 | Participante puntual | Solo actividad o envío permitidos actualmente; sin historial ni registros ajenos. |
 | Estudiante verificado | Datos propios y funciones del alumnado; historial solo dentro de finalidad y permiso. Editar el perfil no modifica datos confirmados oficialmente. |

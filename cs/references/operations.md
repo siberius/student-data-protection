@@ -17,7 +17,7 @@ Audit ukládej do append-only cíle, ke kterému běžná aplikace nemá oprávn
 [Z] Uchovávej data jen po dobu nezbytnou pro účel a příslušné povinnosti. GDPR neurčuje univerzální počet dnů pro všechny školní aplikace. [P] Následující hodnoty jsou návrh k potvrzení školou; zákonná povinnost a spisový/skartační režim mají přednost.
 
 | Kategorie | Výchozí návrh |
-|---|---|
+| --- | --- |
 | Vstupní kód/QR tajemství | Zneplatnit po expiraci nebo uzavření vstupu; nezachovávat použitelné tajemství. |
 | Session tajemství | Revokovat ihned při logout/expiraci, neaktivní verifikátory odstranit do 24 hodin; audit bez tajemství lze držet déle. |
 | Dočasná účast a device ID pro jednorázovou aktivitu | Odstranit do 24 hodin po jejím konci, pokud není dokumentován jiný nezbytný účel. |

@@ -9,6 +9,7 @@ Sections sources: 17.
 ### 17.1 Modes de déploiement (M1 - M6)
 
 L'assistant prend en charge les architectures suivantes:
+
 - **M1 (Application autonome locale / Hors ligne):** Fonctionne sur l'ordinateur de l'enseignant sans internet (SQLite, CSV).
 - **M2 (Serveur dédié de l'établissement):** Application Web hébergée au sein du réseau local de l'école.
 - **M3 (Plateforme éducative avec contrat DPA):** Solution cloud officielle couverte par un contrat conforme à l'article 28 du RGPD.
@@ -18,7 +19,7 @@ L'assistant prend en charge les architectures suivantes:
 
 ### 17.2 Schéma d'architecture de référence
 
-```
+```text
 [ Navigateur ou PWA de l'élève ]
              │
              │ HTTPS (TLS 1.3 + HSTS)
@@ -40,6 +41,7 @@ L'assistant prend en charge les architectures suivantes:
 ### 17.5 Fiche descriptive de module applicatif
 
 Chaque module fait l'objet d'une fiche normalisée:
+
 1. **Nom du module et finalité éducative:** Description synthétique.
 2. **Catégories de données traitées:** Données ordinaires et techniques.
 3. **Fondement juridique:** Article du RGPD et référence au Code de l'éducation.

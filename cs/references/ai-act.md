@@ -47,7 +47,7 @@ U veřejnoprávních subjektů a soukromých poskytovatelů veřejných služeb 
 ### 3.6 Časová osa a míra právního ověření
 
 | Datum | Význam pro posouzení |
-|---|---|
+| --- | --- |
 | 1. 8. 2024 | Vstup původního AI Actu v platnost. |
 | 2. 2. 2025 | Použitelnost kapitol I a II, tedy mj. čl. 4 a původních zákazů čl. 5. |
 | 2. 8. 2025 | Použitelnost vybraných částí včetně GPAI a správy/dozoru; zohledni přechodná ustanovení pro starší modely. |

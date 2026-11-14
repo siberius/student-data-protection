@@ -31,7 +31,7 @@ Zdrojové oddíly: 12, 13, 14.
 Prováděj pouze v autorizovaném testovacím prostředí se syntetickými daty. Připrav dvě školy, dva učitele s různými třídami, dva žáky se stejným jménem, anonymního návštěvníka, sdílený prohlížeč a mobilní PWA. Přidej účet zástupce a servisní účet, pokud existují. Testy pro QR, WebSocket, PWA, přílohy a AI proveď jen pro přítomné funkce; N/A vždy zdůvodni. Časové testy používejí řízené testovací hodiny. U každého testu uchovej konfiguraci/verzi, postup, očekávání, skutečnost a důkaz bez osobních údajů.
 
 | ID | Scénář / postup | Akceptační výsledek |
-|---|---|---|
+| --- | --- | --- |
 | AT01 | Uživatel B zadá jméno uživatele A do formuláře, profilu nebo jednorázového vstupu. | Nedostane účet ani historii A a nepřepíše jeho evidenci; podání zůstane nepotvrzené do oprávněného ověření. |
 | AT02 | Změň `school_id`, `student_id`, `record_id` v cestě, JSON, exportu a WebSocketu. | Server nepřizná cizí data ani změnu; odpověď 403/404 nebo ekvivalent bez úniku existence. |
 | AT03 | Žák volá učitelské API, učitel A exportuje školu/třídu B. | Vše odmítnuto bez osobních údajů a bez vytvoření souboru na pozadí. |

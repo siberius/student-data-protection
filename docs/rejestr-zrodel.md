@@ -3,7 +3,7 @@
 Wersja 1.2. Rejestr dokumentuje zakres weryfikacji, nie stanowi certyfikatu. Daty pierwotnego wydania są deklaracjami historycznymi, a nie nowym wykonaniem. Pozostałe cytowania pozostają przejęte do odrębnej weryfikacji.
 
 | ID | Źródło | Data | Status i ograniczenia |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | DPO | [DPO](https://www.edpb.europa.eu/sme/be-compliant/data-protection-officer_en) | 2026-11-05 | Wyrywkowa lektura: niezależne doradztwo i monitorowanie; decyzje należą do administratora. |
 | AI4 | [AI4](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4) | 2026-11-05 | Lektura tekstu Komisji. Pełny Dziennik Urzędowy nie był w tej zmianie ponownie weryfikowany. |
 | AI113 | [AI113](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113) | 2026-11-05 | Lektura terminów Komisji; sprawdź konkretny obowiązek i okres przejściowy przed wdrożeniem. |
@@ -33,4 +33,3 @@ Dla zmienionego twierdzenia prawnego zarejestruj dokładny artykuł/ustęp, jury
 Sprawdź ponownie po nowelizacji, zmianie celu/dostawcy/kraju lub przed prawnie istotnym wdrożeniem produkcyjnym. Rejestr nie rozstrzyga o planie retencji każdej szkoły, właściwości organu, umowach, DPIA/EIPD czy warunkach dostawców. Są to decyzje wdrożeniowe do weryfikacji; nie zakładaj zgodności z góry.
 
 Przy wykryciu zmiany przepisów, nowelizacji lub nowej wykładni organu nadzorczego zastosuj nowe zasady natychmiast dla użytkownika i za jego zgodą otwórz zgłoszenie Issue na GitHubie [siberius/student-data-protection](https://github.com/siberius/student-data-protection/issues) z etykietą `legal-update`, podając identyfikator ID, nowe brzmienie i oficjalne źródło.
-

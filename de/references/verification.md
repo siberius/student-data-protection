@@ -7,6 +7,7 @@ Quellabschnitte: 12, 13, 14.
 ## 12. Checkliste vor Produktivbetrieb
 
 Vor dem Echtbetrieb überprüfen:
+
 1. Rechtsgrundlage dokumentiert und Abstimmung mit dem behördlichen DSB erfolgt.
 2. AV-Vertrag (Art. 28 DSGVO) mit allen IT- und Cloud-Dienstleistern abgeschlossen.
 3. Datenschutzhinweise nach Art. 13-14 DSGVO in verständlicher Sprache bereitgestellt.
@@ -23,7 +24,7 @@ Vor dem Echtbetrieb überprüfen:
 Tabelle der 38 verbindlichen Prüfszenarien:
 
 | Kennung | Bereich | Testszenario | Erwartetes Ergebnis |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | AT01 | Rechtsgrundlage | Verarbeitung von Schülerdaten im amtlichen Verzeichnis | Nachweis von Art. 6 Abs. 1 lit. c DSGVO i. V. m. Schulgesetz |
 | AT02 | Einwilligung | Teilnahme am verpflichtenden Informatikunterricht | Keine Einwilligungserklärung als Zugangsvoraussetzung |
 | AT03 | Sensible Daten | Registrierung in einer Mathematik-Lern-App | Keine Felder zu Religion, Herkunft oder Gesundheit |
@@ -38,7 +39,7 @@ Tabelle der 38 verbindlichen Prüfszenarien:
 | AT12 | Elterntrennung | Elternteil versucht fremdes Zeugnis abzurufen | Zugriff gesperrt, nur eigene Kinder sichtbar |
 | AT13 | Transportverschlüsselung | Unverschlüsselter Aufruf per HTTP | Automatische 301-Weiterleitung auf HTTPS (TLS 1.3) |
 | AT14 | HSTS-Header | Überprüfung der HTTP-Sicherheitsheader | Header Strict-Transport-Security aktiv |
-| AT15 | CSV-Injektion | Name enthält `=1+2';cmd|' ...` | Exportiertes CSV stellt Apostroph vor die Zelle |
+| AT15 | CSV-Injektion | Name enthält `=1+2';cmd&#124;' ...` | Exportiertes CSV stellt Apostroph vor die Zelle |
 | AT16 | SQLite-Injektion | Eingabe von `' OR 1=1 --` in Suchmaske | Abfrage parametrisiert, kein Datenabfluss |
 | AT17 | SQLite-Ablage | Direkter Aufruf der `.sqlite`-Datei im Browser | Zugriff verweigert (403/404), Datei außerhalb Web-Root |
 | AT18 | Geteilte Rechner | Klick auf „Abmelden“ im Computerraum | LocalStorage und Tokens rückstandslos gelöscht |
@@ -66,6 +67,7 @@ Tabelle der 38 verbindlichen Prüfszenarien:
 ## 14. Form der Übergabe und Grenzen von Zusagen
 
 Bei der Übergabe von Auditberichten oder Dokumentation:
+
 - Feststellungen sachlich, präzise und konstruktiv formulieren.
 - Beobachtete Code-Tatsachen klar von allgemeinen Empfehlungen trennen.
 - Niemals Formulierungen wie „100% DSGVO-konform“ oder „garantiert rechtssicher“ verwenden; Datenschutz ist ein fortlaufender organisatorischer Prozess.

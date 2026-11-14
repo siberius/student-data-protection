@@ -27,6 +27,7 @@ Distinguez **compte durable avec identité vérifiée**, **participation ponctue
 ### 1.4 Fraîcheur juridique continue et remontée vers GitHub [P]
 
 Le profil de sécurité de ce skill impose que toute analyse juridique s'appuie sur le droit positif à jour (RGPD, Règlement sur l'IA, Loi Informatique et Libertés, doctrines de la CNIL et consignes ministérielles).
+
 1. **Règle d'ancienneté des sources (> 6 mois):** Si plus de 6 mois se sont écoulés depuis la dernière revue des sources, l'assistant doit vérifier la validité des textes cités.
 2. **Prise en compte immédiate pour l'utilisateur:** En cas d'évolution législative ou doctrinale, l'assistant applique immédiatement la règle actuelle dans sa réponse et en informe l'utilisateur.
 3. **Remontée amont (GitHub Issue):** Avec l'accord de l'utilisateur, l'assistant propose d'ouvrir une issue sur le dépôt: `https://github.com/siberius/student-data-protection/issues` avec l'étiquette `legal-update`.
@@ -36,6 +37,7 @@ Le profil de sécurité de ce skill impose que toute analyse juridique s'appuie 
 ### 2.1 Bases légales en milieu scolaire français
 
 [J] Tout traitement de données scolaires doit reposer sur une base légale valide (art. 6 et art. 9 du RGPD):
+
 - **Art. 6 par. 1 point c du RGPD (Obligation légale):** Tenue du registre des élèves, livret scolaire unique (LSU), appel quotidien et gestion des examens sur la base du Code de l'éducation.
 - **Art. 6 par. 1 point e du RGPD (Mission d'intérêt public):** Accomplissement de la mission éducative, pédagogique et d'encadrement des élèves.
 - **Art. 6 par. 1 point a du RGPD (Consentement):** Strictement réservé aux activités facultatives (publication de photos sur les réseaux sociaux, clubs péri-éducatifs, sorties facultatives). Le consentement ne peut conditionner la scolarité obligatoire (l'article 45 de la Loi Informatique et Libertés fixe l'âge de la majorité numérique à 15 ans pour les services en ligne).
@@ -44,6 +46,7 @@ Le profil de sécurité de ce skill impose que toute analyse juridique s'appuie 
 ### 2.2 Responsabilité et délégué à la protection des données (DPO)
 
 [J] Le responsable de traitement est l'établissement scolaire (représenté par le chef d'établissement pour le second degré ou l'autorité académique pour le premier degré).
+
 - **Contrat de sous-traitance (art. 28 du RGPD):** Tout outil logiciel externe, espace numérique ou solution d'IA requiert un contrat formel de sous-traitance fixant les obligations de sécurité et de confidentialité.
 - **Délégué à la Protection des Données (DPO):** La désignation d'un DPO est obligatoire pour les établissements publics d'enseignement. Le DPO doit être consulté avant l'adoption de tout nouvel outil numérique.
 - **Interdiction de la biométrie:** La CNIL s'oppose formellement au déploiement de dispositifs de reconnaissance biométrique (reconnaissance faciale ou digitale) pour l'accès aux établissements ou aux cantines.
@@ -51,6 +54,7 @@ Le profil de sécurité de ce skill impose que toute analyse juridique s'appuie 
 ### 2.3 Devoir d'information et droits des personnes
 
 [J] L'établissement doit fournir une information claire aux élèves et à leurs parents (art. 13-14 du RGPD) dans un langage accessible aux mineurs.
+
 - Droits d'accès (art. 15), de rectification (art. 16) et de limitation (art. 18).
 - Le droit à l'effacement (« droit à l'oubli », art. 17) ne s'applique pas aux registres scolaires officiels soumis aux règles de conservation des archives publiques.
 - Droit de réclamation auprès de la CNIL.
@@ -62,7 +66,7 @@ Le profil de sécurité de ce skill impose que toute analyse juridique s'appuie 
 Lors de la conception d'une application éducative, vérifiez toujours le cadre national applicable:
 
 | Pays / Juridiction | Âge de consentement (art. 8 RGPD) | Autorité de contrôle | Spécificités scolaires et doctrines Cloud / IA |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **France (FR)** | 15 ans (Loi Informatique et Libertés) | CNIL | Code de l'éducation; doctrine ENT et cadre GAR; consignes ministérielles interdisant les clouds gratuits US; interdiction des comptes partagés en classe pour l'IA. |
 | **Allemagne (DE)** | 16 ans (§ 16 BDSG) | DSK + 16 autorités régionales | 16 lois scolaires des Länder; décisions DSK contre M365 et la télémétrie; priorité au modèle local (L0); AIPD obligatoire pour l'IA. |
 | **Pologne (PL)** | 16 ans (Loi ODO 2018) | UODO | Prawo oświatowe; responsabilité du chef d'établissement; interdiction de la biométrie; contrat art. 28 RGPD obligatoire pour l'IA. |
@@ -85,6 +89,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ### 3.2 Pratiques interdites en milieu scolaire (Article 5)
 
 [J] Sont strictement interdits dans les établissements scolaires:
+
 1. **Reconnaissance des émotions:** Utilisation de l'IA pour déduire l'état émotionnel des élèves à partir de la caméra ou de la voix (art. 5 par. 1 point f).
 2. **Notation sociale (Social Scoring):** Classement ou évaluation des élèves menant à un traitement préjudiciable hors du contexte initial (art. 5 par. 1 point c).
 3. **Catégorisation biométrique:** Déduction de caractéristiques sensibles (origines, opinions, croyances) à partir de données biométriques.
@@ -93,6 +98,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ### 3.3 Systèmes d'IA à haut risque dans l'éducation (Article 6 et Annexe III)
 
 [J] Sont classés à haut risque (High-Risk AI) les systèmes d'IA destinés à:
+
 - Déterminer l'admission ou l'orientation des élèves vers des filières scolaires.
 - Évaluer les acquis d'apprentissage et corriger automatiquement des épreuves influant sur l'orientation ou les notes.
 - Surveiller le comportement et détecter les fraudes lors d'examens (proctoring).
@@ -111,6 +117,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 4. Modèle de données, collecte et minimisation [P]
 
 [P] Le modèle de données de l'application DOIT respecter le principe de minimisation:
+
 - **Identifiants:** Utiliser des UUIDv4 synthétiques comme clés primaires. Ne jamais exposer le numéro d'identification national (INE en France) ni le nom de l'élève dans les URL ou le stockage local.
 - **Champs facultatifs:** Les numéros de téléphone personnel, adresses postales et photographies ne doivent pas être obligatoires dans les applications disciplinaires.
 - **Données sensibles:** Les applications pédagogiques NE DOIVENT PAS collecter de diagnostics médicaux. Pour les aménagements d'épreuves (tiers-temps), seul un paramètre technique (`extra_time_multiplier: 1.33`) doit être conservé.
@@ -119,6 +126,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 5. Authentification, invitations et sessions [P]
 
 [P] Profil d'authentification:
+
 - **Mots de passe:** Longueur minimale de 12 caractères. Contrôle contre les dictionnaires de mots de passe compromis. Hachage obligatoire via Argon2id ou bcrypt avec coût élevé.
 - **Codes PIN et QR codes:** Réservés exclusivement aux élèves des classes primaires pour des séances encadrées en classe avec expiration automatique.
 - **Gestion des sessions:** Identifiants de session cryptographiquement sûrs (au moins 128 bits d'entropie). Cookies munis des attributs `HttpOnly`, `Secure` et `SameSite=Lax/Strict`.
@@ -127,6 +135,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 6. Rôles, habilitations et intégrité [P]
 
 [P] Contrôle d'accès:
+
 - **Modèle RBAC:** Rôles distincts: Élève, Enseignant, Parent/Responsable, Chef d'établissement/Administrateur.
 - **Cloisonnement des données:** Contrôle systématique des autorisations à chaque requête. Un élève ne consulte que ses propres notes; un parent ne voit que ses enfants; un enseignant accède uniquement à ses classes d'enseignement.
 - **Protection anti-IDOR:** Toute modification d'identifiant d'objet dans la requête doit être bloquée côté serveur avec un code HTTP 403 Forbidden.
@@ -135,6 +144,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 7. Chiffrement et gestion des clés [P]
 
 [P] Standards cryptographiques:
+
 - **Données au repos (At Rest):** Chiffrement des bases de données et sauvegardes avec AES-256-GCM ou ChaCha20-Poly1305.
 - **Données en transit (In Transit):** Utilisation stricte de TLS 1.3 (minimum TLS 1.2 avec suites cryptographiques robustes). Activation de l'en-tête HSTS pour au moins 1 an (`max-age=31536000; includeSubDomains`).
 - **Gestion des secrets:** Interdiction d'enregistrer des clés ou mots de passe dans le code source. Utilisation de variables d'environnement ou d'un gestionnaire de secrets dédié.
@@ -142,6 +152,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 8. CSV et SQLite [P]
 
 [P] Fichiers locaux et bases embarquées:
+
 - **Protection anti-injection CSV:** Lors de l'exportation de données d'élèves, tout champ débutant par `=`, `+`, `-`, `@`, tabulation ou retour chariot DOIT être précédé d'une apostrophe (`'`) pour empêcher l'exécution de macros malveillantes dans les tableurs.
 - **Mode SQLite:** Utilisation du mode WAL (Write-Ahead Logging) et activation des clés étrangères (`PRAGMA foreign_keys = ON;`). La base SQLite doit impérativement être placée hors de l'arborescence publique du serveur Web.
 - **Requêtes paramétrées:** Recours exclusif aux requêtes préparées (Prepared Statements) pour éradiquer tout risque d'injection SQL.
@@ -149,6 +160,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 9. Web, PWA et équipements partagés [P]
 
 [P] Sécurité sur postes partagés:
+
 - **Postes partagés en salle de classe:** L'action de déconnexion DOIT vider intégralement les stockages locaux du navigateur (`localStorage`, `sessionStorage`, `IndexedDB`) pour empêcher la consultation par l'élève suivant.
 - **Content Security Policy (CSP):** Politique CSP stricte bloquant les domaines tiers non approuvés et les scripts inline non signés.
 - **Absence de traceurs tiers:** Interdiction totale d'intégrer des outils d'analyse marketing ou des pixels publicitaires (Google Analytics, Meta) dans les outils scolaires.
@@ -156,6 +168,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 10. Audit, durées de conservation et reprise [P/J]
 
 [P/J] Traçabilité et cycle de vie:
+
 - **Journaux d'audit:** Enregistrement des connexions, échecs d'authentification, modifications de droits et saisies de notes.
 - **Minimisation des logs:** Pas de mots de passe en clair ni de données d'élèves sensibles dans les fichiers journaux.
 - **Purge et archivage:** Suppression des données d'exercices à l'issue de l'année scolaire; versement des éléments administratifs aux archives selon la réglementation nationale.
@@ -164,6 +177,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 11. Gestion des incidents de sécurité [J/P]
 
 [J] Notification et registre des violations (art. 33-34 du RGPD):
+
 - **Notification à la CNIL:** L'établissement notifie toute violation de données personnelles à la CNIL dans les 72 heures suivant sa découverte, sauf si elle ne présente pas de risque pour les droits des personnes.
 - **Information des familles:** Si le risque pour les droits des élèves est élevé, les familles doivent être informées directement et sans délai.
 - **Registre interne:** Inscription obligatoire de tout incident dans le registre interne des violations de l'établissement.
@@ -171,6 +185,7 @@ Les algorithmes déterministes classiques, calculs de moyennes par formule fixe 
 ## 12. Liste de contrôle avant mise en production
 
 Points de contrôle obligatoires:
+
 1. Base légale identifiée et DPO consulté.
 2. Contrat de sous-traitance (art. 28 RGPD) signé avec tous les prestataires cloud et IA.
 3. Mentions d'information (art. 13-14 RGPD) rédigées dans un langage clair et adapté.
@@ -187,7 +202,7 @@ Points de contrôle obligatoires:
 Tableau des 38 scénarios de test d'acceptation obligatoires:
 
 | Identifiant | Domaine | Scénario de test | Résultat attendu |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | AT01 | Base légale | Traitement de données dans le registre obligatoire des élèves | Référence à l'obligation légale et au Code de l'éducation |
 | AT02 | Consentement | Inscription à un cours obligatoire du programme scolaire | Absence de demande de consentement parental comme condition |
 | AT03 | Données sensibles | Inscription d'un élève sur un exerciseur de mathématiques | Le formulaire ne contient aucun champ de santé ou de religion |
@@ -202,7 +217,7 @@ Tableau des 38 scénarios de test d'acceptation obligatoires:
 | AT12 | Cloisonnement famille | Un parent tente d'afficher les résultats d'un autre enfant | Accès refusé, affichage limité aux seuls enfants rattachés |
 | AT13 | Chiffrement en transit | Tentative d'accès via le protocole non sécurisé HTTP | Redirection automatique 301/308 vers HTTPS (TLS 1.3) |
 | AT14 | En-tête HSTS | Analyse des en-têtes HTTP de réponse | En-tête Strict-Transport-Security actif |
-| AT15 | Injection CSV | Un nom d'élève contient `=1+2';cmd|' ...` | L'export CSV insère une apostrophe en tête de cellule |
+| AT15 | Injection CSV | Un nom d'élève contient `=1+2';cmd&#124;' ...` | L'export CSV insère une apostrophe en tête de cellule |
 | AT16 | Injection SQLite | Saisie de la chaîne `' OR 1=1 --` dans la recherche | Requête préparée exécutée, aucune fuite ni erreur |
 | AT17 | Emplacement SQLite | Tentative de téléchargement direct du fichier `.sqlite` | Requête rejetée (403/404), fichier hors de la racine Web |
 | AT18 | Postes partagés | Clic sur « Se déconnecter » en salle informatique | Nettoyage complet du localStorage et suppression des jetons |
@@ -230,6 +245,7 @@ Tableau des 38 scénarios de test d'acceptation obligatoires:
 ## 14. Modalités de restitution et limites des déclarations
 
 Lors de la remise de rapports ou de préconisations techniques:
+
 - Formulez les constats de manière rigoureuse, factuelle et constructive.
 - Distinguez formellement les faits techniques constatés dans le code des recommandations générales.
 - Ne garantissez jamais une « conformité RGPD à 100% » ni une « certification absolue », la conformité relevant d'une démarche continue et organisationnelle.
@@ -239,12 +255,14 @@ Lors de la remise de rapports ou de préconisations techniques:
 ### 15.1 Modèles de langage en contexte scolaire
 
 [P/V] Recours aux grands modèles de langage (LLM) comme assistants pédagogiques:
+
 - **Rétention nulle (Zero-Data Retention - ZDR):** Les engagements contractuels du fournisseur doivent stipuler que les requêtes des élèves ne sont pas conservées au-delà de la réponse et ne servent pas à l'entraînement de modèles.
 - **Sensibilisation aux prompts:** Les élèves doivent être formés à ne jamais saisir d'informations nominatives, d'adresses ou d'éléments de vie privée dans l'interface de requête.
 
 ### 15.2 Génération augmentée par récupération (RAG)
 
 [P] Dans les architectures RAG éducatives:
+
 - Vectorisez uniquement des contenus pédagogiques libres et des manuels scolaires autorisés.
 - Ne versez jamais de dossiers scolaires, rapports d'orientation ou données d'élèves dans les index vectoriels.
 
@@ -257,12 +275,15 @@ Lors de la remise de rapports ou de préconisations techniques:
 [P] Architecture de protection des données pour l'IA scolaire:
 
 #### 1. Niveaux de traitement (L0 / C1 / C2)
+
 - **Niveau L0 (Entièrement local):** Modèle exécuté sur l'infrastructure propre de l'établissement ou sur le poste (ex. Ollama, llama.cpp sur le réseau scolaire). Aucune donnée ne sort de l'école.
 - **Niveau C1 (Cloud avec contrat RGPD et ZDR):** Fournisseur hébergé dans l'EEE disposant d'un contrat de sous-traitance (art. 28 RGPD) et d'un engagement ZDR. Les identifiants directs des élèves DOIVENT être retirés ou pseudonymisés avant transmission.
 - **Niveau C2 (Modèles publics sans contrat scolaire):** Uniquement pour des requêtes entièrement anonymisées et décontextualisées, sans aucun lien avec l'élève ou l'établissement.
 
 #### 2. Seuils de k-anonymat (k >= 5) et l-diversité (l >= 2)
+
 Pour toute diffusion de données agrégées ou alimentation d'algorithmes prédictifs:
+
 - **Seuil de k-anonymat:** Chaque groupe partageant des quasi-identifiants identiques (âge, classe, filière) DOIT comporter au minimum $k = 5$ élèves distincts. Les groupes inférieurs font l'objet d'une suppression ou d'une généralisation.
 - **Seuil de l-diversité:** Les attributs sensibles au sein de chaque groupe doivent présenter au moins $l = 2$ valeurs différentes pour parer aux attaques par homogénéité.
 - **Validation automatisée:** Exécutez systématiquement un script de validation (`scripts/check_k_anonymity.py`) avant toute extraction.
@@ -270,6 +291,7 @@ Pour toute diffusion de données agrégées ou alimentation d'algorithmes prédi
 ## 16. Authentification fédérée et ENT [P]
 
 [P] Raccordement aux systèmes d'identité:
+
 - Privilégiez les protocoles standardisés OpenID Connect (OIDC) ou SAML 2.0 via l'ENT ou le GAR.
 - Ne demandez que les attributs strictement nécessaires (identifiant pseudonymisé `sub` et profil d'appartenance).
 - Conservez les jetons de manière sécurisée côté serveur sans les exposer dans le stockage du navigateur.
@@ -279,6 +301,7 @@ Pour toute diffusion de données agrégées ou alimentation d'algorithmes prédi
 ### 17.1 Modes de déploiement (M1 - M6)
 
 L'assistant prend en charge les architectures suivantes:
+
 - **M1 (Application autonome locale / Hors ligne):** Fonctionne sur l'ordinateur de l'enseignant sans internet (SQLite, CSV).
 - **M2 (Serveur dédié de l'établissement):** Application Web hébergée au sein du réseau local de l'école.
 - **M3 (Plateforme éducative avec contrat DPA):** Solution cloud officielle couverte par un contrat conforme à l'article 28 du RGPD.
@@ -288,7 +311,7 @@ L'assistant prend en charge les architectures suivantes:
 
 ### 17.2 Schéma d'architecture de référence
 
-```
+```text
 [ Navigateur ou PWA de l'élève ]
              │
              │ HTTPS (TLS 1.3 + HSTS)
@@ -310,6 +333,7 @@ L'assistant prend en charge les architectures suivantes:
 ### 17.5 Fiche descriptive de module applicatif
 
 Chaque module fait l'objet d'une fiche normalisée:
+
 1. **Nom du module et finalité éducative:** Description synthétique.
 2. **Catégories de données traitées:** Données ordinaires et techniques.
 3. **Fondement juridique:** Article du RGPD et référence au Code de l'éducation.
@@ -321,6 +345,7 @@ Chaque module fait l'objet d'une fiche normalisée:
 ### 18.1 Règles relatives aux photographies et créations d'élèves
 
 [R/V] Diffusion sur le site de l'établissement et supports d'information:
+
 - **Consentement écrit préalable:** Accord explicite des responsables légaux avant toute publication d'image d'un élève mineur.
 - **Principe de dissociation:** Le formulaire de droit à l'image ne doit pas être inclus dans le dossier général d'inscription administrative.
 - **Anonymat des publications:** Ne pas associer le nom complet et la classe d'un élève à sa photographie sur des plateformes publiques.

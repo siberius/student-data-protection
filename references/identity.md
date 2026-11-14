@@ -45,7 +45,7 @@ Background: [OWASP Session Management](https://cheatsheetseries.owasp.org/cheats
 ## 6. Roles, permissions, and record integrity [P]
 
 | Role | Permitted scope |
-|---|---|
+| --- | --- |
 | Unauthenticated | Public content and any limited submission; no reading of personal records. |
 | One-time participant | Only the currently permitted activity or submission; no history or other people's records. |
 | Verified student | Their own data and student-facing functions; history only within the purpose and permission. They do not change officially confirmed data by merely editing a profile. |

@@ -15,6 +15,7 @@ Tradycyjne algorytmy deterministyczne, regułowe kalkulatory punktów, statyczne
 ### 3.2 Praktyki zakazane w edukacji (Art. 5)
 
 [Z] AI Act bezwzględnie zakazuje w szkołach i placówkach oświatowych:
+
 1. **Rozpoznawania emocji:** Używania systemów AI do wnioskowania o stanie emocjonalnym uczniów w klasie na podstawie obrazu z kamer lub analizy głosu (art. 5 ust. 1 lit. f). Zakaz ten nie dopuszcza wyjątków w szkolnictwie podstawowym i średnim.
 2. **Punktacji społecznej (Social Scoring):** Klasyfikacji lub oceny uczniów prowadzącej do niekorzystnego traktowania w kontekstach niezwiązanych z pierwotnym celem (art. 5 ust. 1 lit. c).
 3. **Biometrycznej kategoryzacji:** Systemów wnioskujących o cechach wrażliwych (pochodzenie, poglądy, przekonania religijne) na podstawie danych biometrycznych.
@@ -23,6 +24,7 @@ Tradycyjne algorytmy deterministyczne, regułowe kalkulatory punktów, statyczne
 ### 3.3 Systemy wysokiego ryzyka w edukacji (Art. 6 i Załącznik III, pkt 3)
 
 [Z] Systemy AI w edukacji kwalifikują się jako systemy wysokiego ryzyka (High-Risk AI Systems), jeśli są przeznaczone do:
+
 - **Określania dostępu lub przydziału:** Kwalifikacji uczniów do szkół, profili, kierunków kształcenia lub poziomów zaawansowania.
 - **Oceny wyników i uczenia się:** Ewaluacji efektów uczenia się, automatycznego sprawdzania i oceniania prac rzutującego na końcową klasyfikację.
 - **Oceny poziomu wykształcenia:** Monitorowania zachowania i wykrywania niedozwolonych zachowań podczas egzaminów (proctoring).
@@ -32,6 +34,7 @@ Wyjątek proceduralny (art. 6 ust. 3) dla systemów wąskich (wąskie zadanie pr
 ### 3.4 Obowiązki dostawców i podmiotów wdrażających
 
 [Z] Dla systemów AI wysokiego ryzyka:
+
 - **Dostawca (producent / deweloper):** System zarządzania ryzykiem (art. 9), zarządzanie jakością danych szkoleniowych (art. 10), dokumentacja techniczna (art. 11), automatyczne rejestrowanie logów (art. 12), przejrzystość i instrukcja obsługi (art. 13), nadzór ludzki w architekturze (art. 14), dokładność, solidność i cyberbezpieczeństwo (art. 15), rejestracja w unijnej bazie danych (art. 71).
 - **Podmiot wdrażający (szkoła / dyrektor):** Używanie zgodnie z instrukcją dostawcy (art. 26 ust. 1), zapewnienie kompetentnego nadzoru ludzkiego przez nauczycieli (art. 26 ust. 2), monitorowanie działania i zgłaszanie incydentów dostawcy, przechowywanie automatycznie generowanych logów przez co najmniej 6 miesięcy (art. 26 ust. 6), przeprowadzenie oceny skutków dla praw podstawowych (FRIA, art. 27), poinformowanie przedstawicieli pracowników i uczniów przed uruchomieniem.
 

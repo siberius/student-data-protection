@@ -32,7 +32,7 @@ Consultez la [méthode de travail](references/workflow.md) pour les détails pro
 Lors d'une demande de solution pratique, sélectionnez le mode de données adéquat et n'ouvrez que le module correspondant.
 
 | Domaine | Module de référence |
-|---|---|
+| --- | --- |
 | Publication, photographies, sites publics et dérivés | [Publication et documents](references/publication.md) |
 | Sélection du mode de données et fiche descriptive | [Solutions pratiques](references/practical-solutions.md) |
 | Collecte, formulaires, téléversements et API | [Flux de données](references/data.md) |

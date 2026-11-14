@@ -32,7 +32,7 @@ Einzelheiten zum Vorgehen und zum technischen Profil finden sich im [Arbeitsabla
 Bei Anfragen nach praktischen Lösungen den passenden Datenmodus auswählen und gezielt das entsprechende Modul öffnen.
 
 | Bereich | Referenzmodul |
-|---|---|
+| --- | --- |
 | Veröffentlichung, Dokumente, Webseiten und Exporte | [Veröffentlichung und Dokumente](references/publication.md) |
 | Auswahl des Datenmodus und Lösungssteckbrief | [Praktische Lösungen](references/practical-solutions.md) |
 | Datenerhebung, Formulare, Uploads und Schnittstellen | [Datenflüsse](references/data.md) |

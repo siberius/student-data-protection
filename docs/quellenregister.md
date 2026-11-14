@@ -8,7 +8,7 @@ Status der Rechtsquellen und Prüftermine für den Datenschutz in Schulen.
 ## Rechtsvorschriften und offizielle Leitlinien
 
 | Kennung | Behörde / Organisation | Dokumenttitel | Status / Datum | Geltungsbereich |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | DSGVO-2016 | EU (EP und Rat) | Verordnung (EU) 2016/679 (DSGVO) | Gültig seit 25.05.2018 | EU / grenzüberschreitend |
 | AIA-2024 | EU (EP und Rat) | Verordnung (EU) 2024/1689 (KI-Verordnung / AI Act) | Gültig seit 02.08.2024 | EU |
 | EDPB-ANON | EDSA / WP29 | Stellungnahme 05/2014 zu Anonymisierungstechniken | Gültig (WP216) | EU |
@@ -25,6 +25,7 @@ Status der Rechtsquellen und Prüftermine für den Datenschutz in Schulen.
 ## Verfahren für Upstream-Rechtsaktualisierungen (GitHub Issue)
 
 Wird bei der Nutzung des Skills eine Änderung der Rechtslage oder der Aufsichtsbehörden-Praxis festgestellt (oder sind seit der Quellenprüfung mehr als 6 Monate vergangen):
+
 1. Wendet der Assistent unverzüglich die aktuelle Rechtslage in seiner Antwort an und informiert den Nutzer.
 2. Schlägt der Assistent mit Zustimmung des Nutzers ein Issue im Projekt-Repository vor:
    `https://github.com/siberius/student-data-protection/issues` mit dem Label `legal-update`.

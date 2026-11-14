@@ -8,7 +8,7 @@
 - Add deterministic validation script `scripts/check_k_anonymity.py` without external dependencies to evaluate CSV/JSON exports without chat context bloat.
 - Expand source registers with 8 authoritative sources: EDPB Guidelines 02/2026 (Anonymisation), EDPB Guidelines 01/2025 (Pseudonymisation), EDPB Opinion 28/2024 (AI Models), AEPD K-Anonymity Note & Guide, NIST SP 800-188, NIST AI 600-1, US DoE PTAC, and Czech MSMT/NPI AI guidance.
 - Add behavioral test BE09 and acceptance tests AT37 (k-anonymity/l-diversity/suppression) and AT38 (local pseudonymisation gateway).
-- Add continuous legal freshness checks (> 6 months) and an upstream GitHub feedback loop to report statutory amendments to https://github.com/siberius/student-data-protection/issues with user consent.
+- Add continuous legal freshness checks (> 6 months) and an upstream GitHub feedback loop to report statutory amendments to <https://github.com/siberius/student-data-protection/issues> with user consent.
 - Add Section 2.4 comparative legal overview and age threshold matrix covering Germany (BDSG/DSK), France (CNIL/ENT), Poland (UODO), and Ukraine (Mrija/Draft Law 8153).
 - Synchronize English, Czech, and Spanish editions across standalone guides and modular native references.
 - Add four full language editions with complete standalone guides, legal registers, evaluation suites, native skills, and localized documentation:

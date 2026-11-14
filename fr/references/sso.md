@@ -7,6 +7,7 @@ Sections sources: 16.
 ## 16. Authentification fédérée et ENT [P]
 
 [P] Raccordement aux systèmes d'identité:
+
 - Privilégiez les protocoles standardisés OpenID Connect (OIDC) ou SAML 2.0 via l'ENT ou le GAR.
 - Ne demandez que les attributs strictement nécessaires (identifiant pseudonymisé `sub` et profil d'appartenance).
 - Conservez les jetons de manière sécurisée côté serveur sans les exposer dans le stockage du navigateur.

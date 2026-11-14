@@ -9,6 +9,7 @@ Sekcje źródłowe: 17.
 ### 17.1 Tryby operacyjne (M1 - M6)
 
 Podczas pracy z aplikacją szkolną asystent rozpoznaje i wspiera następujące tryby wdrożeniowe:
+
 - **Tryb M1 (Aplikacja w pełni lokalna / Offline):** Działa na komputerze nauczyciela lub w sieci lokalnej bez połączenia z chmurą. Baza danych SQLite, pliki CSV.
 - **Tryb M2 (Chmura szkolna / Własny serwer EOG):** Aplikacja webowa hostowana na szkolnym serwerze VPS w europejskim centrum danych.
 - **Tryb M3 (Komercyjna platforma edukacyjna z umową DPA):** Integracja z oficjalnymi platformami szkolnymi na podstawie art. 28 RODO.
@@ -19,7 +20,8 @@ Podczas pracy z aplikacją szkolną asystent rozpoznaje i wspiera następujące 
 ### 17.2 Architektura referencyjna aplikacji szkolnej
 
 Rekomendowana architektura:
-```
+
+```text
 [ Przeglądarka / PWA ucznia ]
              │
              │ HTTPS (TLS 1.3 + HSTS)
@@ -41,6 +43,7 @@ Rekomendowana architektura:
 ### 17.5 Szablon karty wdrożeniowej rozwiązania
 
 Dla każdego modułu edukacyjnego przygotuj kartę wdrożeniową według poniższego schematu:
+
 1. **Nazwa modułu i cel dydaktyczny:** Krótki opis funkcjonalności.
 2. **Kategorie przetwarzanych danych:** Wyszczególnienie danych zwykłych i technicznych.
 3. **Podstawa prawna:** Wskazanie odpowiedniego artykułu RODO i Prawa oświatowego.

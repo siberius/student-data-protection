@@ -7,6 +7,7 @@ Quellabschnitte: 5, 6.
 ## 5. Authentifizierung, Einladungen und Sitzungen [P]
 
 [P] Sicherheitsanforderungen:
+
 - **Passwörter:** Mindestens 12 Zeichen, Abgleich gegen Wörterbücher kompromittierter Passwörter. Passwort-Hashing zwingend mit Argon2id oder bcrypt (hoher Work-Factor).
 - **PIN- und QR-Codes:** Nur für jüngere Schüler für zeitlich begrenzte Unterrichtseinheiten im Klassenraum zulässig.
 - **Sitzungen:** Kryptografisch sichere Sitzungs-IDs (mindestens 128 Bit Entropie). Cookies mit `HttpOnly`, `Secure` und `SameSite=Lax/Strict`.
@@ -15,6 +16,7 @@ Quellabschnitte: 5, 6.
 ## 6. Rollen, Berechtigungen und Integrität [P]
 
 [P] Zugriffskontrolle:
+
 - **RBAC-Modell:** Definierte Rollen: Schüler, Lehrkraft, Eltern/Erziehungsberechtigte, Schulleitung/Administrator.
 - **Mandantentrennung:** Berechtigungsprüfung bei jeder Datenbankabfrage. Schüler sehen nur eigene Noten; Eltern nur eigene Kinder; Lehrkräfte nur die eigenen Klassen.
 - **Schutz vor IDOR:** Manipulation von Objekt-IDs im Request muss serverseitig mit 403 Forbidden blockiert werden.

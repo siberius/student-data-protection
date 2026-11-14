@@ -9,6 +9,7 @@ Quellabschnitte: 17.
 ### 17.1 Bereitstellungsmodi (M1 - M6)
 
 Folgende Modi werden unterstützt:
+
 - **M1 (Vollständig lokal / Offline):** Läuft lokal beim Lehrer ohne Internet (SQLite, CSV).
 - **M2 (Schuleigener Server):** Web-Applikation auf schuleigenem Server oder Rechenzentrum.
 - **M3 (Bildungs-Cloud mit AVV):** Offiziell beschaffte Plattform mit ADV-Vertrag.
@@ -18,7 +19,7 @@ Folgende Modi werden unterstützt:
 
 ### 17.2 Referenzarchitektur
 
-```
+```text
 [ Schüler-Browser / PWA ]
              │
              │ HTTPS (TLS 1.3 + HSTS)
@@ -40,6 +41,7 @@ Folgende Modi werden unterstützt:
 ### 17.5 Vorlage für Modul-Steckbrief
 
 Für jedes Anwendungsmodul ist ein Steckbrief zu erstellen:
+
 1. **Modulname und didaktischer Zweck:** Kurzbeschreibung.
 2. **Datenkategorien:** Erfasste Felder.
 3. **Rechtsgrundlage:** Artikel der DSGVO und landesrechtliche Norm.

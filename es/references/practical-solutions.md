@@ -13,7 +13,7 @@ Secciones de origen: 17.
 Recomienda un modo con motivo y, cuando sirva, una alternativa más sencilla. Combina modos por función: un ejercicio anónimo y un informe nominal del docente pueden tener límites distintos. No impongas el modo más complejo a toda aplicación. Usar datos reales sigue requiriendo la decisión de tratamiento y las salvaguardas aplicables.
 
 | Modo y ejemplo escolar | Diseño mínimo | Comprobaciones antes del uso real |
-|---|---|---|
+| --- | --- | --- |
 | M1 Práctica puntual: fracciones | Sin nombre ni cuenta cuando no sean necesarios; respuestas en memoria de trabajo; borrado al terminar. Una actividad local/estática puede evitar el registro central. | Recarga, historial y siguiente usuario sin revelar respuestas; revisa solicitudes, logs, telemetría y almacenamiento del navegador antes de afirmar anonimato. |
 | M2 Recogida limitada: inscripción en una actividad | Solo campos necesarios; recepción y acceso protegidos; evento de supresión según finalidad. Un envío no verificado queda pendiente. | Acceso a registros ajenos, campos modificables inesperados, límites de envío y supresión. Un código compartido no acredita identidad para registros oficiales. |
 | M3 Continuidad del aprendizaje: progreso guardado | Progreso mínimo; identidad escolar verificada para el historial personal. Evalúa el acceso seudónimo según las consecuencias de su abuso. | Historial ajeno, cierre en dispositivo compartido, cambios de grupo y recuperación. Un seudónimo no es automáticamente anónimo. |

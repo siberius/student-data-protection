@@ -7,6 +7,7 @@ Quellabschnitte: 10, 11.
 ## 10. Audit, Aufbewahrung und Wiederherstellung [P/G]
 
 [P/G] Protokollierung und Datenlebenszyklus:
+
 - **Protokolldaten:** Aufzeichnung von Anmeldungen, Fehlversuchen, Rechteänderungen und Notenbearbeitungen.
 - **Minimierte Logs:** Keine Klartext-Passwörter oder sensiblen Schülerdaten in Protokolldateien.
 - **Löschfristen:** Temporäre Unterrichtsdaten nach Schuljahresende löschen; amtliche Nachweise gemäß den Archivvorschriften des jeweiligen Bundeslandes sichern.
@@ -15,6 +16,7 @@ Quellabschnitte: 10, 11.
 ## 11. Sicherheitsvorfälle (Incidents) [G/P]
 
 [G] Vorgehen bei Datenschutzverletzungen (Art. 33-34 DSGVO):
+
 - **Meldung an Aufsichtsbehörde:** Meldung an die zuständige Landesbeauftragte für den Datenschutz (LfDI) innerhalb von 72 Stunden nach Bekanntwerden, sofern ein Risiko für die Rechte der Schüler besteht.
 - **Benachrichtigung der Betroffenen:** Bei hohem Risiko unverzügliche Information der Eltern und Schüler.
 - **Vorfallregister:** Dokumentation aller Sicherheitsvorfälle im internen Verzeichnis der Schule.

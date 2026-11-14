@@ -37,7 +37,7 @@ For scope, strict-profile applicability and governance detail, read [workflow](r
 For a practical solution, recommend one suitable data-handling mode; expand only that recipe. The six data modes differ from the task modes above. Read the practical guide only for this choice. Keep the core short; consider separate skills only when incident response, auditing or implementation develops an independent workflow with distinct inputs and permissions.
 
 | Work | Reference |
-|---|---|
+| --- | --- |
 | Publication, documents, generated sites or derived outputs | [Publication and outputs](references/publication.md) |
 | Practical choice of data-handling mode and solution card | [Practical solutions](references/practical-solutions.md) |
 | Collection, fields, files, imports or connectors | [Data flows](references/data.md) |
@@ -56,7 +56,7 @@ Do not load every module automatically or add the described technology to use a 
 
 For an implementation, select tests for the actual changed feature and its risks. Use authorised environments and synthetic records. For an audit, provide location/evidence, severity, effect, recommendation and needed verification; do not claim proposed tests passed. Distinguish observed failure, hypothesis, not checked and N/A with a reason. Keep legal uncertainty separate from technical failure. Hand over concrete checked properties and remaining decisions; never claim 100% security or GDPR certification.
 
-Continuous legal freshness and upstream feedback: If you detect that cited legal provisions, supervisory authority decisions, or age boundaries have changed since the date recorded in source-status.md (or if an active reference exceeds 6 months without review), immediately apply the updated law to the user's task, explain the deviation, and with the user's consent, offer to file a structured update issue on the upstream repository (https://github.com/siberius/student-data-protection/issues).
+Continuous legal freshness and upstream feedback: If you detect that cited legal provisions, supervisory authority decisions, or age boundaries have changed since the date recorded in source-status.md (or if an active reference exceeds 6 months without review), immediately apply the updated law to the user's task, explain the deviation, and with the user's consent, offer to file a structured update issue on the upstream repository (<https://github.com/siberius/student-data-protection/issues>).
 
 ## Integration and attribution
 

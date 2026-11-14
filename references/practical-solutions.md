@@ -13,7 +13,7 @@ Source sections: 17.
 Recommend one mode with a reason and, when useful, a simpler alternative. Combine modes only for the affected features: an anonymous exercise and an identified teacher report can have different boundaries. Do not force every application into the most complex mode. Real-data use still needs the applicable processing decision and safeguards.
 
 | Mode and school example | Minimum design | Checks before real use |
-|---|---|---|
+| --- | --- | --- |
 | M1 One-off practice: fractions exercise | No learner name or account when unnecessary; answers in working memory; clear on finish. A local/static activity can avoid a central record. | Reload, history and the next user must not reveal answers; inspect actual requests, logs, telemetry and browser storage before claiming anonymity. |
 | M2 Limited collection: event signup | Collect only fields needed for the event; protect receipt and access; set a purpose-based deletion trigger. Treat an unverified submission as pending. | Foreign-record access, unexpected writable fields, submission limits and deletion. A shared code alone cannot establish identity for official records. |
 | M3 Resume learning: saved practice progress | Keep minimum progress; use verified school identity for personal history. Assess any pseudonymous access mechanism against its consequences. | Another learner's history, shared-device logout, changed class membership and recovery. A pseudonym is not automatically anonymous. |

@@ -21,6 +21,7 @@ Sekcje źródłowe: 1.
 ### 1.4 Ciągła świeżość prawna i zgłaszanie aktualizacji w górę projektu [P]
 
 Profil bezpieczeństwa tego skilla wymaga, aby każda analiza prawna i rekomendacja opierała się na aktualnym stanie prawnym (przepisy RODO, wytyczne EDPB, orzecznictwo TSUE oraz krajowe przepisy oświatowe i stanowiska organów nadzorczych).
+
 1. **Reguła weryfikacji wieku źródeł (> 6 miesięcy):** Jeśli od daty ostatniej weryfikacji źródeł skilla upłynęło ponad 6 miesięcy, asystent musi sprawdzić aktualność powoływanych aktów prawnych i wytycznych.
 2. **Natychmiastowe dostosowanie dla użytkownika:** W przypadku stwierdzenia rozbieżności lub nowelizacji prawa asystent natychmiast stosuje w bieżącej odpowiedzi aktualny stan prawny i informuje użytkownika o zmianie.
 3. **Zgłoszenie aktualizacji (GitHub Issue):** Asystent pyta użytkownika o zgodę na utworzenie zgłoszenia w repozytorium projektu: `https://github.com/siberius/student-data-protection/issues` z etykietą `legal-update`, podając zidentyfikowaną nowelizację, dotknięte sekcje i proponowaną modyfikację.

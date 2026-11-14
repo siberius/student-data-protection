@@ -49,7 +49,7 @@ Kompletní průvodce zůstává samostatnou čtenářskou verzí; nenačítej je
 ## Dostupné jazykové verze a nativní skilly
 
 | Jazyk / Jurisdikce | Nativní skill | Samostatný průvodce | Registr zdrojů | Readme |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Čeština (Česko / EU)** | [cs/SKILL.md](cs/SKILL.md) | [docs/ochrana-dat-zaku.md](docs/ochrana-dat-zaku.md) | [docs/registr-zdroju.md](docs/registr-zdroju.md) | [README.cs.md](README.cs.md) |
 | **English (EU / Czech context)** | [SKILL.md](SKILL.md) | [docs/student-data-protection.md](docs/student-data-protection.md) | [docs/source-register.md](docs/source-register.md) | [README.md](README.md) |
 | **Español (España / UE)** | [es/SKILL.md](es/SKILL.md) | [docs/proteccion-datos-alumnado.md](docs/proteccion-datos-alumnado.md) | [docs/registro-fuentes.md](docs/registro-fuentes.md) | [README.es.md](README.es.md) |

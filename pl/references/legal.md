@@ -9,6 +9,7 @@ Sekcje źródłowe: 2.
 ### 2.1 Podstawy prawne w polskiej szkole
 
 [Z] Każde przetwarzanie danych osobowych ucznia musi posiadać ważną podstawę prawną (art. 6 i art. 9 RODO). W polskich szkołach podstawowych i ponadpodstawowych podstawowymi przesłankami są:
+
 - **Art. 6 ust. 1 lit. c RODO (obowiązek prawny):** Prowadzenie ewidencji uczniów, księgi uczniów, dziennika lekcyjnego, arkuszy ocen, dokumentacji przebiegu nauczania na podstawie Ustawy z dnia 14 grudnia 2016 r. - Prawo oświatowe oraz rozporządzeń wykonawczych MEN.
 - **Art. 6 ust. 1 lit. e RODO (zadanie w interesie publicznym):** Realizacja statutowych celów dydaktycznych, opiekuńczych i wychowawczych.
 - **Art. 6 ust. 1 lit. a RODO (zgoda):** Wyłącznie w działaniach fakultatywnych (publikacja wizerunku w mediach społecznościowych, dobrowolne wycieczki, nieobowiązkowe kółka zainteresowań). Zgoda nie może być warunkiem uczestnictwa w edukacji obowiązkowej.
@@ -17,6 +18,7 @@ Sekcje źródłowe: 2.
 ### 2.2 Podmioty i odpowiedzialność w polskim systemie oświaty
 
 [Z] Administratorem danych osobowych (ADO) w szkole publicznej jest placówka reprezentowana przez dyrektora szkoły. Nauczyciel lub administrator IT działa z upoważnienia dyrektora.
+
 - **Umowa powierzenia przetwarzania danych (art. 28 RODO):** Każde zewnętrzne narzędzie edukacyjne, platforma chmurowa, dostawca dziennika elektronicznego lub zewnętrzny model AI przetwarzający dane uczniów wymaga formalnej umowy powierzenia podpisanej przez dyrektora szkoły przed rozpoczęciem przetwarzania.
 - **Inspektor Ochrony Danych (IOD):** Szkoła ma bezwzględny prawny obowiązek wyznaczenia IOD (art. 10 Ustawy o ochronie danych osobowych z dnia 10 maja 2018 r.). IOD musi być konsultowany przed wdrożeniem każdego nowego oprogramowania przetwarzającego dane uczniów.
 - **Nadzór:** Organem nadzorczym w Polsce jest Prezes Urzędu Ochrony Danych Osobowych (UODO). Odwołania do orzecznictwa: Naczelny Sąd Administracyjny (NSA) w wyroku dotyczącym biometrii w szkołach (I OSK 3945/19) potwierdził bezwzględny zakaz pobierania danych biometrycznych uczniów (np. linii papilarnych) w celu weryfikacji uprawnień do obiadów.
@@ -25,6 +27,7 @@ Sekcje źródłowe: 2.
 
 [Z] Szkoła musi spełnić obowiązek informacyjny zgodnie z art. 13-14 RODO w formie przystępnej zarówno dla rodziców, jak i samych uczniów (motyw 58 RODO).
 Prawa uczniów i rodziców obejmują:
+
 - Prawo dostępu (art. 15 RODO) i sprostowania (art. 16 RODO).
 - Prawo do usunięcia danych ("bycia zapomnianym", art. 17 RODO) nie przysługuje w odniesieniu do danych przetwarzanych na podstawie obowiązku prawnego (np. dokumentacja przebiegu nauczania musi być przechowywana zgodnie z instrukcją kancelaryjną i przepisami archiwalnymi).
 - Prawo do sprzeciwu (art. 21 RODO) oraz prawo wniesienia skargi do Prezesa UODO.
@@ -36,7 +39,7 @@ Prawa uczniów i rodziców obejmują:
 Przy projektowaniu aplikacji edukacyjnej lub integracji modeli AI zawsze weryfikuj właściwą jurysdykcję szkoły i grupy uczniów. Sam język interfejsu nie determinuje prawa krajowego. RODO w art. 8 umożliwia państwom członkowskim określenie wieku zgody cyfrowej w przedziale od 13 do 16 lat; przepisy oświatowe i stanowiska organów nadzorczych różnią się w poszczególnych krajach:
 
 | Państwo / jurysdykcja | Wiek z art. 8 RODO | Organ nadzorczy | Przepisy oświatowe i ograniczenia chmury / AI |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Polska (PL)** | 16 lat (Ustawa o ODO 2018) | UODO | Prawo oświatowe; odpowiedzialność dyrektora jako ADO; wymóg umowy powierzenia z art. 28 RODO dla AI; zakaz biometrii uczniów (NSA). |
 | **Czechy (CZ)** | 15 lat (ustawa nr 110/2019 Sb.) | ÚOOÚ | Ustawa o szkolnictwie nr 561/2004 Sb. (§ 28); pragmatyczne podejście do chmur edukacyjnych; wytyczne MŠMT i NPI (AIDIG). |
 | **Hiszpania (ES)** | 14 lat (LOPDGDD art. 7) | AEPD + organy regionalne | LOE (DA 23); szczegółowe wytyczne AEPD dotyczące k-anonimowości i obowiązek DPO w szkołach (art. 34.1.b LOPDGDD). |

@@ -49,7 +49,7 @@ The English and Czech editions address Czech ZŠ and SŠ, excluding preschools a
 ## Available editions and native skills
 
 | Language / Jurisdiction | Native skill | Standalone guide | Legal register | Readme |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **English (EU / Czech context)** | [SKILL.md](SKILL.md) | [docs/student-data-protection.md](docs/student-data-protection.md) | [docs/source-register.md](docs/source-register.md) | [README.md](README.md) |
 | **Čeština (Česko / EU)** | [cs/SKILL.md](cs/SKILL.md) | [docs/ochrana-dat-zaku.md](docs/ochrana-dat-zaku.md) | [docs/registr-zdroju.md](docs/registr-zdroju.md) | [README.cs.md](README.cs.md) |
 | **Español (España / UE)** | [es/SKILL.md](es/SKILL.md) | [docs/proteccion-datos-alumnado.md](docs/proteccion-datos-alumnado.md) | [docs/registro-fuentes.md](docs/registro-fuentes.md) | [README.es.md](README.es.md) |

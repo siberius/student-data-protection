@@ -7,6 +7,7 @@ Quellabschnitte: 8.
 ## 8. CSV und SQLite [P]
 
 [P] Lokale Datenspeicherung und Exporte:
+
 - **CSV-Injektionsschutz:** Felder, die mit `=`, `+`, `-`, `@`, Tabulator oder Zeilenumbruch beginnen, MÜSSEN beim Export durch ein vorangestelltes Apostroph (`'`) neutralisiert werden, um Makroausführung in Tabellenkalkulationen (Excel, Calc) zu verhindern.
 - **SQLite:** Einsatz des WAL-Modus (Write-Ahead Logging) und Aktivierung von Fremdschlüsseln (`PRAGMA foreign_keys = ON;`). Die Datenbankdatei darf nicht im öffentlich erreichbaren Web-Root liegen.
 - **Prepared Statements:** Ausschließlich parametrisierte SQL-Abfragen zur Verhinderung von SQL-Injektionen.

@@ -13,7 +13,7 @@ Zdrojové oddíly: 17.
 Doporuč jeden režim s důvodem a případně jednodušší alternativu. Režimy kombinuj podle funkcí: anonymní cvičení a jmenný přehled učitele mohou mít odlišné hranice. Každá aplikace nepotřebuje nejsložitější režim. Použití reálných dat nadále vyžaduje odpovídající rozhodnutí o zpracování a ochranná opatření.
 
 | Režim a školní příklad | Minimální návrh | Kontroly před reálným použitím |
-|---|---|---|
+| --- | --- | --- |
 | M1 Jednorázové procvičování: zlomky | Bez jména a účtu, pokud nejsou potřebné; odpovědi v pracovní paměti; vyčištění při ukončení. Lokální/statická aktivita může obejít centrální evidenci. | Obnovení, historie a další uživatel nesmějí odhalit odpovědi; před tvrzením o anonymitě prověř skutečné požadavky, logy, telemetrii a úložiště prohlížeče. |
 | M2 Omezený sběr: přihláška na akci | Jen údaje potřebné pro akci; chráněný příjem a přístup; spouštěč výmazu podle účelu. Neověřené podání zůstává nepotvrzené. | Přístup k cizím záznamům, nečekaná zapisovatelná pole, limity podání a výmaz. Společný kód sám neověřuje identitu pro úřední evidenci. |
 | M3 Navazující učení: uložený pokrok | Uchovávej minimum pokroku; osobní historii zpřístupni přes ověřenou školní identitu. Pseudonymní přístup posuď podle následků jeho zneužití. | Cizí historie, odhlášení na sdíleném zařízení, změna členství ve třídě a obnova. Pseudonym není automaticky anonymní. |

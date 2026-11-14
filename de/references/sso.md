@@ -7,6 +7,7 @@ Quellabschnitte: 16.
 ## 16. Schulisches Single Sign-On (SSO) [P]
 
 [P] Föderierte Authentifizierung:
+
 - Verwendung von Standards wie OpenID Connect (OIDC) oder SAML 2.0 (z. B. Shibboleth).
 - Minimale Attributübermittlung (nur pseudonyme User-ID und Schulzugehörigkeit). Keine Übergabe kompletter Profile.
 - Schutz von Tokens im Backend; keine Speicherung im ungeschützten Browser-Speicher.

@@ -21,6 +21,7 @@ Sections sources: 1.
 ### 1.4 Fraîcheur juridique continue et remontée vers GitHub [P]
 
 Le profil de sécurité de ce skill impose que toute analyse juridique s'appuie sur le droit positif à jour (RGPD, Règlement sur l'IA, Loi Informatique et Libertés, doctrines de la CNIL et consignes ministérielles).
+
 1. **Règle d'ancienneté des sources (> 6 mois):** Si plus de 6 mois se sont écoulés depuis la dernière revue des sources, l'assistant doit vérifier la validité des textes cités.
 2. **Prise en compte immédiate pour l'utilisateur:** En cas d'évolution législative ou doctrinale, l'assistant applique immédiatement la règle actuelle dans sa réponse et en informe l'utilisateur.
 3. **Remontée amont (GitHub Issue):** Avec l'accord de l'utilisateur, l'assistant propose d'ouvrir une issue sur le dépôt: `https://github.com/siberius/student-data-protection/issues` avec l'étiquette `legal-update`.
