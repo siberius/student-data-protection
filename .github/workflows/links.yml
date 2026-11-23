@@ -15,9 +15,12 @@ jobs:
           args: >-
             --no-progress --accept 200
             --exclude '^https://eur-lex\.europa\.eu'
+            --exclude '^https://uodo\.gov\.pl/pl/138/1256$'
+            --exclude '^https://www\.linkedin\.com/in/ludek-susicky/$'
+            --exclude '^https://x\.com/ludeksusicky$'
             './**/*.md'
           fail: true
       - name: Scope of link verification
         if: always()
         run: |
-          echo 'This job checks URL reachability, not legal correctness. HTTP 403/429 is unverified and fails this check. EUR-Lex is excluded due to blocking and requires separate source review; see docs/source-register.md.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'This job checks URL reachability, not legal correctness. HTTP 403/429 is unverified and fails this check. EUR-Lex is excluded due to blocking, UODO due to an incomplete TLS chain, and the author social profiles due to bot protection. These sources require separate review; see docs/source-register.md.' >> "$GITHUB_STEP_SUMMARY"
