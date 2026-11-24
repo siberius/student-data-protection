@@ -14,14 +14,15 @@ jobs:
         with:
           args: >-
             --no-progress --accept 200
+            --max-retries 5 --retry-wait-time 10 --max-concurrency 8
             --exclude '^https://eur-lex\.europa\.eu'
             --exclude '^https://uodo\.gov\.pl/pl/138/1256$'
             --exclude '^https://www\.linkedin\.com/in/ludek-susicky/$'
             --exclude '^https://x\.com/ludeksusicky$'
-            --exclude '^https://www\.aepd\.es/guias/nota-tecnica-kanonimidad\.pdf$'
+            --exclude '^https://www\.aepd\.es/'
             './**/*.md'
           fail: true
       - name: Scope of link verification
         if: always()
         run: |
-          echo 'This job checks URL reachability, not legal correctness. HTTP 403/429/503 is unverified and fails this check. EUR-Lex is excluded due to blocking, UODO due to an incomplete TLS chain, the author social profiles due to bot protection, and the AEPD k-anonymity PDF because Akamai edge nodes return 503 intermittently. These sources require separate review; see docs/source-register.md.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'This job checks URL reachability, not legal correctness. HTTP 403/429/503 is unverified and fails this check. EUR-Lex is excluded due to blocking, UODO due to an incomplete TLS chain, the author social profiles due to bot protection, and AEPD because its Akamai edge nodes intermittently return 503 to CI runners. These sources require separate review; see docs/source-register.md.' >> "$GITHUB_STEP_SUMMARY"
